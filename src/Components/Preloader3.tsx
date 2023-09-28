@@ -84,10 +84,10 @@ const Preloader3 = ({res}:{res:any}) => {
                                 zIndex:123456,
                                 position:'absolute'}}>
                                 <Typography sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',lg:'4em'},fontWeight:900}}>
-                                Experience the Power of Nature
+                                Experience the Power of Desgin Compas
                                 </Typography>
                                 <Typography sx={{color:'white',fontSize:{xs:'.85em',sm:'.89em'},mt:1,maxWidth:'600px'}}>
-                                Welcome to Truenaturalblend, your one-stop-shop for all your health and wellness needs. Discover our premium selection of natural supplements including ashwagandha, tongkat ali, cordyceps mushroom, lion manes mushroom, and more.
+                                At DesignCompas, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design
                                 </Typography>
                                 <Box className="flex">
 

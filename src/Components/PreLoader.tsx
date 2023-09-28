@@ -120,10 +120,10 @@ PreLoader = ({data,resImages}:any) => {
           ABOUT US
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className=''>
-        Welcome to True Natural Blend
+        Welcome to Design Compas
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        At Truenaturalblend, we’re passionate about health and wellness. We believe in the power of nature, and that’s why we’ve created a range of natural supplements to help you live your best life. From ashwagandha to tongkat ali, we’ve got everything you need to feel your best.
+        Explore our portfolio and let our work speak for itself. DesignCompas invites you to embark on a journey of transformation, where your spaces become a canvas for creativity and your ideas find a home
         </Typography>
         <Btn v2 className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
           Learn More

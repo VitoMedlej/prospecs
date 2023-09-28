@@ -105,7 +105,7 @@ export default function Navbar() {
 }}>
     <img
         className='img'
-        src={`https://ucarecdn.com/46a52749-a6f7-40f1-932c-d7a98074c48c/WhatsAppImage20230922at1306531.jpeg`}
+        src={`https://ucarecdn.com/13297c6a-72ec-4555-8372-965e8531d16f/372688426_120263737816524_8073115919353653137_n.jpg`}
         alt="design compas  logo"/>
 </Box>
 </Link>
