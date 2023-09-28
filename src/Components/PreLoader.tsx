@@ -86,7 +86,7 @@ PreLoader = ({data,resImages}:any) => {
           </Typography>
           </Box>
           <Box sx={{height:{xs:'200px',sm:'300px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'48%'}}}>
-            <img style={{borderRadius:'6px'}} src="https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-store-home-about-image_cXRc9c18.webp" alt="" className="img" />
+            <img style={{borderRadius:'6px'}} src={i.img} alt="" className="img" />
           </Box>
         </Box>
       })}
