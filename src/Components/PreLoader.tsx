@@ -67,7 +67,7 @@ PreLoader = ({data,resImages}:any) => {
       <Container sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
 
       {textsArray.map(i=>{
-        return <Box className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} key={i.id}>
+        return <Box key={i.id} className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} >
          <Box sx={{width:{xs:'100%',sm:'48%'}}}>
 
   
@@ -91,7 +91,7 @@ PreLoader = ({data,resImages}:any) => {
     <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
         {
         [1,2,3].map(i=>{
-          return <Box sx={{mx:2}} className='flex col items-center center'>
+          return <Box key={i} sx={{mx:2}} className='flex col items-center center'>
               <Box sx={{width:'20px'}}>
                 <img src="https://www.svgrepo.com/show/447781/secure.svg" alt="" className="img" />
               </Box>
@@ -123,7 +123,7 @@ PreLoader = ({data,resImages}:any) => {
         Welcome to Design Compas
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        Explore our portfolio and let our work speak for itself. DesignCompas invites you to embark on a journey of transformation, where your spaces become a canvas for creativity and your ideas find a home
+        Explore our portfolio and let our work speak for itself. DesignCompass invites you to embark on a journey of transformation, where your spaces become a canvas for creativity and your ideas find a home
         </Typography>
         <Btn v2 className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
           Learn More
@@ -148,7 +148,7 @@ PreLoader = ({data,resImages}:any) => {
           </Typography>
         <Box className='flex row wrap' sx={{justifyContent:'space-between'}}>
           {[1,2,3].map(i=>{
-            return <Box sx={{width:{xs:'95%',sm:'32%'}}}>
+            return <Box key={i} sx={{width:{xs:'95%',sm:'32%'}}}>
               <Box sx={{width:'100%'}}>
                 <img src="https://th.bing.com/th/id/OIP.IrUBHhdMo6wWLFueKNreRwHaHa?pid=ImgDet&rs=1" alt="" className="img" />
               </Box>

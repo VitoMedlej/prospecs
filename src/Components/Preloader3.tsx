@@ -87,7 +87,7 @@ const Preloader3 = ({res}:{res:any}) => {
                                 Experience the Power of Desgin Compas
                                 </Typography>
                                 <Typography sx={{color:'white',fontSize:{xs:'.85em',sm:'.89em'},mt:1,maxWidth:'600px'}}>
-                                At DesignCompas, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design
+                                At DesignCompass, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design
                                 </Typography>
                                 <Box className="flex">
 

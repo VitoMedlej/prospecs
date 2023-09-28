@@ -8,8 +8,8 @@ import QuickCart from '@/Components/Shared/QuickCart/QuickCart'
 import ContextWrapper from '@/context/Contexts'
 
 export const metadata = {
-    title: 'DesignCompas: Elevating Interior Design in Lebanon',
-    description: `Discover the artistry and innovation of DesignCompas, your premier interior design firm in Lebanon. We transform spaces into masterpieces`,
+    title: 'DesignCompass: Elevating Interior Design in Lebanon',
+    description: `Discover the artistry and innovation of DesignCompass, your premier interior design firm in Lebanon. We transform spaces into masterpieces`,
     icons: {
         icon: `https://ucarecdn.com/f21fe250-e19c-4fd7-b4e7-bf1b246a3640/favicon.jpeg`
     }
