@@ -46,7 +46,7 @@ const Footer = () => (
             <li><Link href="/collection/products">All Products</Link></li> 
             <li><Link href="/cart">Cart</Link></li>
             <li><Link href="/checkout">checkout</Link></li>
-            <li><Link href="https://wa.me/+96171984678">Contact Us</Link></li>
+            <li><Link href="https://wa.me/+9611234567">Contact Us</Link></li>
           </ul>
      
           <ul  className='ul-white' style={{color:'black'}}>

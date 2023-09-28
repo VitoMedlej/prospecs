@@ -20,21 +20,25 @@ PreLoader = ({data,resImages}:any) => {
       id: 1,
       title: 'Heading explaining the main benefit of your app',
       desc: 'Our supplements are made from only the finest natural ingredients, ensuring that you get the best possible results without any harmful chemicals or additives.'
+     , img : `https://assets.website-files.com/63406c069f42a4fe385a10ed/63406c069f42a498b95a11a2_Vue%2520Inte%25CC%2581rieur%2520-%2520Appartement%2520-%2520Chambre%252002-p-1080.jpeg`
     },
     {
       id: 2,
       title: 'Purity and Potency',
       desc: 'We carefully select our ingredients for their purity and potency, ensuring that you get the best possible results from our supplements.'
+      ,img : `https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/724f1953608397.593a356c9ec7d.jpg`
     },
     {
       id: 3,
       title: 'Expertly Formulated',
       desc: 'Our supplements are expertly formulated by our team of experienced professionals, ensuring that you get the best possible results every time.'
+      ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
     },
     {
       id: 4,
       title: 'Great Value',
       desc: 'Our supplements offer great value for money, providing you with the highest quality ingredients at an affordable price.'
+      ,img:`https://i.pinimg.com/originals/54/47/c7/5447c76323d6f6f93c24eba837587b97.jpg`
     }
   ];
   
