@@ -175,7 +175,7 @@ PreLoader = ({data,resImages}:any) => {
               `https://ucarecdn.com/4531d712-f11b-48f0-8814-a65d9d662758/326873372_1203331257238341_3929759003780858100_n.jpg`,
               `https://ucarecdn.com/5e6a1c31-0c4b-4d54-88aa-b62e8909268f/310628913_814761196339895_5039299682204342831_n.jpg`
         ].map(i=>{
-            return <Box sx={{my:1.5,width:{xs:'95%',sm:'32%'}}}>
+            return <Box key={i} sx={{my:1.5,width:{xs:'95%',sm:'32%'}}}>
               <Box sx={{width:'100%'}}>
                 <img src={`${i}`} alt="" className="img" />
               </Box>
