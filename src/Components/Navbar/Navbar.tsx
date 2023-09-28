@@ -15,9 +15,7 @@ import {Badge, Divider, Typography} from '@mui/material';
 // import { loadState } from '../../Utils/LocalstorageFn';
 import {useRouter} from 'next/navigation';
 // import {AiOutlinePhone, AiOutlineSearch, AiOutlineMenu} from 'react-icons/ai'
-import {CiSearch,CiShoppingCart} from 'react-icons/ci'
-import {AiOutlineHome,AiOutlineShoppingCart} from 'react-icons/ai'
-import SearchInput from './SearchInput';
+import {CiShoppingCart} from 'react-icons/ci'
 
 import NavButtom from './NavButtom';
 import { useCartContext, useDrawerContext } from '@/context/Contexts';
@@ -56,7 +54,7 @@ export default function Navbar() {
     return ( <>
      <Box
      id='navy'
-    className='center auto   bg flex'
+    className='center relative auto   bg flex'
         sx={{
             zIndex:12,
         flexWrap: 'wrap',
@@ -71,7 +69,7 @@ export default function Navbar() {
         <AppBar
      id='navy2'
 
-    className='center   flex'
+    className='center relative  flex'
 
             sx={{
 
@@ -108,7 +106,7 @@ export default function Navbar() {
     <img
         className='img'
         src={`https://ucarecdn.com/46a52749-a6f7-40f1-932c-d7a98074c48c/WhatsAppImage20230922at1306531.jpeg`}
-        alt="Pets Town logo"/>
+        alt="design compas  logo"/>
 </Box>
 </Link>
                 <Box
@@ -237,16 +235,7 @@ mobile
                           
                         </IconButton> */}
 
-                        <IconButton
-                            onClick={() => setCartOpen(!cartOpen)}
-                            sx={{
-                            color: 'black'
-                        }}>
-                            {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-                                <CiShoppingCart color='black'/>
-                            {/* </Badge> */}
-                          
-                            </IconButton>
+                  
 
 
 

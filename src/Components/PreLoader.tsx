@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { Box,  Container, Grid, Typography } from "@mui/material"
+import { Box,  Container, Divider, Grid, Typography } from "@mui/material"
 import ContactSection from './ContactSection/ContactSection'
 import HomeProductCollection from './HomeProductCollection/HomeProductCollection'
 import HomeProductsCarousel from './HomeProductsCarousel/HomeProductsCarousel'
@@ -18,7 +18,7 @@ PreLoader = ({data,resImages}:any) => {
   const textsArray = [
     {
       id: 1,
-      title: '100% Natural',
+      title: 'Heading explaining the main benefit of your app',
       desc: 'Our supplements are made from only the finest natural ingredients, ensuring that you get the best possible results without any harmful chemicals or additives.'
     },
     {
@@ -52,15 +52,71 @@ PreLoader = ({data,resImages}:any) => {
       <MainCarousel resImages={resImages}/>
       {/* <Perks/> */}
 
-    <Grid  sx={{background:'#f4f8fd',width:'100%',py:8}} container>
+    <Container   maxWidth='lg'   sx={{my:{xs:3,sm:6,md:8}}}>
+      <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:900}} className='center text-center auto '>
+      DESIGN COMPASS IS DEFINED BY GREATNESS
+
+
+      </Typography>
+      <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
+      DesignAgency is an award-winning studio with a talent for envisioning inspired environments and brands. Our exceptional designs are driven by the collaborative spirit of our studio that values the evolution of unique and functional spaces through innovation and creativity. We understand that individual inspiration can only be realized through the power of collaboration.
+        </Typography>
+    </Container>
+
+ 
+      <Container sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
+
+      {textsArray.map(i=>{
+        return <Box className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} key={i.id}>
+         <Box sx={{width:{xs:'100%',sm:'48%'}}}>
+
+  
+          <Typography  className='color'>
+            .0{i.id}
+          </Typography>
+          <Typography  sx={{maxWidth:'400px',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
+            {i.title}
+          </Typography>
+          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'350px'}}>
+            {i.desc}
+          </Typography>
+          </Box>
+          <Box sx={{height:{xs:'200px',sm:'300px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'48%'}}}>
+            <img style={{borderRadius:'6px'}} src="https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-store-home-about-image_cXRc9c18.webp" alt="" className="img" />
+          </Box>
+        </Box>
+      })}
+      </Container>
+
+    <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
+        {
+        [1,2,3].map(i=>{
+          return <Box sx={{mx:2}} className='flex col items-center center'>
+              <Box sx={{width:'20px'}}>
+                <img src="https://www.svgrepo.com/show/447781/secure.svg" alt="" className="img" />
+              </Box>
+              <Box >
+              <Typography className='center text-center'  sx={{maxWidth:'400px',fontSize:{xs:'.99em',sm:'1.1em'},fontWeight:500}}>
+              Feature One
+          </Typography>
+          <Typography className='center text-center' sx={{color:'#4d555e',fontSize:{xs:'.75em',sm:'.8em'},pb:.65,maxWidth:'350px'}}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.
+          </Typography>
+              </Box>
+          </Box>
+        })
+        }
+    </Container>
+
+    <Grid  sx={{width:'100%',pt:6}} container>
     <Grid  maxWidth='lg' item xs={12} sm={6}>
       <Box sx={{height:'500px',maxWidth:'450px'}} className='auto'>
-        <img src="https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-store-home-about-image_cXRc9c18.webp" alt="" className="img" />
+        <img src="https://th.bing.com/th/id/R.895c8ea5d0d0dce5e8790c317209e10d?rik=yaI%2fbJaLkYBogw&pid=ImgRaw&r=0" alt="" className="img" />
       </Box>
     </Grid>
     <Grid maxWidth='lg' item xs={12} sm={6}>
     <Container  className='wrap col   auto flex' sx={{alignItems:'left',px:{sm:1},pt:{xs:2,sm:4},display:'flex'}}>
-        <Typography sx={{fontWeight:400}} className='color2'>
+        <Typography sx={{fontWeight:400}} className='color'>
           ABOUT US
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className=''>
@@ -75,164 +131,65 @@ PreLoader = ({data,resImages}:any) => {
     </Container>
 
     </Grid>
-    <Grid  maxWidth='lg' item xs={12} sx={{mt:{xs:8,sm:12}}}>
-      <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className='center text-center auto color'>
-      Why Choose Truenaturalblend?
-      </Typography>
-      <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      Our supplements are made with only the finest natural ingredients, carefully selected for their purity and potency. Our products are free from harmful chemicals
-        </Typography>
+   
+   
     </Grid>
-    <Grid  xs={12}  sx={{mt:4}}
-    >
-      <Container sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
-
-      {textsArray.map(i=>{
-        return <Box sx={{borderBottom:'1px solid white',width:{xs:'98%',sm:'200px',md:'48%'},maxWidth:'500px',mt:2.5}} key={i.id}>
-          <Typography className='color3'>
-            .0{i.id}
-          </Typography>
-          <Typography className='color2' sx={{fontSize:'1.4em',fontWeight:500}}>
-            {i.title}
-          </Typography>
-          <Typography sx={{color:'#4d555e',fontSize:'.8em',pb:.65,maxWidth:'350px'}}>
-            {i.desc}
-          </Typography>
-        </Box>
-      })}
-      </Container>
-
-    </Grid>
-    </Grid>
-    {/* <Box className='flex auto wrap ' sx={{justifyContent:'space-between',width:'100%',maxWidth:'xl'}}>
-      {
-        resImages?.categoryImage && resImages?.categoryImage.map((img:any)=>{
-          return <Box className='cursor' onClick={()=>router.push('/collection/products')} key={img?.img} sx={{minWidth:'200px',my:1,width:{xs:'99%',sm:'49%',md:'48%'}}}>
-            <img src={img?.img} alt="Category Image Shop Now" className="img" />
-          </Box>
-        })
-      }
-    </Box> */}
-
-     {/* <Box
-                className=' text-center auto center box'
-     
-     sx={{mx:1,width:'100%'}}> */}
-{/* 
-        
-         <Typography
-                className='sectionTitle text-center auto center box'
-                sx={{
-                  py:'.15em',
-                  // pt:9,
-                  display:'flex',
-                fontSize: {
-                    xs: '1.2em',
-                    sm: '1.4em'
-                },
-                flex:1,
-                fontWeight: '300'
-            }}>
-               Explore Categories
-            </Typography>
-          */}
-
-            {/* <Box className='wrap  space-evenly' sx={{width:'100%',my:3,display:{xs:'flex'}}}> */}
-
-        {/* {cates.map((i:any)=>{
-            return <Box
-
-            onClick={()=>router.push(`${i?.category.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-            key={i?.img} className='cursor'
-             sx={{borderRadius:'50%',height:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'},
-             my:2,width:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
-                    <img src={i?.img} alt={`${i?.category ,'image'}`} style={{borderRadius:'50%'}} className="img" />
-                    <Typography sx={{fontWeight:'500',fontSize:'.65em',textAlign: 'center',px:1}}>
-             {i?.category}
-            </Typography>
-            </Box>
-
-        })} */}
-
-{/* {resImages?.first && <Box
-
-onClick={()=>router.push(`${'circut machines'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
- className='cursor'
- sx={{borderRadius:'50%',height:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'},
- my:2,width:{xs:'48vw',sm:'24vw',md:'24vw',lg:'15vw'}}}>
-        <img src={resImages?.first} alt={`Circut Machines Images image`} style={{borderRadius:'2%'}} className="img" />
-        <Typography sx={{fontWeight:'500',fontSize:'.65em',textAlign: 'center',px:1}}>
-        Circut Machines
-</Typography>
-</Box>}
+ 
 
 
-{resImages?.second && <Box
-  onClick={() => router.push(`${'customizable-blanks'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={`${resImages?.second}`} alt={`Customizable Blanks Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    Customizable Blanks
-  </Typography>
-</Box>}
-{resImages?.third && <Box
-  onClick={() => router.push(`${'hot-offers'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={resImages?.third} alt={`Hot Offers Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    Hot Offers
-  </Typography>
-</Box>}
-{resImages?.fourth && <Box
-  onClick={() => router.push(`${'new-arrivals'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={resImages?.fourth} alt={`New Arrivals Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    New Arrivals
-  </Typography>
-</Box>}
-{resImages?.fifth && <Box
-  onClick={() => router.push(`${'materials'.replace(/ /g, '-').toLocaleLowerCase() || 'collection'}/products`)}
-  className='cursor'
-  sx={{ borderRadius: '2%', height: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' }, my: 2, width: { xs: '48vw', sm: '24vw', md: '24vw', lg: '15vw' } }}>
-  <img src={resImages?.fifth} alt={`Materials Images image`} style={{ borderRadius: '2%' }} className="img" />
-  <Typography sx={{ fontWeight: '500', fontSize: '.65em', textAlign: 'center', px: 1 }}>
-    Materials
-  </Typography>
-</Box>} */}
 
-
-            {/* </Box> */}
-
-     {/* </Box> */}
 
       <Box/>
-        <HomeProductCollection  products={[{description:'',category:'abc',images:['https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-product-image-005_cXRc9c18.webp'],title:'Ali Dawa',_id:'14152',price:123},{description:'',category:'abc',images:['https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-product-image-005_cXRc9c18.webp'],title:'Ali Dawa',_id:'14152',price:123},{description:'',category:'abc',images:['https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-product-image-005_cXRc9c18.webp'],title:'Ali Dawa',_id:'14152',price:123}]}/>
-      <Container  className='flex center items-center row' sx={{py:5,my:8,mx:'auto',maxWidth:'lg',background:'#f4f8fd',}}>
-        <Box>
-        <Typography sx={{width:'100%',maxWidth:'600px',flex:1,fontSize:{xs:'.95em',sm:'1.19em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-            
-            At Truenaturalblend, we’re committed to sustainability. That’s why we use eco-friendly packaging and support sustainable farming practices to ensure that our products have a minimal impact on the environment
-            </Typography>
+
+        
+      <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
+      <Typography  className='center text-center' sx={{my:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
+            Meet The Team
+          </Typography>
+        <Box className='flex row wrap' sx={{justifyContent:'space-between'}}>
+          {[1,2,3].map(i=>{
+            return <Box sx={{width:{xs:'95%',sm:'32%'}}}>
+              <Box sx={{width:'100%'}}>
+                <img src="https://th.bing.com/th/id/OIP.IrUBHhdMo6wWLFueKNreRwHaHa?pid=ImgDet&rs=1" alt="" className="img" />
+              </Box>
+              <Box>
+              <Typography  className='center' sx={{maxWidth:'400px',fontSize:{xs:'.8em',sm:'1em'},fontWeight:300}}>
+            David R. Stevenson
+          </Typography>
+              </Box>
+            </Box>
+          })}
         </Box>
+      </Container>
         
-        <Box sx={{width:{xs:'100%',sm:'200px'}}} className='auto rounded'>
-          <img src="https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-store-recycled-circle-iamge_cXRc9c18.webp" alt="" className="img rounded" />
+          <Divider light></Divider>
+      <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
+      <Typography  className='center text-center' sx={{my:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
+            Our Projects
+          </Typography>
+        <Box className='flex row wrap' sx={{justifyContent:'space-between'}}>
+            {['https://ucarecdn.com/f8cec8bd-329e-4619-a3fa-84bc6a7eb976/350174584_772950354335809_1546699321853274506_n1.jpg',
+              `https://ucarecdn.com/29e05437-650c-4630-ab22-aef56e7b7b43/346568375_561570792787877_3007785310889235198_n1.jpg`,
+              `https://ucarecdn.com/45e7f519-a236-4950-88d2-b20c03f01779/327354731_1382619425823545_3993434233662015758_n.jpg`
+              ,`https://ucarecdn.com/918f24a2-67e9-4401-84e7-6bd5580bcf39/326989089_124426176993731_5807831868261554876_n.jpg`,
+              `https://ucarecdn.com/4531d712-f11b-48f0-8814-a65d9d662758/326873372_1203331257238341_3929759003780858100_n.jpg`,
+              `https://ucarecdn.com/5e6a1c31-0c4b-4d54-88aa-b62e8909268f/310628913_814761196339895_5039299682204342831_n.jpg`
+        ].map(i=>{
+            return <Box sx={{my:1.5,width:{xs:'95%',sm:'32%'}}}>
+              <Box sx={{width:'100%'}}>
+                <img src={`${i}`} alt="" className="img" />
+              </Box>
+              <Box>
+              {/* <Typography  className='center' sx={{maxWidth:'400px',fontSize:{xs:'.8em',sm:'1em'},fontWeight:300}}>
+            David R. Stevenson
+          </Typography> */}
+              </Box>
+            </Box>
+          })}
         </Box>
-        </Container>       
-    {/* <FullscreenPoster/> */}
-    {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(10,18)}/> */}
-    {/* <HomeProductsCarousel Collectiontitle={"Browse Our Collections"} delay={3000} data={data?.featuredProducts?.slice(18)}/> */}
+      </Container>
 
-    <Testimonials/>
-        
-
-        
-
-        {/* <ContactSection/> */}
+        <ContactSection/>
   </Box>
   )
 }

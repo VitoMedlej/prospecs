@@ -5,6 +5,7 @@ import React from 'react'
 
 
 import {AiOutlineWhatsApp,AiOutlineInstagram} from 'react-icons/ai'
+import {BsLinkedin,BsInstagram} from 'react-icons/bs'
 // import EmailInput from './EmailInput'
 const Perks = () => {
     return (
@@ -28,13 +29,12 @@ const Perks = () => {
                     alignItems: 'center',
                     flexDirection: 'column',
                 }}>
-                {/* <Typography sx={{
+                <Typography sx={{
                     fontWeight: '600',
                     fontSize: '1.7em'
                 }}>
-                 Sign Up For Our News Letter
-                </Typography> */}
-                {/* <EmailInput/> */}
+                    CONTACT US TODAY
+                </Typography>
                 <Typography
                     className='white'
                     sx={{
@@ -44,7 +44,7 @@ const Perks = () => {
             <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1em' }}>
                 {/* {[{title:'Phone Number',value:"70873045",isLink:false}, {isLink:true,title:'Instagram',value:'https://www.instagram.com/power_house_european/'}, {isLink:true,title:'Facebook',value:'https://www.facebook.com/online.european.outlet/'}].map(i => {
                     return 
-                })} */}
+                })} 
 
                 <Box
 
@@ -63,7 +63,6 @@ const Perks = () => {
                             alignItems: 'center',
                             justifyContent: 'center'
                         }}>
-                        {<a className='white' target={`_blank`} rel='noreferrer' style={{textDecoration:"none"}} href={"https://www.instagram.com/pets_town_lb/?igshid=MzRlODBiNWFlZA%3D%3D"}>
 
 
                             <Typography
@@ -93,7 +92,7 @@ sx={{
 </Box> */}
 
 
-                {/* <Box
+                 <Box
 
                     sx={{
                         display: 'flex',
@@ -101,7 +100,7 @@ sx={{
                         flexDirection: 'row'
                     }}>
                     <Box className='flex items-center'>
-                        <AiFillFacebook color='#fff' />
+                        <BsLinkedin color='#fff' />
                     </Box>
                     <Box
                         sx={{
@@ -116,13 +115,13 @@ sx={{
                             <Typography
                                 sx={{
                                     fontSize: '1.1em'
-                                }}>Facebook</Typography>
+                                }}>LinkedIn</Typography>
                         </a>
 
                         }
                     </Box>
 
-                </Box> */}
+                </Box>
 
 
                 <Box
@@ -155,10 +154,39 @@ sx={{
                     </Box>
 
                 </Box>
+                <Box
+
+sx={{
+    display: 'flex',
+    gap: '.5em',
+    flexDirection: 'row'
+}}>
+<Box className='flex items-center'>
+    <BsInstagram  color= '#fff' />
+</Box>
+<Box
+    sx={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column'
+    }}>
+    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/design__compass/`}>
 
 
+        <Typography
+            sx={{
+                fontSize: '1.1em'
+            }}>Instagram</Typography>
+    </a>
+
+    }
+</Box>
+
+</Box>
 
 
+                
 
 
             </Box>

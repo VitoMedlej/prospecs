@@ -14,7 +14,7 @@ import Btn from './Btn/Btn';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img : `https://10web-site.ai/25/wp-content/uploads/sites/28/2023/09/recycled-shoe-store-hero-image-bg_cXRc9c18.webp`},
+        {img : `https://ucarecdn.com/4b553e20-2359-4dd7-858d-353b4bbedb80/chrisshelby.jpg`},
        
      ])
     useEffect(() => {
@@ -35,10 +35,9 @@ const Preloader3 = ({res}:{res:any}) => {
             maxWidth:'none',
             // maxWidth: 'lg',
             minHeight:'500px',
-            maxHeight:{xs:'600px',sm:'90vh',md:'700px'},
+          
             margin: '0 auto',
-            mt:4,
-            height : {xs:'100%',sm:'550px',md:'650px'},
+            height : {xs:'100vh',sm:'650px'},
              
             display: {
                 xs: 'flex'
@@ -84,20 +83,18 @@ const Preloader3 = ({res}:{res:any}) => {
                                 transform:'translateY(-50%)',
                                 zIndex:123456,
                                 position:'absolute'}}>
-                                <Typography sx={{color:'white',fontSize:{xs:'1.95em',sm:'3em',md:'3.5em',lg:'4em'},fontWeight:900}}>
+                                <Typography sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',lg:'4em'},fontWeight:900}}>
                                 Experience the Power of Nature
                                 </Typography>
-                                <Typography sx={{color:'white',fontSize:{xs:'.75em',sm:'.84em'},mt:1,maxWidth:'600px'}}>
+                                <Typography sx={{color:'white',fontSize:{xs:'.85em',sm:'.89em'},mt:1,maxWidth:'600px'}}>
                                 Welcome to Truenaturalblend, your one-stop-shop for all your health and wellness needs. Discover our premium selection of natural supplements including ashwagandha, tongkat ali, cordyceps mushroom, lion manes mushroom, and more.
                                 </Typography>
                                 <Box className="flex">
 
                                 <Btn className='bg white borderColor' sx={{mt:3}}>
-                                    Shop Now
+                                    Explore
                                 </Btn>
-                                <Btn  v2 className='color2 borderColor2' sx={{ml:2,mt:3}}>
-                                    Discover 
-                                </Btn>
+                             
                                 </Box>
                             </Box>
                             </Container>

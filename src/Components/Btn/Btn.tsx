@@ -8,7 +8,7 @@ let style1 = {
   color: 'black',
   background: 'white',
   border:'1px solid',
-  borderRadius: '0px', 
+  borderRadius: '30px', 
   transition: 'background 0.3s ease, transform 0.2s ease',
 
   ':hover': {
@@ -16,7 +16,7 @@ let style1 = {
       transform: 'scale(1.05)',
   },
   display: 'flex',
-  padding: '11px 35px',
+  padding: '9px 40px',
   fontWeight: '400',
   fontSize: '12px',
   cursor: 'pointer',
@@ -36,7 +36,7 @@ let style2 = {
       transform: 'scale(1.05)',
   },
   display: 'flex',
-  padding: '6px 34px',
+  padding: '9px 40px',
   fontWeight: '600',
   fontSize: '12px',
   cursor: 'pointer',

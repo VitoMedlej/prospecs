@@ -19,11 +19,11 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/80fdb836-ff38-415a-a359-66a9f41bcb57/279234257_691043618773985_3830166968954566921_n.jpg' alt="Pets Town Lebanon Logo" />
+            <img className='img ' src='https://ucarecdn.com/80fdb836-ff38-415a-a359-66a9f41bcb57/279234257_691043618773985_3830166968954566921_n.jpg' alt="designcompas Lebanon Logo" />
             </Link>
           </div>
           <Typography component='h1' sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
-          At PetsTown, we are passionate about providing the best care for your pets. Our pet shop in Lebanon offers a wide selection of high-quality pet supplies for dogs, cats, birds, and more. Our friendly and knowledgeable staff is always here to help you find the perfect product for your furry friend. Shop at PetsTown today and give your pet the love and care they deserve.
+          At DesignCompas, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design. With an unwavering commitment to creativity and quality, we turn your vision into reality.
           </Typography>
           <SMicons/>
 
@@ -51,11 +51,11 @@ const Footer = () => (
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            {/* <li><Link href="mailto:sales@thecraftroom-lb.com">sales@petstown.com</Link></li> */}
+            <li><Link href="mailto:sales@thecraftroom-lb.com">contact@designcompas.com</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
-            <li><a href="https://www.instagram.com/pets_town_lb/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank" rel="noreferrer" >@pets_town_lb</a></li>
+            <li><a href="https://www.instagram.com/design__compass/" target="_blank" rel="noreferrer" >@design__compass</a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >+{process.env.NEXT_PUBLIC_WA}</a></li>
             {/* <li><a href={`http://tiktok.com/@thecraftroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>

@@ -64,7 +64,7 @@ const NavButtom = () => {
         <Container
             className='flex   '
             sx={{
-              
+            justifyContent:'flex-end',
             maxWidth: 'lg',
             overflow:'hidden',
             py:1.5,
