@@ -101,7 +101,7 @@ export default function Navbar() {
     mx: {
         sm: '1em'
     },
-    width:{xs:'90px',sm: '90px'}
+    width:{xs:'100px',sm: '110px'}
 }}>
     <img
         className='img'
@@ -149,20 +149,7 @@ export default function Navbar() {
                         }}>
                             <AiOutlineHome color='black'/>
                         </IconButton> */}
-                        <IconButton
-                            onClick={() => setCartOpen(!cartOpen)}
-                            sx={{
-                                margin : '8px',padding:0,
-                            color: 'black'
-                        }}>
-                            {/* <Badge color='primary' badgeContent={`${localCart.length || '0'}`}> */}
-
-                                <CiShoppingCart color='black'/>
-                            {/* </Badge> */}
-                            {/* <Typography>
-                                Cart
-                            </Typography> */}
-                        </IconButton>
+                      
     <IconButton
                             onClick={() => setOpen(!open)}
                             size="large"
