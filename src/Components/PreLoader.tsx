@@ -59,8 +59,6 @@ PreLoader = ({data,resImages}:any) => {
     <Container   maxWidth='lg'   sx={{my:{xs:3,sm:6,md:8}}}>
       <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:900}} className='center text-center auto '>
       DESIGN COMPASS IS DEFINED BY GREATNESS
-
-
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
       DesignAgency is an award-winning studio with a talent for envisioning inspired environments and brands. Our exceptional designs are driven by the collaborative spirit of our studio that values the evolution of unique and functional spaces through innovation and creativity. We understand that individual inspiration can only be realized through the power of collaboration.
@@ -85,7 +83,7 @@ PreLoader = ({data,resImages}:any) => {
             {i.desc}
           </Typography>
           </Box>
-          <Box sx={{height:{xs:'200px',sm:'300px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'48%'}}}>
+          <Box sx={{height:{xs:'250px',sm:'300px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'48%'}}}>
             <img style={{borderRadius:'6px'}} src={i.img} alt="" className="img" />
           </Box>
         </Box>

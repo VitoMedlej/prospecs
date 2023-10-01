@@ -79,11 +79,11 @@ const Preloader3 = ({res}:{res:any}) => {
                             sx={{
                                 top:'50%',
                                 px:{xs:4,sm:5,md:6},
-                                maxWidth:'550px',
+                                maxWidth:'750px',
                                 transform:'translateY(-50%)',
                                 zIndex:123456,
                                 position:'absolute'}}>
-                                <Typography sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',lg:'4em'},fontWeight:900}}>
+                                <Typography sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',lg:'4.4em'},fontWeight:900}}>
                                 Experience the Power of Desgin Compas
                                 </Typography>
                                 <Typography sx={{color:'white',fontSize:{xs:'.85em',sm:'.89em'},mt:1,maxWidth:'600px'}}>

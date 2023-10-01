@@ -101,7 +101,7 @@ export default function Navbar() {
     mx: {
         sm: '1em'
     },
-    width:{xs:'100px',sm: '110px'}
+    width:{xs:'80px',sm: '90px'}
 }}>
     <img
         className='img'
