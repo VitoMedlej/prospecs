@@ -75,7 +75,7 @@ const NavButtom = () => {
                     Sale
                     </Typography>
                 </Link> */}
-                <Link className='black decor-none uppercase' href={`/collection/products`}>
+                <Link className='black decor-none uppercase' href={`/`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none uppercase'
@@ -88,7 +88,7 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Home
 </Typography>
 </Link>
-<Link className='black decor-none uppercase' href={`/collection/products`}>
+<Link className='black decor-none uppercase' href={`/about`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none uppercase'
@@ -98,10 +98,10 @@ mx:'1em',
 alignItems: 'center',
 
 fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
-About
+About Us
 </Typography>
 </Link>
-<Link className='black decor-none uppercase' href={`/collection/products`}>
+<Link className='black decor-none uppercase' href={`/about`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none uppercase'
@@ -114,7 +114,7 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Contact
 </Typography>
 </Link>
-<Link className='black decor-none uppercase' href={`/collection/products`}>
+<Link className='black decor-none uppercase' href={`/portfolio`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none uppercase'
@@ -124,7 +124,7 @@ mx:'1em',
 alignItems: 'center',
 
 fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
-Services
+Our Projects
 </Typography>
 </Link>
 
