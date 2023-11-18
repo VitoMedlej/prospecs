@@ -6,46 +6,7 @@ import React from 'react'
 import { categories } from './Navbar'
 import MenuHover from './MenuHover'
 
-export const catsSubcategories = [
-    "Food",
-    "Treats",
-    "Toys",
-    "Collars",
-    "Leashes",
-    "Apparel",
-    "Grooming",
-    "Brushes",
-    "Litters",
-    "Hygiene",
-    "Health",
-    "Wellness",
-    "Medication",
-    "Fleas",
-    "Ticks"
-];
 
-export const dogsSubcategories = [
-    "Food",
-    "Treats",
-    "Toys",
-    "Collars",
-    "Leashes",
-    "Apparel",
-    "Grooming",
-    "Brushes",
-    "Hygiene",
-    "Health",
-    "Wellness",
-    "Medication",
-    "Fleas",
-    "Ticks"
-];
-
-export const offersSubcategories = [
-  	"Special Deals",
-  	"Clearance Items",
-  	"Discounted Bundles"
-];
 
 
 
@@ -101,7 +62,7 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 About Us
 </Typography>
 </Link>
-<Link className='black decor-none uppercase' href={`/about`}>
+<Link className='black decor-none uppercase' href={`/contact`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none uppercase'

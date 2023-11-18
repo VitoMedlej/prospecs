@@ -43,15 +43,15 @@ const Footer = () => (
           <ul className=' ul-white'>
             <li className='link-title'>Site links</li>
             <li><Link  href="/">Home</Link></li>
-            <li><Link href="/collection/products">All Products</Link></li> 
-            <li><Link href="/cart">Cart</Link></li>
-            <li><Link href="/checkout">checkout</Link></li>
-            <li><Link href="https://wa.me/+9611234567">Contact Us</Link></li>
+            <li><Link href="/portfolio">Our Projects</Link></li> 
+            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="/contact">Contact Us</Link></li>
+            <li><Link href="https://wa.me/+9611234567">Whatsapp</Link></li>
           </ul>
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            <li><Link href="mailto:sales@thecraftroom-lb.com">contact@DesignCompass.com</Link></li>
+            <li><Link href="mailto:contact@designcompass.com">contact@DesignCompass.com</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
@@ -67,7 +67,7 @@ const Footer = () => (
     <div className="site-footer__bottom " style={{color:'black',borderTop:"1px solid #0000001f"}}>
       <div className="container " style={{color:'black'}}>
         <p>Website Developed By{' '}
-          <a style={{ color: 'black' }} href={`${'https://www.onbeirut.com'}`}>OnBeirut Agency </a></p>
+          <a style={{ color: 'black' }} href={`${'https://www.onbeirut.com'}`}>@OnBeirut Agency</a></p>
       </div>
     </div>
   </footer>

@@ -9,8 +9,8 @@ import {AiOutlineArrowUp} from 'react-icons/ai';
 
 import { DrawerContext } from '@/context/Contexts';
 import {GrFormClose} from 'react-icons/gr'
-import SMicons from '../SMicons/SMicons';
-import { catsSubcategories, dogsSubcategories, offersSubcategories } from '../Navbar/NavButtom';
+// import SMicons from '../SMicons/SMicons';
+// import { catsSubcategories, dogsSubcategories, offersSubcategories } from '../Navbar/NavButtom';
 import NestedAccordion from './NestedAccordion';
 
 
@@ -44,7 +44,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
       
       >
         <Box>
-          <Typography sx={{fontWeight:600}}>
+          <Typography sx={{fontWeight:800}}>
             Sidebar Menu
           </Typography>
         </Box>
@@ -63,12 +63,12 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
       <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/collection/products`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             
                   <Typography sx={{fontWeight:600}}>
-              All Products
+             Home
             </Typography>
             </ListItemButton>
   
@@ -77,12 +77,40 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
           <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/new-arrivals/products`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/contact`); toggleDrawer(false)}}
+           disablePadding>
+              <ListItemButton sx={{py:1.5}} >
+            
+                  <Typography sx={{fontWeight:600}}>
+             Contact Us
+            </Typography>
+            </ListItemButton>
+  
+          <Divider></Divider>
+          </ListItem> 
+      <ListItem
+          sx={{fontWeight:600}}
+
+          onClick={()=>{router.push(`/portfolio`); toggleDrawer(false)}}
+           disablePadding>
+              <ListItemButton sx={{py:1.5}} >
+            
+                  <Typography sx={{fontWeight:600}}>
+             Our Projects
+            </Typography>
+            </ListItemButton>
+  
+          <Divider></Divider>
+          </ListItem> 
+          <ListItem
+          sx={{fontWeight:600}}
+
+          onClick={()=>{router.push(`/about`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1}} >
             
                   <Typography sx={{fontWeight:600}}>
-             New Arrivals
+             About
             </Typography>
             </ListItemButton>
   
@@ -145,7 +173,7 @@ key={i}>
         </AccordionDetails>
       </Accordion> */}
 
-            <NestedAccordion toggleDrawer={setOpen}/>
+            {/* <NestedAccordion toggleDrawer={setOpen}/> */}
 
       {/* <Accordion sx={{border:'none',boxShadow:'none',}}>
             
@@ -260,7 +288,6 @@ key={i}>
 
    
       </List>
-  <SMicons />   
     </Box>
   );
 

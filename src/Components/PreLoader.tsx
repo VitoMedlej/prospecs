@@ -144,7 +144,7 @@ PreLoader = ({data,resImages}:any) => {
       <Box/>
 
         
-      <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
+      {/* <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
       <Typography  className='center text-center' sx={{my:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
             Meet The Team
           </Typography>
@@ -162,9 +162,9 @@ PreLoader = ({data,resImages}:any) => {
             </Box>
           })}
         </Box>
-      </Container>
+      </Container> */}
         
-          <Divider light></Divider>
+          {/* <Divider light></Divider> */}
       <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
       <Typography  className='center text-center' sx={{my:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
             Our Projects

@@ -24,11 +24,10 @@ import Btn from '../Btn/Btn';
 
 
 export const categories = [
-    "New Arrivals",
-    "Cats",
-    "Dogs",
-    "Birds",
-    "Offers",
+    'Home',
+    'About',
+    'Contact',
+    'Portfolio'
 ]
 export default function Navbar() {
     const {open, setOpen} = useDrawerContext();

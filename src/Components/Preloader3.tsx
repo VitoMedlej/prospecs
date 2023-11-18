@@ -14,7 +14,8 @@ import Btn from './Btn/Btn';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img : `https://ucarecdn.com/4b553e20-2359-4dd7-858d-353b4bbedb80/chrisshelby.jpg`},
+        {img : `https://th.bing.com/th/id/R.1bd115eb313eb77c1b1adab41764509c?rik=we51JeZavsx%2fIQ&pid=ImgRaw&r=0`},
+        {img : `https://th.bing.com/th/id/R.f9a5184c0cdaa5fb293c10d30f1d44e7?rik=A4JN4HLwTn4ZZQ&pid=ImgRaw&r=0`},
        
      ])
     useEffect(() => {
@@ -71,7 +72,8 @@ const Preloader3 = ({res}:{res:any}) => {
                         <Container className='auto' sx={{width:'100%'}} maxWidth='lg' disableGutters>
                             
                       
-                            <Box sx={{top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black',opacity:.43}} className="absolute">
+                            <Box sx={{top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black'
+                            ,opacity:.57}} className="absolute">
 
                             </Box>
                             <Box 
@@ -83,11 +85,11 @@ const Preloader3 = ({res}:{res:any}) => {
                                 transform:'translateY(-50%)',
                                 zIndex:123456,
                                 position:'absolute'}}>
-                                <Typography sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',lg:'4.4em'},fontWeight:900}}>
-                                Experience the Power of Desgin Compas
+                                <Typography sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',lg:'4.8em'},fontWeight:900}}>
+                                Experience the Power of Desgin Compass
                                 </Typography>
                                 <Typography sx={{color:'white',fontSize:{xs:'.85em',sm:'.89em'},mt:1,maxWidth:'600px'}}>
-                                At DesignCompass, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design
+                                At Design Compass, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design
                                 </Typography>
                                 <Box className="flex">
 
