@@ -18,27 +18,27 @@ PreLoader = ({data,resImages}:any) => {
   const textsArray = [
     {
       id: 1,
-      title: 'Heading explaining the main benefit of your app',
-      desc: 'Our supplements are made from only the finest natural ingredients, ensuring that you get the best possible results without any harmful chemicals or additives.'
+      title: 'Customized Interior Design Solutions',
+      desc: 'Our turn-key services are tailored to your specific needs. We understand that every project is unique, and we approach each one with a fresh perspective and an open mind.'
      , img : `https://assets.website-files.com/63406c069f42a4fe385a10ed/63406c069f42a498b95a11a2_Vue%2520Inte%25CC%2581rieur%2520-%2520Appartement%2520-%2520Chambre%252002-p-1080.jpeg`
     },
     {
       id: 2,
-      title: 'Purity and Potency',
-      desc: 'We carefully select our ingredients for their purity and potency, ensuring that you get the best possible results from our supplements.'
-      ,img : `https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/724f1953608397.593a356c9ec7d.jpg`
+      title: 'Exceptional Wood Work Services',
+      desc: 'Our wood work services are all about precision and attention to detail. We take pride in crafting custom pieces that add a touch of elegance and sophistication to your space.'
+      ,img : `https://images.pexels.com/photos/4263067/pexels-photo-4263067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
     },
     {
       id: 3,
-      title: 'Expertly Formulated',
-      desc: 'Our supplements are expertly formulated by our team of experienced professionals, ensuring that you get the best possible results every time.'
+      title: 'Comprehensive Interior Design Services',
+      desc: 'At DesignCompass, we offer a wide array of services under one roof. Our comprehensive approach ensures that every aspect of your interior design project is handled with professionalism and attention to detail.'
       ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
     },
     {
       id: 4,
-      title: 'Great Value',
-      desc: 'Our supplements offer great value for money, providing you with the highest quality ingredients at an affordable price.'
-      ,img:`https://i.pinimg.com/originals/54/47/c7/5447c76323d6f6f93c24eba837587b97.jpg`
+      title: 'Quality Furniture Manufacturing',
+      desc: 'We also specialize in furniture manufacturing. Our furniture pieces are designed with a focus on quality, durability, and style. We use the finest materials and techniques to ensure that our furniture not only looks good but also lasts a lifetime.'
+      ,img:`https://images.pexels.com/photos/17965207/pexels-photo-17965207/free-photo-of-a-kitchen-with-a-chair-and-a-table-in-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
     }
   ];
   
@@ -61,7 +61,7 @@ PreLoader = ({data,resImages}:any) => {
       DESIGN COMPASS IS DEFINED BY GREATNESS
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      DesignAgency is an award-winning studio with a talent for envisioning inspired environments and brands. Our exceptional designs are driven by the collaborative spirit of our studio that values the evolution of unique and functional spaces through innovation and creativity. We understand that individual inspiration can only be realized through the power of collaboration.
+      At DesignCompass, we believe that every space has the potential to become unique, inspirational, and functional. We are committed to transforming your ideas into reality, creating spaces that not only meet your needs but also reflect your personality and style.
         </Typography>
     </Container>
 
@@ -92,17 +92,34 @@ PreLoader = ({data,resImages}:any) => {
 
     <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
         {
-        [1,2,3].map(i=>{
-          return <Box key={i} sx={{mx:2}} className='flex col items-center center'>
+        [
+          {
+            title: 'Personalized Approach',
+            text:`We believe that every client is unique. That’s why we offer personalized design solutions tailored to your specific needs and preferences.`,
+            icon: 'https://www.svgrepo.com/show/494431/handshake-deal.svg'
+          },
+          {
+            title: 'Quality Craftsmanship',
+            text:`Quality is at the heart of everything we do. From our custom woodwork to our manufactured furniture, we use only the finest materials and techniques.`,
+            icon: 'https://www.svgrepo.com/show/409793/tools.svg'
+          },
+          {
+            title: 'Comprehensive Services',
+            text:`Get a full suite of interior design services under one roof. From initial design concept to final installation.`,
+            icon: 'https://www.svgrepo.com/show/476047/checklist.svg'
+          }
+          
+        ].map(i=>{
+          return <Box key={i.title} sx={{mx:2}} className='flex col items-center center'>
               <Box sx={{width:'20px'}}>
-                <img src="https://www.svgrepo.com/show/447781/secure.svg" alt="" className="img" />
+                <img src={i.icon} alt="" className="img" />
               </Box>
               <Box >
               <Typography className='center text-center'  sx={{maxWidth:'400px',fontSize:{xs:'.99em',sm:'1.1em'},fontWeight:500}}>
-              Feature One
+              {i.title}
           </Typography>
           <Typography className='center text-center' sx={{color:'#4d555e',fontSize:{xs:'.75em',sm:'.8em'},pb:.65,maxWidth:'350px'}}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo id, scelerisque purus. Ut auctor gravida nulla.
+          {i.text}
           </Typography>
               </Box>
           </Box>
@@ -121,14 +138,14 @@ PreLoader = ({data,resImages}:any) => {
         <Typography sx={{fontWeight:400}} className='color'>
           ABOUT US
         </Typography>
-        <Typography sx={{width:'100%',maxWidth:'500px',fontSize:{xs:'2em',sm:'3em'},fontWeight:600}} className=''>
-        Welcome to Design Compas
+        <Typography component='h1' sx={{width:'100%',maxWidth:'500px',fontSize:{xs:'2em',sm:'3em'},fontWeight:900}} className=''>
+        Crafting Spaces with Precision and Passion
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        Explore our portfolio and let our work speak for itself. DesignCompass invites you to embark on a journey of transformation, where your spaces become a canvas for creativity and your ideas find a home
+        Welcome to DesignCompass, your trusted Interior Design Studio in Lebanon. We are committed to creating spaces that inspire, resonate, and transform.
         </Typography>
-        <Btn v2 className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
-          Learn More
+        <Btn className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
+          Reach Us
         </Btn>
     </Container>
 
@@ -167,17 +184,17 @@ PreLoader = ({data,resImages}:any) => {
           {/* <Divider light></Divider> */}
       <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
       <Typography  className='center text-center' sx={{my:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
-            Our Projects
+            Our Gallery
           </Typography>
         <Box className='flex row wrap' sx={{justifyContent:'space-between'}}>
-            {['https://ucarecdn.com/f8cec8bd-329e-4619-a3fa-84bc6a7eb976/350174584_772950354335809_1546699321853274506_n1.jpg',
-              `https://ucarecdn.com/29e05437-650c-4630-ab22-aef56e7b7b43/346568375_561570792787877_3007785310889235198_n1.jpg`,
-              `https://ucarecdn.com/45e7f519-a236-4950-88d2-b20c03f01779/327354731_1382619425823545_3993434233662015758_n.jpg`
-              ,`https://ucarecdn.com/918f24a2-67e9-4401-84e7-6bd5580bcf39/326989089_124426176993731_5807831868261554876_n.jpg`,
-              `https://ucarecdn.com/4531d712-f11b-48f0-8814-a65d9d662758/326873372_1203331257238341_3929759003780858100_n.jpg`,
-              `https://ucarecdn.com/5e6a1c31-0c4b-4d54-88aa-b62e8909268f/310628913_814761196339895_5039299682204342831_n.jpg`
+            {['https://ucarecdn.com/69b0fd55-c09a-47c3-b983-a7a0f8c7d464/380886384_18122833480310836_2037527117038793595_n.jpg',
+              `https://ucarecdn.com/d6566a9c-1cbf-479a-8c86-161f905e1707/380879015_18122833432310836_7499431899428723809_n.jpg`,
+              `https://ucarecdn.com/57923e4b-9c36-4910-9fc9-ee24dbb810ca/380886818_18122833288310836_8033594672296713165_n.jpg`
+              ,`https://ucarecdn.com/b4bc45d4-b9d0-4ea0-b732-fe8d512836f0/380939103_18122833258310836_7226978765671778953_n.jpg`,
+              `https://ucarecdn.com/1446276a-fe29-45c6-a912-b9dc3c67e4e4/380882960_18122833213310836_9136510878753639112_n.jpg`,
+              `https://ucarecdn.com/2ab686b3-3be2-4d57-9ccd-f2f3d84013ba/380889662_18122833006310836_2215207237974251906_n.jpg`
         ].map(i=>{
-            return <Box key={i} sx={{my:1.5,width:{xs:'95%',sm:'32%'}}}>
+            return <Box key={i} sx={{width:{xs:'33%'}}}>
               <Box sx={{width:'100%'}}>
                 <img src={`${i}`} alt="" className="img" />
               </Box>
