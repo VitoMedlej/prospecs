@@ -56,7 +56,7 @@ PreLoader = ({data,resImages}:any) => {
       <MainCarousel resImages={resImages}/>
       {/* <Perks/> */}
 
-    <Container maxWidth='lg'   sx={{my:{xs:3,sm:6,md:8}}}>
+    <Container maxWidth='lg'   sx={{mb:{xs:3,sm:6,md:8},mt:{xs:0,sm:6,md:8}}}>
       <Typography sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
       Excellence in Every Detail with Design Compass Services
       </Typography>
@@ -90,7 +90,7 @@ PreLoader = ({data,resImages}:any) => {
       })}
       </Container>
 
-    <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
+    <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:6,sm:12},display:'flex'}}>
         {
         [
           {
@@ -110,7 +110,7 @@ PreLoader = ({data,resImages}:any) => {
           }
           
         ].map(i=>{
-          return <Box key={i.title} sx={{mx:2}} className='flex col items-center center'>
+          return <Box key={i.title} sx={{mx:2,my:1}} className='flex col items-center center'>
               <Box sx={{width:'20px'}}>
                 <img src={i.icon} alt="" className="img" />
               </Box>
