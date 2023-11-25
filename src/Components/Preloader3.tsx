@@ -61,7 +61,7 @@ const Preloader3 = ({res}:{res:any}) => {
                 {imgs.map((item) => {
     
                     return <SwiperSlide 
-                        onClick={() => router.push('/')}
+                        // onClick={() => router.push('/')}
                     className='ztop  ' key={item.img}>
                         <Box
                             sx={{
@@ -93,7 +93,10 @@ const Preloader3 = ({res}:{res:any}) => {
                                 </Typography>
                                 <Box className="flex">
 
-                                <Btn className='bg white borderColor' sx={{mt:3}}>
+                                <Btn
+                        onClick={() => router.push('/#serv')}
+                                
+                                className='bg white borderColor' sx={{mt:3}}>
                                     Explore
                                 </Btn>
                              

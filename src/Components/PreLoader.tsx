@@ -56,9 +56,9 @@ PreLoader = ({data,resImages}:any) => {
       <MainCarousel resImages={resImages}/>
       {/* <Perks/> */}
 
-    <Container   maxWidth='lg'   sx={{my:{xs:3,sm:6,md:8}}}>
-      <Typography sx={{fontSize:{xs:'2em',sm:'3em'},fontWeight:900}} className='center text-center auto '>
-      DESIGN COMPASS IS DEFINED BY GREATNESS
+    <Container maxWidth='lg'   sx={{my:{xs:3,sm:6,md:8}}}>
+      <Typography sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
+      Excellence in Every Detail with Design Compass Services
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
       At DesignCompass, we believe that every space has the potential to become unique, inspirational, and functional. We are committed to transforming your ideas into reality, creating spaces that not only meet your needs but also reflect your personality and style.
@@ -66,7 +66,7 @@ PreLoader = ({data,resImages}:any) => {
     </Container>
 
  
-      <Container sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
+      <Container id='serv'    sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
 
       {textsArray.map(i=>{
         return <Box key={i.id} className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} >
@@ -182,10 +182,26 @@ PreLoader = ({data,resImages}:any) => {
       </Container> */}
         
           {/* <Divider light></Divider> */}
-      <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
-      <Typography  className='center text-center' sx={{my:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
+      <Container  id='gallery' className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
+      <Typography  className='center text-center' sx={{mt:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
             Our Gallery
-          </Typography>
+            </Typography>
+         
+          <a className='center text-center auto' target='_blank' rel='noreferrer' href={`
+https://www.instagram.com/design__compass/`}>
+
+<Typography 
+className=' cursor center flex gap1 black decor-none '
+id="button"
+component='p' sx={{width:'max-content',
+mx:'1em',
+mb:4,
+alignItems: 'center',
+
+fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
+@design__compass
+</Typography>
+  </a>
         <Box className='flex row wrap' sx={{justifyContent:'space-between'}}>
             {['https://ucarecdn.com/69b0fd55-c09a-47c3-b983-a7a0f8c7d464/380886384_18122833480310836_2037527117038793595_n.jpg',
               `https://ucarecdn.com/d6566a9c-1cbf-479a-8c86-161f905e1707/380879015_18122833432310836_7499431899428723809_n.jpg`,

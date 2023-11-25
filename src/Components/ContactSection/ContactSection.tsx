@@ -10,6 +10,7 @@ import {BsLinkedin,BsInstagram} from 'react-icons/bs'
 const Perks = () => {
     return (
         <Box
+        id='contactsection'
             className='flexed bg'
             sx={{
                 mt: '5em',

@@ -31,15 +31,15 @@ const NavButtom = () => {
             py:1.5,
 
         }}>
-{/* <Link className=' decor-none uppercase' href={`/collection/products`}>
+{/* <Link className=' decor-none ' href={`/collection/products`}>
                     <Typography  component='p' sx={{width:'max-content',fontWeight:400,fontSize:{xs:'.7em',sm:'.85em'}}}>
                     Sale
                     </Typography>
                 </Link> */}
-                <Link className='black decor-none uppercase' href={`/`}>
+                <Link className='black decor-none ' href={`/`}>
 
 <Typography 
-className=' cursor center flex gap1 black decor-none uppercase'
+className=' cursor center flex gap1 black decor-none '
 id="button"
 component='p' sx={{width:'max-content',
 mx:'1em',
@@ -49,10 +49,10 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Home
 </Typography>
 </Link>
-<Link className='black decor-none uppercase' href={`/about`}>
+<Link className='black decor-none ' href={`/about`}>
 
 <Typography 
-className=' cursor center flex gap1 black decor-none uppercase'
+className=' cursor center flex gap1 black decor-none '
 id="button"
 component='p' sx={{width:'max-content',
 mx:'1em',
@@ -62,23 +62,23 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 About Us
 </Typography>
 </Link>
-<Link className='black decor-none uppercase' href={`/contact`}>
+<Link className='black decor-none ' href={`/#contactsection`}>
 
 <Typography 
-className=' cursor center flex gap1 black decor-none uppercase'
+className=' cursor center flex gap1 black decor-none '
 id="button"
 component='p' sx={{width:'max-content',
 mx:'1em',
 alignItems: 'center',
 
 fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
-Contact
+Reach Us
 </Typography>
 </Link>
-<Link className='black decor-none uppercase' href={`/portfolio`}>
+<Link className='black decor-none ' href={`/#gallery`}>
 
 <Typography 
-className=' cursor center flex gap1 black decor-none uppercase'
+className=' cursor center flex gap1 black decor-none '
 id="button"
 component='p' sx={{width:'max-content',
 mx:'1em',
@@ -87,14 +87,15 @@ alignItems: 'center',
 fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Our Projects
 </Typography>
+
 </Link>
 
 
 
-                {/* <Link className='black decor-none uppercase' href={`/birds/products`}>
+                {/* <Link className='black decor-none ' href={`/birds/products`}>
 
                 <Typography 
-      className=' cursor center flex gap1 black decor-none uppercase'
+      className=' cursor center flex gap1 black decor-none '
         id="button"
         component='p' sx={{width:'max-content',
         mx:'1em',
@@ -111,7 +112,7 @@ Our Projects
     // {cate:"Dogs",subCate:dogsSubcategories,img:`https://mypetguru.com/imgs/uploads/toy-for-dog.jpg`},
     // {cate:"Offers",subCate:offersSubcategories,img:'https://i.pinimg.com/originals/bf/cb/59/bfcb59f20bddc43101e39de2cc142f7e.jpg'}
 ].map(i => {
-                // return <Link className='clr decor-none uppercase' key={i} href={`/${i.replace(/ /g, '-').toLocaleLowerCase()}/products`}>
+                // return <Link className='clr decor-none ' key={i} href={`/${i.replace(/ /g, '-').toLocaleLowerCase()}/products`}>
                 //     <Typography  component='p' sx={{width:'max-content',fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>                    
                 //     {i}
                 //     </Typography>

@@ -15,35 +15,45 @@ const Index = () => {
                 <Typography sx={{fontWeight:900,fontSize:"2.5em"}}>
                     About Us
                 </Typography>
-                <Typography sx={{maxWidth:'700px',fontSize:"1em"}}>
+                <Typography sx={{maxWidth:'650px',fontSize:"1em"}}>
 
-                Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs.
+                Where creativity meets craftsmanship. We’re not just designing spaces, we’re crafting experiences. Let us transform your space into a masterpiece that tells your unique story.
+                
                 </Typography>
 
             </Container>
         </Box>
-        <Container sx={{pt:8}}>
+        <Container sx={{pt:8,px:{xs:2,sm:1}}}>
         <Box  className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} >
-         <Box sx={{width:{xs:'100%',sm:'48%'}}}>
+         <Box sx={{width:{xs:'100%',sm:'48%',md:'60%'}}}>
 
   
           <Typography  className='color'>
           LEARN MORE
           </Typography>
-          <Typography  sx={{maxWidth:'400px',fontSize:{xs:'1.5em',sm:'2.5em'},fontWeight:600}}>
-          Our Network
+          <Typography  sx={{maxWidth:'450px',fontSize:{xs:'1.5em',sm:'2.65em'},fontWeight:900}}>
+          Navigating Your Way to Exceptional Interiors
           </Typography>
-          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1.1em'},pb:.65,maxWidth:'550px'}}>
-          Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>
+          Our journey began with a simple vision: to transform ordinary spaces into extraordinary environments. Today, we are proud to be a leading Interior Design Studio, offering a comprehensive range of services from creative interior design solutions to custom woodwork and furniture manufacturing.
+
+
+       
           </Typography>
-          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1.1em'},pb:.65,maxWidth:'550px'}}>
-          Added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>
+At DesignCompass, we believe in the power of design to enhance lives and improve spaces. We work closely with our clients, understanding their needs and desires, to create spaces that are not only aesthetically pleasing but also functional and sustainable.
+         
           </Typography>
-          <Btn sx={{borderRadius:'0'}}>
+          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>
+Our commitment to quality, attention to detail, and personalized approach sets us apart. We take pride in our craftsmanship, using only the finest materials and techniques to ensure that every piece we create is built to last.
+         
+          </Typography>
+
+          <Btn sx={{mt:2,borderRadius:'0'}}>
             Reach Us
           </Btn>
           </Box>
-          <Box sx={{height:{xs:'300px',sm:'400px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'48%'}}}>
+          <Box sx={{height:{xs:'300px',sm:'400px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'40%'}}}>
             <img style={{borderRadius:'6px'}} src={`https://images.havenly.com/unsafe/1200x804/filters:quality(50)/https://s3.amazonaws.com/static.havenly.com/assets/ce0b7154-9cae-4f94-9970-6d3a12d7a086`} alt="" className="img" />
           </Box>
         </Box>
