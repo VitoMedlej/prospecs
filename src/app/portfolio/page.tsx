@@ -23,7 +23,7 @@ const Index = () => {
                         onClick={()=>router.push(`/portfolio/${i?.id}?title=${i.title.replace(/ /g,'-')}`)}>
                        
 
-                        <Box key={i.title} sx={{py:1,height:{xs:'100%',sm:'400px'}}}>
+                        <Box key={i.title} sx={{py:1,height:{xs:'100%',sm:'400px',md:'600px'}}}>
                             <img src={i.img} alt="" className="img cover" />
 
 
