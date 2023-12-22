@@ -75,7 +75,7 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Reach Us
 </Typography>
 </Link>
-<Link className='black decor-none ' href={`/#gallery`}>
+<Link className='black decor-none ' href={`/portfolio`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '
