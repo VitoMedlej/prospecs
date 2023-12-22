@@ -31,7 +31,7 @@ console.log('search: ', title);
 ].map((item) => {
 
 
-       return <Box sx={{maxHeight:'500px',maxWidth:{xs:'100%',sm:'500px'}}} key={item}>
+       return <Box sx={{maxHeight:{xs:'400px',sm:'500px'},maxWidth:{xs:'100%',sm:'500px'}}} key={item}>
         <img src={item} alt="" className="img cover" />
    </Box>
 })
