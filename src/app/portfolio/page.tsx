@@ -18,6 +18,7 @@ const Index = () => {
     id:'UIn2j41',
   }].map(i=>{
                         return  <Box
+                        key={i?.id}
                         sx={{cursor:'pointer'}}
                         onClick={()=>router.push(`/portfolio/${i?.id}?title=${i.title.replace(/ /g,'-')}`)}>
                        
