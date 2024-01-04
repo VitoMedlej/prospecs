@@ -32,6 +32,19 @@ imgs: [`https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_57673346
 `https://ucarecdn.com/7f04cd21-01c3-406d-8dc6-726d3feca09b/photo_5767334647334812874_y.jpg`,
 
 ]
+ },
+ {  id:'Yo6mz2',
+    imgs: [
+        `https://ucarecdn.com/497ea43f-55e8-4c0f-8487-796f6c522128/photo_5816598205687775287_y.jpg`,
+        `https://ucarecdn.com/daafbd8b-5308-476b-b5be-e506acc670a0/photo_5767334647334812879_y1.jpg`,
+        `https://ucarecdn.com/eedf5817-929b-4828-a6af-cc805f4bd522/photo_5767334647334812876_y1.jpg`,
+        `https://ucarecdn.com/3f019f47-c798-43fe-bfbd-4122a03c1d01/photo_5767334647334812877_y1.jpg`,
+        `https://ucarecdn.com/9e1eb222-191e-4ab4-8927-9b3e5aec6b23/photo_5767334647334812875_y1.jpg`,
+        `https://ucarecdn.com/8ccc8f8e-6bbe-43d3-8248-1d26d449a386/photo_5767334647334812872_y1.jpg`,
+        `https://ucarecdn.com/45924a0f-a665-4ef0-bf05-3a201a6915e6/photo_5767334647334812874_y1.jpg`,
+        `https://ucarecdn.com/c3165371-4257-4473-b858-d906914af3cc/photo_5767334647334812873_y1.jpg`,
+        `https://ucarecdn.com/812952a2-7654-4113-8602-b9211360191e/photo_5767334647334812878_y1.jpg`,
+    ]
  }
 ]
 const Index = () => {
