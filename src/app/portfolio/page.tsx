@@ -33,14 +33,14 @@ const Index = () => {
             </Container>
         </Box>
     
-            <Box sx={{py:6,maxWidth:'none',my:8,background:'rgb(247, 247, 247)'}}>
+            <Box className='auto' sx={{py:6,maxWidth:'xl',my:8,background:'rgb(247, 247, 247)'}}>
     <Container className='auto' sx={{maxWidth:'xl'}}>
     <Typography sx={{textAlign:'center',width:'100%',pb:2,fontWeight:500,fontSize:"1.64em"}}>
 
     Featured Work
 
 </Typography>
-<Box className="flex wrap row space-around">
+<Box sx={{width:'max-content'}} className="flex wrap row space-around">
 
                 {
   [{
