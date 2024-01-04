@@ -40,22 +40,32 @@ const Index = () => {
     Featured Work
 
 </Typography>
+<Box className="flex wrap row space-around">
+
                 {
   [{
     img:'https://ucarecdn.com/f889e11f-eb71-4663-9cca-87af0db84b2f/25c049dde10d4270a29d3e9e53a7b74c.jpg',
     title:'Talet Al Khayat Project',
     id:'UIn2j41',
-  }].map(i=>{
+  },
+  {
+    title : 'Toledo project',
+    img:'https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_5767334647334812873_y.jpg',
+    id:'42NC25'
+  }
+].map(i=>{
                         return  <Box
                         key={i?.id}
                         // className='auto' 
-                        sx={{maxWidth:{xs:'100%',sm:'350px'},
-                        height:{xs:'100%',sm:'500px',md:'550px'}
+                        sx={{width:{xs:'100%',sm:'350px',md:'400px'},
+                        // height:{xs:'100%',sm:'500px',md:'550px'},
+                        height:'fit-content',
+                        mx:1
                         ,cursor:'pointer'}}
                         onClick={()=>router.push(`/portfolio/${i?.id}?title=${i.title.replace(/ /g,'-')}`)}>
                        
 
-                        <Box key={i.title} sx={{py:1,maxHeight:{xs:'100%',sm:'400px',md:'550px'}}}>
+                        <Box key={i.title} sx={{py:1,height:{xs:'100%',sm:'280px',md:'300px'}}}>
                             <img src={i.img} alt="" className="img cover" />
                         </Box>
                         <Box>
@@ -63,14 +73,16 @@ const Index = () => {
                         
                         sx={{textAlign:'left',
                         color:'black',
-                        fontSize:{xs:'.8em',sm:'.96em',md:'1em',lg:'1.12em'},
-                        fontWeight:400}}>
+                        fontSize:{xs:'.89em',sm:'1.196em',md:'1.3em',lg:'1.42em'},
+                        fontWeight:600}}>
                                {i?.title}
                                 </Typography>
                         </Box>
                         </Box>
                     })
                 }
+</Box>
+
     </Container>
 
             </Box>
