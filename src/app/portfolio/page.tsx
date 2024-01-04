@@ -34,7 +34,7 @@ const Index = () => {
         </Box>
     
             <Box sx={{py:6,maxWidth:'none',my:8,background:'rgb(247, 247, 247)'}}>
-    <Container>
+    <Container className='auto' sx={{maxWidth:'xl'}}>
     <Typography sx={{textAlign:'center',width:'100%',pb:2,fontWeight:500,fontSize:"1.64em"}}>
 
     Featured Work
@@ -66,7 +66,8 @@ const Index = () => {
                         sx={{width:{xs:'100%',sm:'350px',md:'400px'},
                         // height:{xs:'100%',sm:'500px',md:'550px'},
                         height:'fit-content',
-                        mx:1
+                        mx:1,
+                        my:1
                         ,cursor:'pointer'}}
                         onClick={()=>router.push(`/portfolio/${i?.id}?title=${i.title.replace(/ /g,'-')}`)}>
                        
@@ -79,7 +80,7 @@ const Index = () => {
                         
                         sx={{textAlign:'left',
                         color:'black',
-                        fontSize:{xs:'.89em',sm:'1.196em',md:'1.3em',lg:'1.42em'},
+                        fontSize:{xs:'1.189em',sm:'1.196em',md:'1.3em',lg:'1.42em'},
                         fontWeight:600}}>
                                {i?.title}
                                 </Typography>
