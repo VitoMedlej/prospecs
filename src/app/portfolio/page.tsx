@@ -33,14 +33,14 @@ const Index = () => {
             </Container>
         </Box>
     
-            <Box className='auto' sx={{py:6,maxWidth:'xl',my:8,background:'rgb(247, 247, 247)'}}>
-    <Container className='auto' sx={{maxWidth:'xl'}}>
+            <Box className='auto' sx={{py:6,my:8,background:'rgb(247, 247, 247)'}}>
+    <Box className='auto' >
     <Typography sx={{textAlign:'center',width:'100%',pb:2,fontWeight:500,fontSize:"1.64em"}}>
 
     Featured Work
 
 </Typography>
-<Box sx={{width:'max-content'}} className="flex wrap row space-around">
+<Box  className="flex wrap row space-around">
 
                 {
   [{
@@ -61,9 +61,10 @@ const Index = () => {
   }
 ].map(i=>{
                         return  <Box
+                        className='auto'
                         key={i?.id}
                         // className='auto' 
-                        sx={{width:{xs:'100%',sm:'350px',md:'400px'},
+                        sx={{width:{xs:'95%',sm:'310px',md:'400px'},
                         // height:{xs:'100%',sm:'500px',md:'550px'},
                         height:'fit-content',
                         mx:1,
@@ -90,7 +91,7 @@ const Index = () => {
                 }
 </Box>
 
-    </Container>
+    </Box>
 
             </Box>
     </Box>
