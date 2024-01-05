@@ -40,11 +40,22 @@ imgs: [`https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_57673346
         `https://ucarecdn.com/eedf5817-929b-4828-a6af-cc805f4bd522/photo_5767334647334812876_y1.jpg`,
         `https://ucarecdn.com/3f019f47-c798-43fe-bfbd-4122a03c1d01/photo_5767334647334812877_y1.jpg`,
         `https://ucarecdn.com/9e1eb222-191e-4ab4-8927-9b3e5aec6b23/photo_5767334647334812875_y1.jpg`,
-        `https://ucarecdn.com/8ccc8f8e-6bbe-43d3-8248-1d26d449a386/photo_5767334647334812872_y1.jpg`,
-        `https://ucarecdn.com/45924a0f-a665-4ef0-bf05-3a201a6915e6/photo_5767334647334812874_y1.jpg`,
         `https://ucarecdn.com/c3165371-4257-4473-b858-d906914af3cc/photo_5767334647334812873_y1.jpg`,
         `https://ucarecdn.com/812952a2-7654-4113-8602-b9211360191e/photo_5767334647334812878_y1.jpg`,
     ]
+ },
+ {
+    id:'5NX51z',
+    imgs:[
+        `https://ucarecdn.com/bcbdc85a-a00d-4863-ab98-e50d7190e980/04.jpg`,
+        `https://ucarecdn.com/c248ea99-506f-4729-b671-43b2fd9698bf/5.jpg`,
+        `https://ucarecdn.com/f36749b5-578f-46b3-97bc-5c7c5dc11ace/03.jpg`,
+        `https://ucarecdn.com/53674b2e-9f98-4031-a9b1-6d5de86e2bbd/ssafir1Model2.jpg`,
+        `https://ucarecdn.com/f17f3f53-68e2-4e03-9be2-c76e5c5fb11d/photo_5816598205687775364_y.jpg`,
+        `https://ucarecdn.com/afe42032-c788-4258-b06f-4b856914367c/photo_5816598205687775368_y.jpg`,
+        `https://ucarecdn.com/1776c4e3-b7b2-41ec-a183-5f964e527a41/photo_5816598205687775365_y.jpg`,
+            `https://ucarecdn.com/4e55ee16-d575-48f2-8c35-cab758c12312/photo_5816598205687775352_y.jpg`
+        ]
  }
 ]
 const Index = () => {

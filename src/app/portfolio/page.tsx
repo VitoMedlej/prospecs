@@ -57,7 +57,11 @@ const Index = () => {
   img:    `https://ucarecdn.com/daafbd8b-5308-476b-b5be-e506acc670a0/photo_5767334647334812879_y1.jpg`,
   title : 'Toledo Project 2',
    id:'Yo6mz2',
-
+  }
+  ,{
+    img:'https://ucarecdn.com/be0f1645-87f4-4b78-9745-e1c6122827e7/6.jpg',
+    title:`Yarze Project`,
+    id:'5NX51z'
   }
 ].map(i=>{
                         return  <Box
