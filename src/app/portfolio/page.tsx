@@ -68,7 +68,8 @@ const Index = () => {
                         // height:{xs:'100%',sm:'500px',md:'550px'},
                         height:'fit-content',
                         mx:1,
-                        my:1
+                        my:1,
+                        py:2
                         ,cursor:'pointer'}}
                         onClick={()=>router.push(`/portfolio/${i?.id}?title=${i.title.replace(/ /g,'-')}`)}>
                        
