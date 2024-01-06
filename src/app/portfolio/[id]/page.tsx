@@ -56,6 +56,20 @@ imgs: [`https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_57673346
         `https://ucarecdn.com/1776c4e3-b7b2-41ec-a183-5f964e527a41/photo_5816598205687775365_y.jpg`,
             `https://ucarecdn.com/4e55ee16-d575-48f2-8c35-cab758c12312/photo_5816598205687775352_y.jpg`
         ]
+ },
+ {
+    id:'Fnz35o',
+    imgs:[
+        `https://ucarecdn.com/70b85b33-019e-41df-8603-420f59557a30/photo_5820989676603948867_y.jpg`,
+        `https://ucarecdn.com/6a2342dc-8c61-4804-a413-5213418af114/photo_5820989676603948868_y.jpg`,
+        `https://ucarecdn.com/929ddc43-e60f-47b2-98e7-17b2d9adcb00/photo_5820989676603948863_y.jpg`,
+        `https://ucarecdn.com/b7bf5dde-f9c4-4eb5-85a5-b555021a2bdf/photo_5820989676603948866_y.jpg`,
+        `https://ucarecdn.com/425a29dd-786f-4359-8a64-f72e8a2ee142/photo_5958587234628255285_y.jpg`,
+        `https://ucarecdn.com/0392ce20-01da-4c3d-8b2a-602d00a9cadf/photo_5820989676603948872_y.jpg`,
+        `https://ucarecdn.com/e18317d6-e3ad-42e2-9f0d-f70f4fff2d49/photo_5820989676603948864_y.jpg`,
+        `https://ucarecdn.com/2f46459f-db39-4331-a862-ace25d8457ae/photo_5820989676603948865_y.jpg`,
+        `https://ucarecdn.com/4e55ee16-d575-48f2-8c35-cab758c12312/photo_5816598205687775352_y.jpg`,
+    ]
  }
 ]
 const Index = () => {

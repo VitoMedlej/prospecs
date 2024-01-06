@@ -62,6 +62,11 @@ const Index = () => {
     img:'https://ucarecdn.com/be0f1645-87f4-4b78-9745-e1c6122827e7/6.jpg',
     title:`Yarze Project`,
     id:'5NX51z'
+  },
+  {
+    title:'Tintin Room',
+    id:'Fnz35o',
+    img:'https://ucarecdn.com/0392ce20-01da-4c3d-8b2a-602d00a9cadf/photo_5820989676603948872_y.jpg'
   }
 ].map(i=>{
                         return  <Box
