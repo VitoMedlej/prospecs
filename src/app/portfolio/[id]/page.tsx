@@ -68,7 +68,6 @@ imgs: [`https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_57673346
         `https://ucarecdn.com/0392ce20-01da-4c3d-8b2a-602d00a9cadf/photo_5820989676603948872_y.jpg`,
         `https://ucarecdn.com/e18317d6-e3ad-42e2-9f0d-f70f4fff2d49/photo_5820989676603948864_y.jpg`,
         `https://ucarecdn.com/2f46459f-db39-4331-a862-ace25d8457ae/photo_5820989676603948865_y.jpg`,
-        `https://ucarecdn.com/4e55ee16-d575-48f2-8c35-cab758c12312/photo_5816598205687775352_y.jpg`,
     ]
  }
 ]
