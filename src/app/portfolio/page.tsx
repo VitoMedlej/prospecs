@@ -54,7 +54,7 @@ const Index = () => {
     img:'https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_5767334647334812873_y.jpg',
     id:'42NC25'
   },{
-  img:    `https://ucarecdn.com/daafbd8b-5308-476b-b5be-e506acc670a0/photo_5767334647334812879_y1.jpg`,
+  img:    `https://ucarecdn.com/ec4ded49-f4ba-4e1a-915c-45630cb4552d/photo_5816598205687775297_y1.jpg`,
   title : 'Toledo Project 2',
    id:'Yo6mz2',
   }

@@ -10,7 +10,9 @@ import { Autoplay } from 'swiper';
 
 
 const projects = [
-    {imgs:['https://ucarecdn.com/7361c401-3e63-4d96-8edf-434e298e5b85/2c55883a716d4c9fa5b74b2460008038.jpg',
+    {imgs:[
+        `https://ucarecdn.com/9ff24220-cdfb-406b-8e1a-855d120d1025/photo_5827996069638816596_y.jpg`,
+        'https://ucarecdn.com/7361c401-3e63-4d96-8edf-434e298e5b85/2c55883a716d4c9fa5b74b2460008038.jpg',
    
     'https://ucarecdn.com/936f2065-6ac8-46c6-995f-9e76fb7d68fc/5a92c72d878446bf94769e4185f60834.jpg',
      `https://ucarecdn.com/5751be25-07bc-4484-ba60-83e61287e464/4fe89e536ab44aaeafeb99e021c65a1c.jpg`,
@@ -22,7 +24,12 @@ const projects = [
  {
     id:'42NC25'
 ,
-imgs: [`https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_5767334647334812873_y.jpg`,
+imgs: [
+    `https://ucarecdn.com/fae27be1-970c-4a04-a1c4-ccec5f0f9beb/photo_5825806679994910489_w.jpg`,
+    `https://ucarecdn.com/08193e32-4f01-40a5-a70c-c98974ea0c5e/photo_5825806679994910488_w.jpg`,
+    `https://ucarecdn.com/3829a183-8ce0-4c0e-9d10-2136b0cf5668/photo_5825806679994910485_w.jpg`,
+    `https://ucarecdn.com/e8245b6f-8bc9-4704-98fd-0fbc8f1a42b6/photo_5825806679994910484_w.jpg`,
+    `https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_5767334647334812873_y.jpg`,
 `https://ucarecdn.com/3fec16d9-a019-47ef-a9ee-842eacb4bfd7/photo_5767334647334812875_y.jpg`,
 `https://ucarecdn.com/32071c54-e59c-44db-8418-1463614d357c/photo_5767334647334812876_y.jpg`,
 `https://ucarecdn.com/afdb25e9-96ce-48c4-bd3d-78b3d2d11488/photo_5767334647334812872_y.jpg`,
@@ -36,7 +43,12 @@ imgs: [`https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_57673346
  {  id:'Yo6mz2',
     imgs: [
         `https://ucarecdn.com/497ea43f-55e8-4c0f-8487-796f6c522128/photo_5816598205687775287_y.jpg`,
-        `https://ucarecdn.com/daafbd8b-5308-476b-b5be-e506acc670a0/photo_5767334647334812879_y1.jpg`,
+       `https://ucarecdn.com/0dd0bd99-80c1-48f3-b49c-82bebb269312/photo_5816598205687775296_y1.jpg`,
+       `https://ucarecdn.com/baebf16d-5634-4cfd-b682-fded505a64dc/photo_5816598205687775295_y1.jpg`,
+       `https://ucarecdn.com/50dee3ef-e603-4499-a445-1be4ce0ed092/photo_5816598205687775299_y1.jpg`,
+       `https://ucarecdn.com/43630f4a-c7ea-49e7-aa00-643bb4266084/photo_5816598205687775304_y1.jpg`,
+       `https://ucarecdn.com/f183eacc-49fc-4a9d-b9a1-0b67dfedccc0/photo_5816598205687775293_y1.jpg`,
+        `https://ucarecdn.com/ec4ded49-f4ba-4e1a-915c-45630cb4552d/photo_5816598205687775297_y1.jpg`,
         `https://ucarecdn.com/eedf5817-929b-4828-a6af-cc805f4bd522/photo_5767334647334812876_y1.jpg`,
         `https://ucarecdn.com/3f019f47-c798-43fe-bfbd-4122a03c1d01/photo_5767334647334812877_y1.jpg`,
         `https://ucarecdn.com/9e1eb222-191e-4ab4-8927-9b3e5aec6b23/photo_5767334647334812875_y1.jpg`,
