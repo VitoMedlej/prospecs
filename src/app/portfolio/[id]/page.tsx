@@ -25,6 +25,11 @@ const projects = [
     id:'42NC25'
 ,
 imgs: [
+    `https://ucarecdn.com/ea83d135-92da-41b3-8cf7-01db0249d70e/photo_5825806679994910490_w1.jpg`,
+    `https://ucarecdn.com/3eba6a1f-abc9-459f-87ac-4e7d3d657110/photo_5825806679994910489_w1.jpg`,
+    `https://ucarecdn.com/44134e95-4e13-4d3f-9260-c1f146ba7f86/photo_5825806679994910493_w.jpg`,
+    `https://ucarecdn.com/e9b73a64-10a1-4560-8cf9-48805514edea/photo_5825806679994910492_w1.jpg`,
+    `https://ucarecdn.com/a5783cba-5d6a-48d1-bd2f-745fde1b7c66/photo_5825806679994910495_w1.jpg`,
     `https://ucarecdn.com/fae27be1-970c-4a04-a1c4-ccec5f0f9beb/photo_5825806679994910489_w.jpg`,
     `https://ucarecdn.com/08193e32-4f01-40a5-a70c-c98974ea0c5e/photo_5825806679994910488_w.jpg`,
     `https://ucarecdn.com/3829a183-8ce0-4c0e-9d10-2136b0cf5668/photo_5825806679994910485_w.jpg`,

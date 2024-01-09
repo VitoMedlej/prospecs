@@ -16,7 +16,8 @@ const Index = () => {
     <Box >
             
             <Box sx={{height:{xs:'300px',sm:'400px'}}} className='relative flex '>
-            <img src="https://images.havenly.com/unsafe/fit-in/1920x1920/filters:format(webp):quality(99)/https://s3.amazonaws.com/static.havenly.com/content/backgrounds/shop_banner.jpg" alt="" className="img" />
+            <img 
+            src="https://ucarecdn.com/08159733-08f7-43bf-beb6-2a1b05b7b27a/photo_5829990695400751436_w.jpg" alt="" className="img" />
             <Box sx={{top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black',opacity:.43}} className="absolute">
 
 </Box>

@@ -26,19 +26,22 @@ PreLoader = ({data,resImages}:any) => {
       id: 2,
       title: 'Exceptional Wood Work Services',
       desc: 'Our wood work services are all about precision and attention to detail. We take pride in crafting custom pieces that add a touch of elegance and sophistication to your space.'
-      ,img : `https://images.pexels.com/photos/4263067/pexels-photo-4263067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+      ,img: `https://ucarecdn.com/5d0a344d-9d8f-425b-a000-0f39071673eb/2.jpg`
+      // ,img : `https://images.pexels.com/photos/4263067/pexels-photo-4263067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
     },
     {
       id: 3,
       title: 'Comprehensive Interior Design Services',
       desc: 'At DesignCompass, we offer a wide array of services under one roof. Our comprehensive approach ensures that every aspect of your interior design project is handled with professionalism and attention to detail.'
-      ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
+      ,img:`https://ucarecdn.com/9efff20b-0863-4303-a780-c530dcc8a2a2/3.jpg`
+      // ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
     },
     {
       id: 4,
       title: 'Quality Furniture Manufacturing',
       desc: 'We also specialize in furniture manufacturing. Our furniture pieces are designed with a focus on quality, durability, and style. We use the finest materials and techniques to ensure that our furniture not only looks good but also lasts a lifetime.'
-      ,img:`https://images.pexels.com/photos/17965207/pexels-photo-17965207/free-photo-of-a-kitchen-with-a-chair-and-a-table-in-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+      // ,img:`https://images.pexels.com/photos/17965207/pexels-photo-17965207/free-photo-of-a-kitchen-with-a-chair-and-a-table-in-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+      ,img:'https://ucarecdn.com/bd31a2e2-c3f5-4bed-8604-31ab617c62ce/4.jpg'
     }
   ];
   
