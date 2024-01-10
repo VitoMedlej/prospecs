@@ -25,6 +25,11 @@ const projects = [
     id:'42NC25'
 ,
 imgs: [
+    "https://ucarecdn.com/e25255f2-b1cd-4d4d-8f5a-cb816095b223/photo_5825806679994910491_w.jpg",
+    "https://ucarecdn.com/e0032cb7-dc95-4a04-8685-b33cd09f8073/photo_5825806679994910494_w.jpg",
+    "https://ucarecdn.com/e01e152c-57ad-4a97-9ecd-b721289b35f6/photo_5825806679994910496_w1.jpg",
+    "https://ucarecdn.com/9c7381e2-a997-4e04-9c59-72997e6bb7cb/photo_5825806679994910486_w.jpg",
+    "https://ucarecdn.com/9d841f89-41eb-4af5-88c5-02faded00bff/photo_5825806679994910487_y.jpg",
     `https://ucarecdn.com/ea83d135-92da-41b3-8cf7-01db0249d70e/photo_5825806679994910490_w1.jpg`,
     `https://ucarecdn.com/3eba6a1f-abc9-459f-87ac-4e7d3d657110/photo_5825806679994910489_w1.jpg`,
     `https://ucarecdn.com/44134e95-4e13-4d3f-9260-c1f146ba7f86/photo_5825806679994910493_w.jpg`,
@@ -47,9 +52,20 @@ imgs: [
  },
  {  id:'Yo6mz2',
     imgs: [
+        
         `https://ucarecdn.com/497ea43f-55e8-4c0f-8487-796f6c522128/photo_5816598205687775287_y.jpg`,
        `https://ucarecdn.com/0dd0bd99-80c1-48f3-b49c-82bebb269312/photo_5816598205687775296_y1.jpg`,
        `https://ucarecdn.com/baebf16d-5634-4cfd-b682-fded505a64dc/photo_5816598205687775295_y1.jpg`,
+       `https://ucarecdn.com/afc1b8ae-5bc6-4a6e-b00a-ca344c53fc88/photo_5825806679994910470_y.jpg`,
+       `https://ucarecdn.com/ffc5a85c-0299-4072-8cc8-6c324e7d7d19/photo_5816598205687775304_y2.jpg`,
+       `https://ucarecdn.com/07ed796b-e935-40e8-87ed-20cb912939c4/photo_5825806679994910471_y.jpg`,
+       `https://ucarecdn.com/ee3a1daf-09d3-4e82-89eb-04564826db23/photo_5816598205687775306_y1.jpg`,
+       `https://ucarecdn.com/1874fb44-f3da-4eb9-9973-30031738e3bb/photo_5816598205687775286_y1.jpg`,
+       `https://ucarecdn.com/46314089-c8ee-492b-b965-2c20ca4f3272/photo_5816598205687775298_y1.jpg`,
+       `https://ucarecdn.com/e9831b0c-1ab2-4a15-856f-191cbe90090c/photo_5816598205687775303_y1.jpg`,
+       `https://ucarecdn.com/58ecc062-d8ef-4204-b4e1-9447e940d542/photo_5816598205687775296_y2.jpg`,
+       `https://ucarecdn.com/83d27718-9035-4937-b44c-701a7729ad7e/photo_5816598205687775299_y2.jpg`,
+       `https://ucarecdn.com/4bd3e528-8a40-4c82-bb81-188eaebc5ae0/photo_5816598205687775301_y1.jpg`,
        `https://ucarecdn.com/50dee3ef-e603-4499-a445-1be4ce0ed092/photo_5816598205687775299_y1.jpg`,
        `https://ucarecdn.com/43630f4a-c7ea-49e7-aa00-643bb4266084/photo_5816598205687775304_y1.jpg`,
        `https://ucarecdn.com/f183eacc-49fc-4a9d-b9a1-0b67dfedccc0/photo_5816598205687775293_y1.jpg`,
