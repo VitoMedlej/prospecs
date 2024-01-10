@@ -57,7 +57,7 @@ const Index = () => {
   },
   {
     title : `Ras El Nabeh Project`,
-    img:`https://ucarecdn.com/ee4d8ba6-a826-4ed4-acf0-4d37eca6e9b4/first.jpg`,
+    img:`https://ucarecdn.com/b6bc2555-d25f-49ab-a69c-923b65eae400/photo_5832586041058509674_y.jpg`,
     id:'NC2zm2'
   },
   {
