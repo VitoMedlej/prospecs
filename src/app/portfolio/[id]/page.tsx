@@ -76,6 +76,7 @@ imgs: [
  },
  {
     id:'Fnz35o',
+    vid: 'https://res.cloudinary.com/dwcu3wcol/video/upload/v1704875266/document_5830363266177569280_mhwztb.mp4',
     imgs:[
         `https://ucarecdn.com/70b85b33-019e-41df-8603-420f59557a30/photo_5820989676603948867_y.jpg`,
         `https://ucarecdn.com/6a2342dc-8c61-4804-a413-5213418af114/photo_5820989676603948868_y.jpg`,
@@ -94,6 +95,7 @@ const {id} = useParams()
 const searchParams = useSearchParams()
 const title = searchParams.get('title')
  const [imgs,setImgs] = useState<string[]>([]);
+ const [video,setVid] = useState<string | null>(null);
 
 
  useEffect(() => {
@@ -101,6 +103,7 @@ const title = searchParams.get('title')
     if (!object || !object?.imgs) return;
 
     setImgs(object?.imgs);
+    object?.vid && setVid(object?.vid);
 }, [ id]);
 
   return (
@@ -109,7 +112,15 @@ const title = searchParams.get('title')
            {`${title || 'Project Name'}`?.replace(/-/g,' ')}
             </Typography>
         <Box sx={{gap:'.5em'}} className='flex wrap row center   auto'>
-    
+        {
+            video && <Box sx={{maxHeight:{xs:'400px',sm:'500px'},maxWidth:{xs:'100%',sm:'500px'}}} key={video}>
+         
+         <video width="100%" height="100%" controls>
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+       </Box>
+        }
    {imgs.map((item) => {
 
 
