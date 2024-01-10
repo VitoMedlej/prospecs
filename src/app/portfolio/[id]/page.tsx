@@ -54,11 +54,6 @@ imgs: [
        `https://ucarecdn.com/43630f4a-c7ea-49e7-aa00-643bb4266084/photo_5816598205687775304_y1.jpg`,
        `https://ucarecdn.com/f183eacc-49fc-4a9d-b9a1-0b67dfedccc0/photo_5816598205687775293_y1.jpg`,
         `https://ucarecdn.com/ec4ded49-f4ba-4e1a-915c-45630cb4552d/photo_5816598205687775297_y1.jpg`,
-        `https://ucarecdn.com/eedf5817-929b-4828-a6af-cc805f4bd522/photo_5767334647334812876_y1.jpg`,
-        `https://ucarecdn.com/3f019f47-c798-43fe-bfbd-4122a03c1d01/photo_5767334647334812877_y1.jpg`,
-        `https://ucarecdn.com/9e1eb222-191e-4ab4-8927-9b3e5aec6b23/photo_5767334647334812875_y1.jpg`,
-        `https://ucarecdn.com/c3165371-4257-4473-b858-d906914af3cc/photo_5767334647334812873_y1.jpg`,
-        `https://ucarecdn.com/812952a2-7654-4113-8602-b9211360191e/photo_5767334647334812878_y1.jpg`,
     ]
  },
  {
@@ -74,6 +69,24 @@ imgs: [
             `https://ucarecdn.com/4e55ee16-d575-48f2-8c35-cab758c12312/photo_5816598205687775352_y.jpg`
         ]
  },
+ {
+    imgs:[
+        `https://ucarecdn.com/63a34c76-5b69-47f8-8142-269449b7ac63/last.jpg`,
+        `https://ucarecdn.com/3cd26e06-15a1-40d3-9bc1-f2c83940dfa7/photo_5832586041058509675_y.jpg`,
+        `https://ucarecdn.com/b6bc2555-d25f-49ab-a69c-923b65eae400/photo_5832586041058509674_y.jpg`,
+        `https://ucarecdn.com/2b42134e-9c9d-472a-9aa6-0f1295ef6d29/photo_5832586041058509670_x.jpg`,    
+        `https://ucarecdn.com/ee4d8ba6-a826-4ed4-acf0-4d37eca6e9b4/first.jpg`],
+    id:'NC2zm2'
+  },
+  {
+    id:`VBz2zs`,
+    imgs: [`https://ucarecdn.com/a7a2e96e-d937-483a-bea7-308678139186/photo_5832586041058509704_y.jpg`,
+`https://ucarecdn.com/fb0d0f3c-9fec-464e-83f1-cec6970c9521/photo_5832586041058509705_y.jpg`,
+`https://ucarecdn.com/e44ebc20-1a19-487b-b1d4-530e8f5b334d/photo_5832586041058509708_y.jpg`,
+`https://ucarecdn.com/654661f9-3266-4f96-862a-90326082879c/photo_5832586041058509707_y.jpg`,
+`https://ucarecdn.com/df471fa0-2a5d-44cf-bc83-f6ac189bd04e/photo_5832586041058509703_y.jpg`,
+]
+  },
  {
     id:'Fnz35o',
     vid: 'https://res.cloudinary.com/dwcu3wcol/video/upload/v1704875266/document_5830363266177569280_mhwztb.mp4',

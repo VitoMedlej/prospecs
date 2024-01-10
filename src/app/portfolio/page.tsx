@@ -54,7 +54,18 @@ const Index = () => {
     title : 'Toledo Project',
     img:'https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_5767334647334812873_y.jpg',
     id:'42NC25'
-  },{
+  },
+  {
+    title : `Ras El Nabeh Project`,
+    img:`https://ucarecdn.com/ee4d8ba6-a826-4ed4-acf0-4d37eca6e9b4/first.jpg`,
+    id:'NC2zm2'
+  },
+  {
+    title: `Animal Lebanon project`,
+    img:`https://ucarecdn.com/e44ebc20-1a19-487b-b1d4-530e8f5b334d/photo_5832586041058509708_y.jpg`,
+    id:'VBz2zs'
+  },
+  {
   img:    `https://ucarecdn.com/ec4ded49-f4ba-4e1a-915c-45630cb4552d/photo_5816598205687775297_y1.jpg`,
   title : 'Toledo Project 2',
    id:'Yo6mz2',
