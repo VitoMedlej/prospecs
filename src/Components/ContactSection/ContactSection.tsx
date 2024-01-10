@@ -110,7 +110,7 @@ sx={{
                             justifyContent: 'center',
                             flexDirection: 'column'
                         }}>
-                        {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={"https://www.facebook.com/namliieh/"}>
+                        {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={"https://www.linkedin.com/company/designcompasslb/"}>
 
 
                             <Typography

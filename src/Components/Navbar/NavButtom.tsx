@@ -4,14 +4,15 @@ import Link from 'next/link'
 import React from 'react'
 // import MenuHover from './MenuHover'
 import { categories } from './Navbar'
-import MenuHover from './MenuHover'
+// import MenuHover from './MenuHover'
+import { useRouter } from 'next/navigation'
 
 
 
 
 
 const NavButtom = () => {
-
+const router = useRouter()
   return (
     <Box
         className=' wrap  space-evenly'
@@ -62,7 +63,9 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
 About Us
 </Typography>
 </Link>
-<Link className='black decor-none ' href={`/#contactsection`}>
+<Link 
+onClick={()=>router.push('/#contactsection')}
+className='black decor-none ' href={`/#contactsection`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '
