@@ -72,6 +72,7 @@ imgs: [
  {
     imgs:[
         `https://ucarecdn.com/63a34c76-5b69-47f8-8142-269449b7ac63/last.jpg`,
+        'https://ucarecdn.com/522f84c8-2d57-4dab-bc54-1e2fb01953b7/photo_5832586041058509672_y1.jpg',
         `https://ucarecdn.com/3cd26e06-15a1-40d3-9bc1-f2c83940dfa7/photo_5832586041058509675_y.jpg`,
         `https://ucarecdn.com/b6bc2555-d25f-49ab-a69c-923b65eae400/photo_5832586041058509674_y.jpg`,
         `https://ucarecdn.com/2b42134e-9c9d-472a-9aa6-0f1295ef6d29/photo_5832586041058509670_x.jpg`,    
@@ -83,6 +84,7 @@ imgs: [
     imgs: [`https://ucarecdn.com/a7a2e96e-d937-483a-bea7-308678139186/photo_5832586041058509704_y.jpg`,
 `https://ucarecdn.com/fb0d0f3c-9fec-464e-83f1-cec6970c9521/photo_5832586041058509705_y.jpg`,
 `https://ucarecdn.com/e44ebc20-1a19-487b-b1d4-530e8f5b334d/photo_5832586041058509708_y.jpg`,
+`https://ucarecdn.com/f606419f-1e2a-439d-b20f-da0c26503024/photo_5832586041058509706_y.jpg`,
 `https://ucarecdn.com/654661f9-3266-4f96-862a-90326082879c/photo_5832586041058509707_y.jpg`,
 `https://ucarecdn.com/df471fa0-2a5d-44cf-bc83-f6ac189bd04e/photo_5832586041058509703_y.jpg`,
 ]
