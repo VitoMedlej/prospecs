@@ -20,7 +20,7 @@ PreLoader = ({data,resImages}:any) => {
       id: 1,
       title: 'Customized Interior Design Solutions',
       desc: 'Our turn-key services are tailored to your specific needs. We understand that every project is unique, and we approach each one with a fresh perspective and an open mind.'
-     , img : `https://assets.website-files.com/63406c069f42a4fe385a10ed/63406c069f42a498b95a11a2_Vue%2520Inte%25CC%2581rieur%2520-%2520Appartement%2520-%2520Chambre%252002-p-1080.jpeg`
+     , img : `https://ucarecdn.com/031f5e5e-2bea-4c7c-a182-0388f5938e1c/photo_5829990695400751405_w.jpg`
     },
     {
       id: 2,
