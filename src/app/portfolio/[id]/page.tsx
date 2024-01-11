@@ -178,7 +178,7 @@ const title = searchParams.get('title')
 
                     return <Box sx={{maxHeight:{xs:'400px',sm:'500px'},maxWidth:{xs:'100%',sm:'500px'}}} key={video}>
 
-          <video key={video} autoPlay width="100%" height="100%" controls>
+          <video key={video} muted loop autoPlay width="100%" height="100%" controls>
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
