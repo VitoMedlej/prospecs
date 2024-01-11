@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <Box>
         <Box sx={{height:{xs:'300px',sm:'400px'}}} className='relative flex '>
-            <img src="https://images.havenly.com/unsafe/fit-in/1920x1920/filters:format(webp):quality(99)/https://s3.amazonaws.com/static.havenly.com/content/backgrounds/shop_banner.jpg" alt="" className="img" />
+            <img src="https://ucarecdn.com/adfc248d-bf22-4941-b4f3-b31e44218b13/photo_5836907701576253670_y.jpg" alt="" className="img" />
             <Box sx={{top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black',opacity:.43}} className="absolute">
 
 </Box>
@@ -54,7 +54,7 @@ Our commitment to quality, attention to detail, and personalized approach sets u
           </Btn>
           </Box>
           <Box sx={{height:{xs:'300px',sm:'400px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'40%'}}}>
-            <img style={{borderRadius:'6px'}} src={`https://images.havenly.com/unsafe/1200x804/filters:quality(50)/https://s3.amazonaws.com/static.havenly.com/assets/ce0b7154-9cae-4f94-9970-6d3a12d7a086`} alt="" className="img" />
+            <img style={{borderRadius:'6px'}} src={`https://ucarecdn.com/adfc248d-bf22-4941-b4f3-b31e44218b13/photo_5836907701576253670_y.jpg`} alt="" className="img" />
           </Box>
         </Box>
         </Container>
