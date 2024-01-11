@@ -19,7 +19,10 @@ const projects = [
      `https://ucarecdn.com/00ec514e-e380-48a4-8d5f-d26cf47a103f/39a2344382f747afbf2a2cc7d2b8af32.jpg`
  ],
  id:'UIn2j41',
-
+ vids: [
+    `https://res.cloudinary.com/dwcu3wcol/video/upload/v1704962911/IMG_1279_qszpvj.mp4`,
+    `https://res.cloudinary.com/dwcu3wcol/video/upload/v1704962881/IMG_1256_r0rm1b.mp4`
+ ]
 },
  {
     id:'42NC25'
@@ -107,7 +110,11 @@ imgs: [
   },
  {
     id:'Fnz35o',
-    vid: 'https://res.cloudinary.com/dwcu3wcol/video/upload/v1704875266/document_5830363266177569280_mhwztb.mp4',
+    vids:
+    [
+
+        'https://res.cloudinary.com/dwcu3wcol/video/upload/v1704875266/document_5830363266177569280_mhwztb.mp4',
+    ],
     imgs:[
         `https://ucarecdn.com/70b85b33-019e-41df-8603-420f59557a30/photo_5820989676603948867_y.jpg`,
         `https://ucarecdn.com/6a2342dc-8c61-4804-a413-5213418af114/photo_5820989676603948868_y.jpg`,
@@ -126,7 +133,7 @@ const {id} = useParams()
 const searchParams = useSearchParams()
 const title = searchParams.get('title')
  const [imgs,setImgs] = useState<string[]>([]);
- const [video,setVid] = useState<string | null>(null);
+ const [videos,setVid] = useState<string[]>([]);
 
 
  useEffect(() => {
@@ -134,7 +141,7 @@ const title = searchParams.get('title')
     if (!object || !object?.imgs) return;
 
     setImgs(object?.imgs);
-    object?.vid && setVid(object?.vid);
+    object?.vids && setVid(object?.vids);
 }, [ id]);
 
   return (
@@ -144,14 +151,20 @@ const title = searchParams.get('title')
             </Typography>
         <Box sx={{gap:'.5em'}} className='flex wrap row center   auto'>
         {
-            video && <Box sx={{maxHeight:{xs:'400px',sm:'500px'},maxWidth:{xs:'100%',sm:'500px'}}} key={video}>
-         
-         <video width="100%" height="100%" controls>
+            
+            
+                videos  && videos?.length > 0 &&   videos.map(video=>{
+
+                    return <Box sx={{maxHeight:{xs:'400px',sm:'500px'},maxWidth:{xs:'100%',sm:'500px'}}} key={video}>
+
+          <video key={video} autoPlay width="100%" height="100%" controls>
                 <source src={video} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
-       </Box>
+                    </Box>
+            })
         }
+        
    {imgs.map((item) => {
 
 
