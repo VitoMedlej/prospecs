@@ -49,7 +49,11 @@ const Index = () => {
     title:'Talet Al Khayat Project',
     id:'UIn2j41',
   },
-
+    {
+      title:'Leon cafe',
+      img:'https://ucarecdn.com/41db89fc-4c34-4ee6-a5d3-6320a43062ce/photo_5837020916914175759_y.jpg',
+      id:'Bj2zw7'
+    },
   {
     title : 'Toledo Project',
     img:'https://ucarecdn.com/525987cf-f7f0-49c7-8144-7c6d17b5f72b/photo_5767334647334812873_y.jpg',

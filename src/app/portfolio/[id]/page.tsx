@@ -76,6 +76,27 @@ imgs: [
     ]
  },
  {
+    id:'Bj2zw7',
+    imgs: [
+        "https://ucarecdn.com/fd01ac05-2112-40d9-81c8-8538eee1782c/photo_5837020916914175766_y.jpg",
+        "https://ucarecdn.com/3aae0c98-fd15-4388-ba1a-9a70ae1ae861/photo_5837020916914175758_y.jpg",
+        "https://ucarecdn.com/0faf4367-eae9-44da-9872-79cb1da13222/photo_5837020916914175763_y.jpg",
+        "https://ucarecdn.com/91958b9b-c356-42fb-80e7-d38454aed821/photo_5837020916914175762_y.jpg",
+        "https://ucarecdn.com/41db89fc-4c34-4ee6-a5d3-6320a43062ce/photo_5837020916914175759_y.jpg",
+        "https://ucarecdn.com/802d79d6-c88c-4547-b11e-50409ffdb4d2/photo_5837020916914175764_y.jpg",
+        "https://ucarecdn.com/0779e4b3-fdba-4165-8d31-4e973f04ed44/photo_5837020916914175760_y.jpg",
+        "https://ucarecdn.com/4fca05ff-0788-415c-b630-3bf6cae36415/photo_5837020916914175765_y.jpg",
+        "https://ucarecdn.com/7d9d6e34-f67c-472c-b14a-84672b466af2/photo_5837020916914175761_y.jpg",
+        "https://ucarecdn.com/0a54fe23-4df8-479b-b4fb-74a2da2019c1/photo_5837020916914175757_y.jpg"
+
+    ],
+    vids: [
+        'https://res.cloudinary.com/dwcu3wcol/video/upload/v1704966578/IMG_1001_sredce.mp4',
+        `https://res.cloudinary.com/dwcu3wcol/video/upload/v1704966577/IMG_0992_gicquh.mp4`,
+        `https://res.cloudinary.com/dwcu3wcol/video/upload/v1704966575/IMG_1291_o9kfa5.mp4`,
+    ]
+ },
+ {
     id:'5NX51z',
     imgs:[
         `https://ucarecdn.com/bcbdc85a-a00d-4863-ab98-e50d7190e980/04.jpg`,
