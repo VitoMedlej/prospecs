@@ -52,7 +52,7 @@ const Index = () => {
   {
     id: 'UKSZN6',
     title:`Gynecologist Doctor Clinic`,
-    img:'https://ucarecdn.com/05bd9889-b5d4-456e-bc8c-71380469f495/photo_5865974137565070921_w.jpg'
+    img:'https://ucarecdn.com/22fa3d16-bda0-4024-90ca-ed14f399d5b5/photo_5865974137565070938_y.jpg'
   },
   {
     title: `Saudi Arabia Project`,
