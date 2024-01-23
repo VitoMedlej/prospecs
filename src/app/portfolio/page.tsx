@@ -49,7 +49,17 @@ const Index = () => {
     title:'Talet Al Khayat Project',
     id:'UIn2j41',
   },
-    {
+  {
+    id: 'UKSZN6',
+    title:`Gynecologist Doctor Clinic`,
+    img:'https://ucarecdn.com/05bd9889-b5d4-456e-bc8c-71380469f495/photo_5865974137565070921_w.jpg'
+  },
+  {
+    title: `Saudi Arabia Project`,
+    img:'https://ucarecdn.com/05bd9889-b5d4-456e-bc8c-71380469f495/photo_5865974137565070921_w.jpg',
+    id:'Vm24zg'
+  }  ,
+  {
       title:'Leon cafe',
       img:'https://ucarecdn.com/41db89fc-4c34-4ee6-a5d3-6320a43062ce/photo_5837020916914175759_y.jpg',
       id:'Bj2zw7'
