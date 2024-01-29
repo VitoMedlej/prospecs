@@ -54,7 +54,7 @@ Our commitment to quality, attention to detail, and personalized approach sets u
           </Btn>
           </Box>
           <Box sx={{height:{xs:'300px',sm:'400px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'40%'}}}>
-            <img style={{borderRadius:'6px'}} src={`https://ucarecdn.com/adfc248d-bf22-4941-b4f3-b31e44218b13/photo_5836907701576253670_y.jpg`} alt="" className="img" />
+            <img style={{borderRadius:'6px'}} src={`https://ucarecdn.com/16aa3a77-15d2-4b55-9c83-1dd762a9b880/WhatsAppImage20240129at162647.jpeg`} alt="" className="img" />
           </Box>
         </Box>
         </Container>
