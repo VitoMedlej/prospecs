@@ -14,8 +14,10 @@ import Btn from './Btn/Btn';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img : `https://th.bing.com/th/id/R.1bd115eb313eb77c1b1adab41764509c?rik=we51JeZavsx%2fIQ&pid=ImgRaw&r=0`},
-        {img : `https://th.bing.com/th/id/R.f9a5184c0cdaa5fb293c10d30f1d44e7?rik=A4JN4HLwTn4ZZQ&pid=ImgRaw&r=0`},
+        {img:'https://ucarecdn.com/2d6a5200-379a-4304-b59f-3c284c21378b/WhatsAppImage20240129at1321461.jpeg'},
+        {img:'https://ucarecdn.com/9e962b0e-753b-43f1-9988-496486316370/WhatsAppImage20240129at132146.jpeg'},
+        // {img : `https://th.bing.com/th/id/R.1bd115eb313eb77c1b1adab41764509c?rik=we51JeZavsx%2fIQ&pid=ImgRaw&r=0`},
+        // {img : `https://th.bing.com/th/id/R.f9a5184c0cdaa5fb293c10d30f1d44e7?rik=A4JN4HLwTn4ZZQ&pid=ImgRaw&r=0`},
        
      ])
     useEffect(() => {

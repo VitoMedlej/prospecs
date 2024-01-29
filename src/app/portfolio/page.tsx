@@ -50,6 +50,11 @@ const Index = () => {
     id:'UIn2j41',
   },
   {
+    id:'Hbn794',
+    img: `https://ucarecdn.com/0ba061b7-2ec8-4236-a461-d2b5168b8658/WhatsAppImage20240129at153050.jpeg`,
+    title: `Stop And Shop`,
+  },
+  {
     id: 'UKSZN6',
     title:`Gynecologist Doctor Clinic`,
     img:'https://ucarecdn.com/22fa3d16-bda0-4024-90ca-ed14f399d5b5/photo_5865974137565070938_y.jpg'

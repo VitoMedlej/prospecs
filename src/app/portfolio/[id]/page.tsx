@@ -106,6 +106,15 @@ imgs: [
 
     ]
 },
+{
+    id:'Hbn794',
+    img: [`https://ucarecdn.com/0ba061b7-2ec8-4236-a461-d2b5168b8658/WhatsAppImage20240129at153050.jpeg`],
+    vids : [
+        `https://res.cloudinary.com/dwcu3wcol/video/upload/v1706532073/WhatsApp_Video_2024-01-29_at_11.45.07_w6xtra.mp4`,
+        `https://res.cloudinary.com/dwcu3wcol/video/upload/v1706532068/WhatsApp_Video_2024-01-29_at_11.44.54_p581c0.mp4`,
+
+    ]
+},
  {
     id:'Vm24zg',
     imgs: [
