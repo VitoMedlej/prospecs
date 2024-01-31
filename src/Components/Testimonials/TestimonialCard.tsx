@@ -23,6 +23,7 @@ const TestimonialCard = ({title,reviewer,description}:{title:string,reviewer:str
 
             </Box>
 <Box sx={{pt:4}}>
+    
 <Rating sx={{mb:.25}} readOnly value={5}></Rating>
 
 </Box>
@@ -31,14 +32,14 @@ const TestimonialCard = ({title,reviewer,description}:{title:string,reviewer:str
             // className='clr'
                 sx={{
                     // color:'#f8f8f8',
-                fontWeight: 300,
+                fontWeight: 400,
                     maxWidth:'500px',
                 pt: 1.25,
                 fontSize: 14
             }}
                 component={'p'}>{description}</Typography>
                  <Typography
-            className='color2'
+            className='clr'
                 sx={{
                     // color:'#f8f8f8',
                     fontStyle:'italic',

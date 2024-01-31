@@ -185,6 +185,9 @@ PreLoader = ({data,resImages}:any) => {
       </Container> */}
         
           {/* <Divider light></Divider> */}
+          <Testimonials/>
+      
+      
       <Container  id='gallery' className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
       <Typography  className='center text-center' sx={{mt:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
             Our Gallery
@@ -226,7 +229,6 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
           })}
         </Box>
       </Container>
-
         <ContactSection/>
   </Box>
   )

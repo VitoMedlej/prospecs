@@ -51,7 +51,7 @@ const Footer = () => (
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            <li><Link href="mailto:contact@designcompass.com">contact@DesignCompass-lb.com</Link></li>
+            <li><Link href="mailto:info@designcompass-lb.com">Info@designcompass-lb.com</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 

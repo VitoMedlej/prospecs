@@ -96,7 +96,7 @@ const Preloader3 = ({res}:{res:any}) => {
                                 <Box className="flex">
 
                                 <Btn
-                        onClick={() => router.push('/#serv')}
+                        onClick={() => router.push('/portfolio')}
                                 
                                 className='bg white borderColor' sx={{mt:3}}>
                                     Explore

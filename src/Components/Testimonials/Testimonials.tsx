@@ -28,22 +28,39 @@ const Testimonial = () => {
 
 
 const tests =[
-    {
-      title: "A Pet Paradise!",
-      reviewer: "(Emma, Pet Lover)",
-      description: "Pets Town is an absolute paradise for pet owners. Their wide array of pet supplies is simply amazing. From top-notch pet food to a delightful selection of toys and accessories, they cater to every pet&apos;s needs. I&apos;m thoroughly impressed by their unwavering commitment to quality and their genuine care for their customers. Pets Town has become my go-to place for all things pet-related!",
-    },
-    {
-      title: "Exceptional Service, Happy Pets!",
-      reviewer: "(Daniel, Proud Pet Parent)",
-      description: "Pets Town sets a high standard for pet shops. As a devoted pet parent, finding reliable pet supplies is crucial, and Pets Town consistently delivers. Their website is user-friendly, making it a breeze to find everything my furry friend needs. What truly sets them apart is their dedication to providing top-quality products and their keen eye for detail. Pets Town has earned my trust as the ultimate destination for pet essentials!",
-    },
-    {
-      title: "A Lifesaver for Pet Businesses!",
-      reviewer: "(Sophia, Pet Business Owner)",
-      description: "Managing pet supplies for our business used to be a hassle until we discovered Pets Town. We regularly source pet supplies for our clients and partners, and Pets Town&apos;s extensive product range has been a game-changer. Even with large orders, their website handles them seamlessly. The Pets Town team goes above and beyond to ensure our branding looks flawless on the pet supplies. Their professionalism and efficiency have saved us invaluable time. We wholeheartedly endorse Pets Town!",
-    },
-  ];
+  {
+    reviewer: "Eva Sayegh",
+    description: "One of the most creative, professional and talented teams I ever dealt with. Design Compass managed to offer perfect and flawless designs to properties located outside of Lebanon virtually as if the whole team was physically available on site. The expert touch and vision of the head designer Mr. Omar makes all the difference. I highly recommend their services."
+  },
+  {
+    reviewer: "Fadi Dinnawi",
+    description: "Very professional, highly recommended ❤"
+  },
+  {
+    reviewer: "Souad Ghalayini",
+    description: "Very tasteful and creative, good service and very friendly team. Acceptable prices and good timing with delivery.👍"
+  },
+  {
+    reviewer: "firas ghalayini",
+    description: "The final result was very nice\nThank you for your hard work Omar"
+  },
+  {
+    reviewer: "MherMardoyan Career Coach",
+    description: "Highly recommended company. Friendly and professional. Reasonable prices and delivers on times. Deserves a 5 stars."
+  },
+  {
+    reviewer: "Roula Jaafarawi",
+    description: "They are such a great team i really enjoyed my experience with this company ❤️"
+  },
+  {
+    reviewer: "Sahar Ramadan",
+    description: "Design compass you are the best!!!!! Everything was easy and smooth, trust worthy, paying attention to every single detail from A to Z, don't hesitate to ask them anything, even if you have 10000 questions! Highly recommended."
+  },
+  {
+    reviewer: "Soha Daroub",
+    description: "Thank you Design Compass represented by its owner Omar M Etal. My room is a joy to be in and can't wait for this lock down to end so we can start with the second bedroom.  Great design and immaculate execution, wonderful staff and service.  Easy and comfortable to work with. Thank you guys for everything ❤"
+  }
+];
     
     
   return (
@@ -114,15 +131,15 @@ const tests =[
               >
 
                 {tests.map((item ) => {
-                    if (!item.title) 
+                    if (!item.reviewer) 
                         return
                     return <SwiperSlide
                         style={{
                         padding:'2em 0',
                         marginRight: '0 !important'
                     }}
-                        key={item.title}>
-                         <TestimonialCard title={item.title} reviewer={item.reviewer} description={item.description}/>
+                        key={item.reviewer}>
+                         <TestimonialCard title={item.reviewer} reviewer={item.reviewer} description={item.description}/>
 
                     </SwiperSlide>
                     // return <SwiperSlide className='swiper-wrapper1'
