@@ -13,7 +13,7 @@ const Perks = () => {
         id='contactsection'
             className='flexed bg'
             sx={{
-                mt: '5em',
+                mt: '0',
                 flexWrap: 'wrap',
                 // background:'#f0f0f0',
                 py: '1.5em',
