@@ -20,7 +20,7 @@ PreLoader = ({data,resImages}:any) => {
       id: 1,
       title: 'Customized Interior Design Solutions',
       desc: 'Our turn-key services are tailored to your specific needs. We understand that every project is unique, and we approach each one with a fresh perspective and an open mind.'
-     , img : `https://ucarecdn.com/031f5e5e-2bea-4c7c-a182-0388f5938e1c/photo_5829990695400751405_w.jpg`
+     , img : `https://ucarecdn.com/7154c006-81d6-4158-aaf1-fb30140b53e8/1cb881e440d0449ebbc5704de4cc0c15.jpg`
     },
     {
       id: 2,
@@ -188,7 +188,7 @@ PreLoader = ({data,resImages}:any) => {
           <Testimonials/>
       
       
-      <Container  id='gallery' className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
+      {/* <Container  id='gallery' className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
       <Typography  className='center text-center' sx={{mt:4,width:'100%',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
             Our Gallery
             </Typography>
@@ -221,14 +221,12 @@ fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
                 <img src={`${i}`} alt="" className="img" />
               </Box>
               <Box>
-              {/* <Typography  className='center' sx={{maxWidth:'400px',fontSize:{xs:'.8em',sm:'1em'},fontWeight:300}}>
-            David R. Stevenson
-          </Typography> */}
+          
               </Box>
             </Box>
           })}
         </Box>
-      </Container>
+      </Container> */}
         <ContactSection/>
   </Box>
   )
