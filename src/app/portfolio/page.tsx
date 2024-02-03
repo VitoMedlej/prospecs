@@ -53,11 +53,11 @@ const Index = () => {
   {
     id:'Hbn794',
     img: `https://ucarecdn.com/0ba061b7-2ec8-4236-a461-d2b5168b8658/WhatsAppImage20240129at153050.jpeg`,
-    title: `Stop And Shop`,
+    title: `Stop And Shop Project`,
   },
   {
     id: 'UKSZN6',
-    title:`Gynecologist Doctor Clinic`,
+    title:`Gynecologist Doctor Clinic Project`,
     img:'https://ucarecdn.com/22fa3d16-bda0-4024-90ca-ed14f399d5b5/photo_5865974137565070938_y.jpg'
   },
   {
@@ -66,7 +66,7 @@ const Index = () => {
     id:'Vm24zg'
   }  ,
   {
-      title:'Leon cafe',
+      title:'Leon cafe Project',
       img:'https://ucarecdn.com/41db89fc-4c34-4ee6-a5d3-6320a43062ce/photo_5837020916914175759_y.jpg',
       id:'Bj2zw7'
     },
@@ -96,7 +96,7 @@ const Index = () => {
     id:'5NX51z'
   },
   {
-    title:'Tintin Room',
+    title:'Tintin Room Project',
     id:'Fnz35o',
     img:'https://ucarecdn.com/0392ce20-01da-4c3d-8b2a-602d00a9cadf/photo_5820989676603948872_y.jpg'
   }
