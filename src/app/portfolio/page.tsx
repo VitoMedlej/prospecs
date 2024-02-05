@@ -51,6 +51,21 @@ const Index = () => {
     id:'UIn2j41',
   },
   {
+    img:'https://ucarecdn.com/f6400526-f65e-4c99-a2a5-b8d751e70f7c/',
+    title: 'Beit Mery project',
+    id:'6INI2X'
+  },
+  {
+    img:'https://ucarecdn.com/f6400526-f65e-4c99-a2a5-b8d751e70f7c/',
+    title: 'Beit Mery project',
+    id:'6INI2X'
+  },
+  {
+    img:``,
+    title: `Ras Beirut Project (contracting)`,
+    id:'ZN521c'
+  },
+  {
     id:'Hbn794',
     img: `https://ucarecdn.com/0ba061b7-2ec8-4236-a461-d2b5168b8658/WhatsAppImage20240129at153050.jpeg`,
     title: `Stop And Shop Project`,

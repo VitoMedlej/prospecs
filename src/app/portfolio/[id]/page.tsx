@@ -11,11 +11,14 @@ import { Autoplay } from 'swiper';
 
 const projects = [
     {imgs:[
+        "https://ucarecdn.com/e31d80ea-adcd-4071-abca-728afd4cb9a9/",
+        "https://ucarecdn.com/282e47c8-a586-455c-bf6f-a3808c071f0a/",
+        "https://ucarecdn.com/e58e6c4e-2ed6-4f82-b54c-1731c882b165/",
+        "https://ucarecdn.com/b4bdb63e-26f0-4fa7-827f-c3a7175d2783/",
+        "https://ucarecdn.com/c8e01351-173d-4762-a869-2e9703ad9533/",
         `https://ucarecdn.com/9ff24220-cdfb-406b-8e1a-855d120d1025/photo_5827996069638816596_y.jpg`,
         'https://ucarecdn.com/7361c401-3e63-4d96-8edf-434e298e5b85/2c55883a716d4c9fa5b74b2460008038.jpg',
-   
-    'https://ucarecdn.com/936f2065-6ac8-46c6-995f-9e76fb7d68fc/5a92c72d878446bf94769e4185f60834.jpg',
-     `https://ucarecdn.com/5751be25-07bc-4484-ba60-83e61287e464/4fe89e536ab44aaeafeb99e021c65a1c.jpg`,
+     'https://ucarecdn.com/936f2065-6ac8-46c6-995f-9e76fb7d68fc/5a92c72d878446bf94769e4185f60834.jpg',
      `https://ucarecdn.com/00ec514e-e380-48a4-8d5f-d26cf47a103f/39a2344382f747afbf2a2cc7d2b8af32.jpg`
  ],
  id:'UIn2j41',
@@ -23,6 +26,42 @@ const projects = [
     `https://res.cloudinary.com/dwcu3wcol/video/upload/v1704962911/IMG_1279_qszpvj.mp4`,
     `https://res.cloudinary.com/dwcu3wcol/video/upload/v1704962881/IMG_1256_r0rm1b.mp4`
  ]
+},
+{
+    imgs: [
+        "https://ucarecdn.com/a4c0c344-43a4-44b0-a344-8ec8c8cc4180/",
+        "https://ucarecdn.com/f6400526-f65e-4c99-a2a5-b8d751e70f7c/",
+        "https://ucarecdn.com/2a055f64-eef0-4fa0-a62f-5ece5f567bc7/",
+        "https://ucarecdn.com/28b39a0a-0773-4c04-a1ba-cf0d0c7a22c8/",
+        "https://ucarecdn.com/23f240c2-7bd6-4ff4-9b1f-9daad64414d7/",
+        "https://ucarecdn.com/3ed5b169-ce93-4e09-b817-367eeaacacd1/",
+        "https://ucarecdn.com/3289e754-7a62-4785-8de6-2eda8cfcd244/",
+        "https://ucarecdn.com/6cba1526-1da9-47c4-89f9-6000cdd88a86/",
+        "https://ucarecdn.com/4bc2ebfe-2cfe-440d-81b7-fcbc924613c9/",
+        "https://ucarecdn.com/ab30a083-ec70-4acb-82ed-86943f06ac43/"
+    ],
+    id:'6INI2X'
+},
+{
+    id:'ZN521c',
+    imgs:[
+        "https://ucarecdn.com/96a3f6a7-ae4f-4e7e-8fca-d00094b949c5/",
+        "https://ucarecdn.com/517dc200-d574-4714-a7e1-c18aab09461e/",
+        "https://ucarecdn.com/b0054253-052c-4a68-8ca8-6fe3d8a96e36/",
+        "https://ucarecdn.com/d15f8a1e-688e-4fce-9baf-00bc0f6aa31e/",
+        "https://ucarecdn.com/c707712a-78fe-4896-b4ed-22922f3d9e12/",
+        "https://ucarecdn.com/e96c1758-a442-4cd2-8ce1-7c7957430628/",
+        "https://ucarecdn.com/c6e57f9b-14d5-49af-96de-70c71ee65115/",
+        "https://ucarecdn.com/e19bcf06-88d2-42d2-9e56-9a902a8bf0ed/",
+        "https://ucarecdn.com/0222b996-deb6-400f-b447-d53c33e0d268/",
+        "https://ucarecdn.com/314a61e5-69f7-4889-8e14-da8f86baf3f6/",
+        "https://ucarecdn.com/ffd74b5d-0edf-43e9-99f7-53beb64c6929/",
+        "https://ucarecdn.com/69670c31-29ac-47c2-99ed-9a1d57495fa9/",
+        "https://ucarecdn.com/fabebecc-4845-4416-b888-f36150751df3/",
+        "https://ucarecdn.com/39971e63-4d4d-4cb6-8071-b656bc567cc0/",
+        "https://ucarecdn.com/87b99168-4e63-4225-bfba-e962b5b33965/",
+        "https://ucarecdn.com/f502bb1c-3d3d-4ecc-a6c5-644a6b49f0d4/"
+    ]
 },
  {
     id:'42NC25'
