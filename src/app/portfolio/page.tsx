@@ -50,18 +50,14 @@ const Index = () => {
     title:'Talet Al Khayat Project',
     id:'UIn2j41',
   },
+
   {
     img:'https://ucarecdn.com/f6400526-f65e-4c99-a2a5-b8d751e70f7c/',
     title: 'Beit Mery project',
     id:'6INI2X'
   },
   {
-    img:'https://ucarecdn.com/f6400526-f65e-4c99-a2a5-b8d751e70f7c/',
-    title: 'Beit Mery project',
-    id:'6INI2X'
-  },
-  {
-    img:``,
+    img:`https://ucarecdn.com/96a3f6a7-ae4f-4e7e-8fca-d00094b949c5/`,
     title: `Ras Beirut Project (contracting)`,
     id:'ZN521c'
   },
