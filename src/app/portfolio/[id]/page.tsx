@@ -50,16 +50,13 @@ const projects = [
         "https://ucarecdn.com/b0054253-052c-4a68-8ca8-6fe3d8a96e36/",
         "https://ucarecdn.com/d15f8a1e-688e-4fce-9baf-00bc0f6aa31e/",
         "https://ucarecdn.com/c707712a-78fe-4896-b4ed-22922f3d9e12/",
-        "https://ucarecdn.com/e96c1758-a442-4cd2-8ce1-7c7957430628/",
         "https://ucarecdn.com/c6e57f9b-14d5-49af-96de-70c71ee65115/",
         "https://ucarecdn.com/e19bcf06-88d2-42d2-9e56-9a902a8bf0ed/",
         "https://ucarecdn.com/0222b996-deb6-400f-b447-d53c33e0d268/",
-        "https://ucarecdn.com/314a61e5-69f7-4889-8e14-da8f86baf3f6/",
         "https://ucarecdn.com/ffd74b5d-0edf-43e9-99f7-53beb64c6929/",
         "https://ucarecdn.com/69670c31-29ac-47c2-99ed-9a1d57495fa9/",
         "https://ucarecdn.com/fabebecc-4845-4416-b888-f36150751df3/",
         "https://ucarecdn.com/39971e63-4d4d-4cb6-8071-b656bc567cc0/",
-        "https://ucarecdn.com/87b99168-4e63-4225-bfba-e962b5b33965/",
         "https://ucarecdn.com/f502bb1c-3d3d-4ecc-a6c5-644a6b49f0d4/"
     ]
 },
