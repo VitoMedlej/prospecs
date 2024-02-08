@@ -194,7 +194,7 @@ PreLoader = ({data,resImages}:any) => {
             </Typography>
          
           <a className='center text-center auto' target='_blank' rel='noreferrer' href={`
-https://www.instagram.com/design__compass/`}>
+https://www.instagram.com/designcompasslb/`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '

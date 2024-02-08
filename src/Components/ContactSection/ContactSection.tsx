@@ -110,7 +110,7 @@ sx={{
                             justifyContent: 'center',
                             flexDirection: 'column'
                         }}>
-                        {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={"https://www.linkedin.com/company/designcompasslb/"}>
+                        {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={"https://www.linkedin.com/company/68516974/"}>
 
 
                             <Typography
@@ -155,6 +155,8 @@ sx={{
                     </Box>
 
                 </Box>
+
+
                 <Box
 
 sx={{
@@ -172,7 +174,7 @@ sx={{
         justifyContent: 'center',
         flexDirection: 'column'
     }}>
-    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/design__compass/`}>
+    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/designcompasslb/`}>
 
 
         <Typography
