@@ -23,7 +23,13 @@ const Index = () => {
 
             </Container>
         </Box>
-        <Container sx={{pt:8,px:{xs:2,sm:1}}}>
+
+        <Container sx={{py:8,px:{xs:2,sm:1},maxWidth:'lg'}}>
+          <Box sx={{width:'100%',height:'100%'}}>
+            <img src="https://ucarecdn.com/d432b77e-cf5d-47d4-ad76-41440c25cc7b/WhatsAppImage20240309at1050181.jpeg" alt="" className="img" />
+          </Box>
+        </Container>
+        <Container sx={{pt:2,px:{xs:2,sm:1}}}>
         <Box  className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} >
          <Box sx={{width:{xs:'100%',sm:'48%',md:'60%'}}}>
 
