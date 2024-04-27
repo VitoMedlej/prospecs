@@ -2,19 +2,19 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 
-*, h1, h2, h3, h4, h5, h6, p, button, input, select, textarea, a {
-  font-family: "Source Sans 3", sans-serif !important;
+h1 {
+  font-family: "Bebas Neue", sans-serif !important;
+}
+
+h2, h3, h4, h5, h6, p, button, input, select, textarea, a {
+  font-family: "Inter", sans-serif !important;
 }
 
 .w100 {
   width: 100%;
-}
-
-.color3 {
-  color: #f27a23 !important;
 }
 
 .img {
@@ -33,7 +33,7 @@ body {
 }
 
 .borderColor {
-  border-color: #0273b5 !important;
+  border-color: #3d8af7 !important;
 }
 
 .borderColor2 {
@@ -49,7 +49,7 @@ body {
 }
 
 .color {
-  color: #0273b5 !important;
+  color: #3d8af7 !important;
 }
 
 .flex {
@@ -72,6 +72,10 @@ body {
   justify-content: space-evenly;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 .hover-shadow:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -89,7 +93,7 @@ body {
 }
 
 .bg {
-  background: #0273b5 !important;
+  background: #3d8af7 !important;
 }
 
 .white {
@@ -102,6 +106,10 @@ body {
 
 .gap1 {
   gap: 0.25em;
+}
+
+.gap2 {
+  gap: 0.5em;
 }
 
 .absolute {
@@ -142,7 +150,7 @@ button[disabled] {
 }
 
 .clr {
-  color: #0273b5 !important;
+  color: #3d8af7 !important;
 }
 
 .auto {
@@ -184,4 +192,12 @@ button[disabled] {
 
 .green {
   color: green;
+}
+
+.react-datepicker__input-container input {
+  padding: 1em !important;
+}
+
+.MuiInputBase-input {
+  font-family: "Inter", sans-serif !important;
 }/*# sourceMappingURL=Styles.css.map */

@@ -104,9 +104,10 @@ export default function Navbar() {
 }}>
     <img
         className='img'
-        src={`https://ucarecdn.com/13297c6a-72ec-4555-8372-965e8531d16f/372688426_120263737816524_8073115919353653137_n.jpg`}
+        src={`https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg`}
         alt="design compas  logo"/>
 </Box>
+
 </Link>
                 <Box
                     sx={{
@@ -148,6 +149,14 @@ export default function Navbar() {
                         }}>
                             <AiOutlineHome color='black'/>
                         </IconButton> */}
+
+                        <Box sx={{display:{xs:'flex',md:'none'}}}>
+                            <Btn 
+                            onClick={()=>router.push('/apply')}
+                            sx={{fontWeight:'600',mr:1}}>
+                                Apply
+                            </Btn>
+                        </Box>
                       
     <IconButton
                             onClick={() => setOpen(!open)}

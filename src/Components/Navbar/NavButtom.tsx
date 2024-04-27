@@ -33,7 +33,7 @@ const router = useRouter()
 
         }}>
 {/* <Link className=' decor-none ' href={`/collection/products`}>
-                    <Typography  component='p' sx={{width:'max-content',fontWeight:400,fontSize:{xs:'.7em',sm:'.85em'}}}>
+                    <Typography  component='h1' sx={{width:'max-content',fontWeight:500,fontSize:{xs:'.7em',sm:'.85em'}}}>
                     Sale
                     </Typography>
                 </Link> */}
@@ -42,11 +42,11 @@ const router = useRouter()
 <Typography 
 className=' cursor center flex gap1 black decor-none '
 id="button"
-component='p' sx={{width:'max-content',
+component='h1' sx={{width:'max-content',
 mx:'1em',
 alignItems: 'center',
 
-fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
+fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Home
 </Typography>
 </Link>
@@ -55,11 +55,11 @@ Home
 <Typography 
 className=' cursor center flex gap1 black decor-none '
 id="button"
-component='p' sx={{width:'max-content',
+component='h1' sx={{width:'max-content',
 mx:'1em',
 alignItems: 'center',
 
-fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
+fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
 About Us
 </Typography>
 </Link>
@@ -70,11 +70,11 @@ className='black decor-none ' href={`/#contactsection`}>
 <Typography 
 className=' cursor center flex gap1 black decor-none '
 id="button"
-component='p' sx={{width:'max-content',
+component='h1' sx={{width:'max-content',
 mx:'1em',
 alignItems: 'center',
 
-fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
+fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Reach Us
 </Typography>
 </Link>
@@ -83,11 +83,11 @@ Reach Us
 <Typography 
 className=' cursor center flex gap1 black decor-none '
 id="button"
-component='p' sx={{width:'max-content',
+component='h1' sx={{width:'max-content',
 mx:'1em',
 alignItems: 'center',
 
-fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
+fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Our Projects
 </Typography>
 
@@ -100,11 +100,11 @@ Our Projects
                 <Typography 
       className=' cursor center flex gap1 black decor-none '
         id="button"
-        component='p' sx={{width:'max-content',
+        component='h1' sx={{width:'max-content',
         mx:'1em',
         alignItems: 'center',
         
-        fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>
+        fontWeight:500,fontSize:{xs:'.6em',sm:'.75em'}}}>
      Birds
    </Typography>
    </Link> */}
@@ -116,7 +116,7 @@ Our Projects
     // {cate:"Offers",subCate:offersSubcategories,img:'https://i.pinimg.com/originals/bf/cb/59/bfcb59f20bddc43101e39de2cc142f7e.jpg'}
 ].map(i => {
                 // return <Link className='clr decor-none ' key={i} href={`/${i.replace(/ /g, '-').toLocaleLowerCase()}/products`}>
-                //     <Typography  component='p' sx={{width:'max-content',fontWeight:600,fontSize:{xs:'.6em',sm:'.75em'}}}>                    
+                //     <Typography  component='h1' sx={{width:'max-content',fontWeight:500,fontSize:{xs:'.6em',sm:'.75em'}}}>                    
                 //     {i}
                 //     </Typography>
                 // </Link>

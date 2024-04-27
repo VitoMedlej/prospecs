@@ -14,8 +14,7 @@ import Btn from './Btn/Btn';
 const Preloader3 = ({res}:{res:any}) => {
     const router = useRouter()
     const [imgs,setImgs] = useState([
-        {img:'https://ucarecdn.com/b65ba785-b4a9-45a7-9d32-42575ffd0939/'},
-        {img:'https://ucarecdn.com/99500dfb-94b4-4e31-8e64-ba0651ae42c6/photo_5895299525722096485_w.jpg'},
+        {img:'https://wallpapercave.com/wp/wp5098925.jpg'},
         // {img : `https://th.bing.com/th/id/R.1bd115eb313eb77c1b1adab41764509c?rik=we51JeZavsx%2fIQ&pid=ImgRaw&r=0`},
         // {img : `https://th.bing.com/th/id/R.f9a5184c0cdaa5fb293c10d30f1d44e7?rik=A4JN4HLwTn4ZZQ&pid=ImgRaw&r=0`},
        
@@ -40,7 +39,7 @@ const Preloader3 = ({res}:{res:any}) => {
             minHeight:'500px',
           
             margin: '0 auto',
-            height : {xs:'100vh',sm:'650px'},
+            height : {xs:'100%  ',sm:'650px'},
              
             display: {
                 xs: 'flex'
@@ -54,7 +53,7 @@ const Preloader3 = ({res}:{res:any}) => {
                 spaceBetween={0}
                 loop={true}
                 autoplay={{
-                delay: 3000,
+                delay: 305500,
                 disableOnInteraction: true
             }}
                 modules={[Autoplay]}
@@ -79,26 +78,41 @@ const Preloader3 = ({res}:{res:any}) => {
 
                             </Box>
                             <Box 
-                            className='auto'
+                            className='auto center  text-center'
                             sx={{
                                 top:'50%',
                                 px:{xs:4,sm:5,md:6},
-                                maxWidth:'750px',
+                                // maxWidth:'750px',
                                 transform:'translateY(-50%)',
                                 zIndex:123456,
                                 position:'absolute'}}>
-                                <Typography sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',lg:'4.8em'},fontWeight:900}}>
-                                Experience the Power of Desgin Compass
+                                <Typography 
+                                className='center  text-center auto'
+                                    component='h1'
+                                
+                                sx={{color:'white',fontSize:{xs:'2.5em',sm:'3.5em',md:'4em',
+                                lg:'4em'},fontWeight:900}}>
+                          Unleash Your Potential with Prospecs
                                 </Typography>
-                                <Typography sx={{color:'white',fontSize:{xs:'.85em',sm:'.89em'},mt:1,maxWidth:'600px'}}>
-                                At Design Compass, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design
+
+                                <Typography
+                                    component='h2'
+
+                                className='center  text-center auto'
+                                
+                                sx={{
+                                    
+                                    fontWeight:300,
+                                    color:'white',fontSize:{xs:'.85em',sm:'.89em'}
+                                ,mt:1,maxWidth:'600px'}}>
+                             Embark on a transformative journey with Prospecs, where we empower athletes with innovative Capacity Development Trainings
                                 </Typography>
                                 <Box className="flex">
 
                                 <Btn
                         onClick={() => router.push('/portfolio')}
                                 
-                                className='bg white borderColor' sx={{mt:3}}>
+                                className='bg white  center borderColor' sx={{mx:'auto',mt:3}}>
                                     Explore
                                 </Btn>
                              

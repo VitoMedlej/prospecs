@@ -8,7 +8,7 @@ let style1 = {
   color: 'black',
   background: 'white',
   border:'1px solid',
-  borderRadius: '30px', 
+  borderRadius: '0px', 
   transition: 'background 0.3s ease, transform 0.2s ease',
 
   ':hover': {

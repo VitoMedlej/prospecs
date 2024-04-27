@@ -6,7 +6,6 @@ import HomeProductCollection from './HomeProductCollection/HomeProductCollection
 import HomeProductsCarousel from './HomeProductsCarousel/HomeProductsCarousel'
 import MainCarousel from './MainCarousel/MainCarousel'
 import { useRouter } from 'next/navigation'
-import Perks from './Perks/Perks'
 import FullscreenPoster from './FullscreenPoster/FullscreenPoster'
 import Testimonials from './Testimonials/Testimonials'
 import Btn from './Btn/Btn'
@@ -29,20 +28,20 @@ PreLoader = ({data,resImages}:any) => {
       ,img: `https://ucarecdn.com/5d0a344d-9d8f-425b-a000-0f39071673eb/2.jpg`
       // ,img : `https://images.pexels.com/photos/4263067/pexels-photo-4263067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
     },
-    {
-      id: 3,
-      title: 'Comprehensive Interior Design Services',
-      desc: 'At DesignCompass, we offer a wide array of services under one roof. Our comprehensive approach ensures that every aspect of your interior design project is handled with professionalism and attention to detail.'
-      ,img:`https://ucarecdn.com/9efff20b-0863-4303-a780-c530dcc8a2a2/3.jpg`
-      // ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
-    },
-    {
-      id: 4,
-      title: 'Quality Furniture Manufacturing',
-      desc: 'We also specialize in furniture manufacturing. Our furniture pieces are designed with a focus on quality, durability, and style. We use the finest materials and techniques to ensure that our furniture not only looks good but also lasts a lifetime.'
-      // ,img:`https://images.pexels.com/photos/17965207/pexels-photo-17965207/free-photo-of-a-kitchen-with-a-chair-and-a-table-in-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
-      ,img:'https://ucarecdn.com/bd31a2e2-c3f5-4bed-8604-31ab617c62ce/4.jpg'
-    }
+    // {
+    //   id: 3,
+    //   title: 'Comprehensive Interior Design Services',
+    //   desc: 'At Prospecs, we offer a wide array of services under one roof. Our comprehensive approach ensures that every aspect of your interior design project is handled with professionalism and attention to detail.'
+    //   ,img:`https://ucarecdn.com/9efff20b-0863-4303-a780-c530dcc8a2a2/3.jpg`
+    //   // ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Quality Furniture Manufacturing',
+    //   desc: 'We also specialize in furniture manufacturing. Our furniture pieces are designed with a focus on quality, durability, and style. We use the finest materials and techniques to ensure that our furniture not only looks good but also lasts a lifetime.'
+    //   // ,img:`https://images.pexels.com/photos/17965207/pexels-photo-17965207/free-photo-of-a-kitchen-with-a-chair-and-a-table-in-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+    //   ,img:'https://ucarecdn.com/bd31a2e2-c3f5-4bed-8604-31ab617c62ce/4.jpg'
+    // }
   ];
   
   
@@ -59,41 +58,25 @@ PreLoader = ({data,resImages}:any) => {
       <MainCarousel resImages={resImages}/>
       {/* <Perks/> */}
 
-    <Container maxWidth='lg'   sx={{mb:{xs:3,sm:6,md:8},mt:{xs:0,sm:6,md:8}}}>
-      <Typography sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
-      Excellence in Every Detail with Design Compass Services
+    <Container maxWidth='lg'   sx={{mb:{xs:3,sm:6,md:8},mt:{xs:4,sm:6,md:8}}}>
+      <Box sx={{width:'100px',height:'100px'}} className='auto'>
+        <img src="https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg" alt="" className="img" />
+      </Box>
+      <Typography
+      component='h1'
+      sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
+      Excellence in Every Detail with Prospecs Services
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      At DesignCompass, we believe that every space has the potential to become unique, inspirational, and functional. We are committed to transforming your ideas into reality, creating spaces that not only meet your needs but also reflect your personality and style.
+      At Prospecs, we believe that every space has the potential to become unique, inspirational, and functional. We are committed to transforming your ideas into reality, creating spaces that not only meet your needs but also reflect your personality and style.
         </Typography>
+        <Btn sx={{margin:'1em auto'}}>
+          Apply Now
+        </Btn>
     </Container>
 
- 
-      <Container id='serv'    sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
-
-      {textsArray.map(i=>{
-        return <Box key={i.id} className='flex row wrap' sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} >
-         <Box sx={{width:{xs:'100%',sm:'48%'}}}>
-
-  
-          <Typography  className='color'>
-            .0{i.id}
-          </Typography>
-          <Typography  sx={{maxWidth:'400px',fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
-            {i.title}
-          </Typography>
-          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'350px'}}>
-            {i.desc}
-          </Typography>
-          </Box>
-          <Box sx={{height:{xs:'250px',sm:'300px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'48%'}}}>
-            <img style={{borderRadius:'6px'}} src={i.img} alt="" className="img" />
-          </Box>
-        </Box>
-      })}
-      </Container>
-
-    <Container  className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:6,sm:12},display:'flex'}}>
+    <Container  className='wrap row  center auto flex' 
+    sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:6,sm:12},display:'flex'}}>
         {
         [
           {
@@ -129,8 +112,35 @@ PreLoader = ({data,resImages}:any) => {
         })
         }
     </Container>
+ 
+      <Container id='serv'    sx={{maxWidth:'lg'}} className='flex wrap row justify-between'>
 
-    <Grid  sx={{width:'100%',pt:6}} container>
+      {textsArray.map(i=>{
+        return <Box key={i.id} className='flex row wrap' 
+        sx={{borderBottom:'1px solid white',width:{xs:'98%'},maxWidth:'lg',justifyContent:'space-between',my:5.5}} >
+         <Box sx={{width:{xs:'100%',md:'48%'}}}>
+
+  
+      
+          <Typography  
+          component='h1'
+          sx={{maxWidth:{xs:'100%',lg:'400px'},fontSize:{xs:'1.5em',sm:'2em'},fontWeight:500}}>
+            {i.title}
+          </Typography>
+          <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:{md:'350px'}}}>
+            {i.desc}
+          </Typography>
+          </Box>
+          <Box sx={{height:{xs:'250px',sm:'300px'},mt:.5,borderRadius:'6px', width:{xs:'100%',md:'48%'}}}>
+            <img style={{borderRadius:'6px'}} src={i.img} alt="" className="img" />
+          </Box>
+        </Box>
+      })}
+      </Container>
+
+
+
+    <Grid  sx={{width:'100%',py:6}} container>
     <Grid  maxWidth='lg' item xs={12} sm={6}>
       <Box sx={{height:'500px',maxWidth:'450px'}} className='auto'>
         <img src="https://ucarecdn.com/a25b1349-8f3b-408d-8c44-e00ad9752c0e/photo_5832586041058509575_y.jpg" alt="" className="img" />
@@ -138,14 +148,12 @@ PreLoader = ({data,resImages}:any) => {
     </Grid>
     <Grid maxWidth='lg' item xs={12} sm={6}>
     <Container  className='wrap col   auto flex' sx={{alignItems:'left',px:{sm:1},pt:{xs:2,sm:4},display:'flex'}}>
-        <Typography sx={{fontWeight:400}} className='color'>
-          ABOUT US
-        </Typography>
+      
         <Typography component='h1' sx={{width:'100%',maxWidth:'500px',fontSize:{xs:'2em',sm:'3em'},fontWeight:900}} className=''>
         Crafting Spaces with Precision and Passion
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        Welcome to DesignCompass, your trusted Interior Design Studio in Lebanon. We are committed to creating spaces that inspire, resonate, and transform.
+        Welcome to Prospecs, your trusted Interior Design Studio in Lebanon. We are committed to creating spaces that inspire, resonate, and transform.
         </Typography>
         <Btn className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
           Reach Us
@@ -185,7 +193,6 @@ PreLoader = ({data,resImages}:any) => {
       </Container> */}
         
           {/* <Divider light></Divider> */}
-          <Testimonials/>
       
       
       {/* <Container  id='gallery' className='wrap row  center auto flex' sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:3,sm:12},display:'flex'}}>
@@ -194,7 +201,7 @@ PreLoader = ({data,resImages}:any) => {
             </Typography>
          
           <a className='center text-center auto' target='_blank' rel='noreferrer' href={`
-https://www.instagram.com/designcompasslb/`}>
+https://www.instagram.com/Prospecslb/`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '

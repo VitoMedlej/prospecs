@@ -30,7 +30,7 @@ const Perks = () => {
                     alignItems: 'center',
                     flexDirection: 'column',
                 }}>
-                <Typography sx={{
+                <Typography component='h1' sx={{
                     fontWeight: '600',
                     fontSize: '1.7em'
                 }}>
@@ -174,7 +174,7 @@ sx={{
         justifyContent: 'center',
         flexDirection: 'column'
     }}>
-    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/designcompasslb/`}>
+    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/Prospecslb/`}>
 
 
         <Typography

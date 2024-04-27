@@ -19,11 +19,11 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/13297c6a-72ec-4555-8372-965e8531d16f/372688426_120263737816524_8073115919353653137_n.jpg' alt="DesignCompass Lebanon Logo" />
+            <img className='img ' src='https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg' alt="Prospecs Lebanon Logo" />
             </Link>
           </div>
-          <Typography component='h1' sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
-          At DesignCompass, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design. With an unwavering commitment to creativity and quality, we turn your vision into reality.
+          <Typography sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
+          At Prospecs, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design. With an unwavering commitment to creativity and quality, we turn your vision into reality.
           </Typography>
           <SMicons/>
 
@@ -51,11 +51,11 @@ const Footer = () => (
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            <li><Link href="mailto:info@designcompass-lb.com">Info@designcompass-lb.com</Link></li>
+            <li><Link href="mailto:info@Prospecs-lb.com">Info@Prospecs-lb.com</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
-            <li><a href="https://www.instagram.com/designcompasslb/" target="_blank" rel="noreferrer" >@design__compass</a></li>
+            <li><a href="https://www.instagram.com/Prospecslb/" target="_blank" rel="noreferrer" >@design__compass</a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >+{process.env.NEXT_PUBLIC_WA}</a></li>
             {/* <li><a href={`http://tiktok.com/@thecraftroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
