@@ -96,7 +96,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
               <ListItemButton sx={{py:1.5}} >
             
                   <Typography sx={{fontWeight:600}}>
-             Our Projects
+             apply now
             </Typography>
             </ListItemButton>
   

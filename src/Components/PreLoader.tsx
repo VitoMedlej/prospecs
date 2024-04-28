@@ -17,32 +17,17 @@ PreLoader = ({data,resImages}:any) => {
   const textsArray = [
     {
       id: 1,
-      title: 'Customized Interior Design Solutions',
-      desc: 'Our turn-key services are tailored to your specific needs. We understand that every project is unique, and we approach each one with a fresh perspective and an open mind.'
-     , img : `https://ucarecdn.com/7154c006-81d6-4158-aaf1-fb30140b53e8/1cb881e440d0449ebbc5704de4cc0c15.jpg`
+      title: 'Empowering Athletes',
+      desc: 'At Prospecs, we recognize that athletic excellence requires more than just talent—it requires continuous evolution and innovation. That\'s why we\'ve developed a comprehensive suite of tools and resources aimed at empowering athletes at every level.'
+     , img : `https://th.bing.com/th/id/R.5a9aa377544398c8218bff1c28c8c6ca?rik=rGD3PCubZjBHJA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fChicago-Bulls-Backgrounds-HD.jpg&ehk=dJG45LDtUGhrEneC%2bIdOwfXOik%2bY6bMZfwVlGHmKzCQ%3d&risl=&pid=ImgRaw&r=0`
     },
     {
       id: 2,
-      title: 'Exceptional Wood Work Services',
-      desc: 'Our wood work services are all about precision and attention to detail. We take pride in crafting custom pieces that add a touch of elegance and sophistication to your space.'
-      ,img: `https://ucarecdn.com/5d0a344d-9d8f-425b-a000-0f39071673eb/2.jpg`
-      // ,img : `https://images.pexels.com/photos/4263067/pexels-photo-4263067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
+      title: 'Cutting-Edge Capacity Development Trainings',
+      desc: 'Our Capacity Development Trainings are designed to exceed traditional methods, offering dynamic programs tailored to unlock each athlete\'s full potential. From personalized coaching to specialized workshops, we provide the support and guidance needed to cultivate skills, confidence, and resilience.'
+      ,img: `https://th.bing.com/th/id/R.1eb9d75eda094c030c7a4137ca84a289?rik=jt5uh4P5zeQzFw&pid=ImgRaw&r=0`
     },
-    // {
-    //   id: 3,
-    //   title: 'Comprehensive Interior Design Services',
-    //   desc: 'At Prospecs, we offer a wide array of services under one roof. Our comprehensive approach ensures that every aspect of your interior design project is handled with professionalism and attention to detail.'
-    //   ,img:`https://ucarecdn.com/9efff20b-0863-4303-a780-c530dcc8a2a2/3.jpg`
-    //   // ,img :`https://mir-s3-cdn-cf.behance.net/project_modules/1400/a7781657088943.59c8c1ffda2b0.jpg`
-    // },
-    // {
-    //   id: 4,
-    //   title: 'Quality Furniture Manufacturing',
-    //   desc: 'We also specialize in furniture manufacturing. Our furniture pieces are designed with a focus on quality, durability, and style. We use the finest materials and techniques to ensure that our furniture not only looks good but also lasts a lifetime.'
-    //   // ,img:`https://images.pexels.com/photos/17965207/pexels-photo-17965207/free-photo-of-a-kitchen-with-a-chair-and-a-table-in-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`
-    //   ,img:'https://ucarecdn.com/bd31a2e2-c3f5-4bed-8604-31ab617c62ce/4.jpg'
-    // }
-  ];
+];
   
   
   // [{img:'https://ucarecdn.com/4635c19f-1ac8-454f-aaf7-8c67adfe4fd0/WhatsAppImage20230824at191722.jpeg',category:'Cricut machines'},
@@ -65,12 +50,15 @@ PreLoader = ({data,resImages}:any) => {
       <Typography
       component='h1'
       sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
-      Excellence in Every Detail with Prospecs Services
+     Prospecs: Revolutionizing Athletic Excellence
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      At Prospecs, we believe that every space has the potential to become unique, inspirational, and functional. We are committed to transforming your ideas into reality, creating spaces that not only meet your needs but also reflect your personality and style.
+      Welcome to Prospecs, where we're committed to pushing the boundaries of athletic achievement through innovative Capacity Development Trainings, Data, & Technology.
         </Typography>
-        <Btn sx={{margin:'1em auto'}}>
+        <Btn 
+        onClick={()=>router.push('/apply')}
+        
+        sx={{margin:'1em auto'}}>
           Apply Now
         </Btn>
     </Container>
@@ -78,24 +66,23 @@ PreLoader = ({data,resImages}:any) => {
     <Container  className='wrap row  center auto flex' 
     sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:6,sm:12},display:'flex'}}>
         {
-        [
-          {
-            title: 'Personalized Approach',
-            text:`We believe that every client is unique. That’s why we offer personalized design solutions tailored to your specific needs and preferences.`,
-            icon: 'https://www.svgrepo.com/show/494431/handshake-deal.svg'
-          },
-          {
-            title: 'Quality Craftsmanship',
-            text:`Quality is at the heart of everything we do. From our custom woodwork to our manufactured furniture, we use only the finest materials and techniques.`,
-            icon: 'https://www.svgrepo.com/show/409793/tools.svg'
-          },
-          {
-            title: 'Comprehensive Services',
-            text:`Get a full suite of interior design services under one roof. From initial design concept to final installation.`,
-            icon: 'https://www.svgrepo.com/show/476047/checklist.svg'
-          }
-          
-        ].map(i=>{
+      [
+        {
+          title: 'Tailored Support',
+          text: "Personalized coaching and workshops tailored to your journey.",
+          icon: 'https://www.svgrepo.com/show/494431/handshake-deal.svg'
+        },
+        {
+          title: 'Empowering Mission',
+          text: "Elevating sports experiences for every athlete.",
+          icon: 'https://www.svgrepo.com/show/409793/tools.svg'
+        },
+        {
+          title: 'Innovative Solutions',
+          text: "Driving change and excellence in sports.",
+          icon: 'https://www.svgrepo.com/show/476047/checklist.svg'
+        }
+    ].map(i=>{
           return <Box key={i.title} sx={{mx:2,my:1}} className='flex col items-center center'>
               <Box sx={{width:'20px'}}>
                 <img src={i.icon} alt="" className="img" />
@@ -143,20 +130,22 @@ PreLoader = ({data,resImages}:any) => {
     <Grid  sx={{width:'100%',py:6}} container>
     <Grid  maxWidth='lg' item xs={12} sm={6}>
       <Box sx={{height:'500px',maxWidth:'450px'}} className='auto'>
-        <img src="https://ucarecdn.com/a25b1349-8f3b-408d-8c44-e00ad9752c0e/photo_5832586041058509575_y.jpg" alt="" className="img" />
+        <img src="https://th.bing.com/th/id/R.f22d5101ac479a3488dcc0d36dad9d91?rik=1Bu8ZJBfuz52Cw&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fa%2faf%2fBasketball_game.jpg&ehk=KvGNkeegVRpNa6HtsO%2fjVrPoR5L5OQF%2fFxDUt3n7p7U%3d&risl=&pid=ImgRaw&r=0" alt="" className="img" />
       </Box>
     </Grid>
     <Grid maxWidth='lg' item xs={12} sm={6}>
     <Container  className='wrap col   auto flex' sx={{alignItems:'left',px:{sm:1},pt:{xs:2,sm:4},display:'flex'}}>
       
         <Typography component='h1' sx={{width:'100%',maxWidth:'500px',fontSize:{xs:'2em',sm:'3em'},fontWeight:900}} className=''>
-        Crafting Spaces with Precision and Passion
+        Join the Prospecs Team Today
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        Welcome to Prospecs, your trusted Interior Design Studio in Lebanon. We are committed to creating spaces that inspire, resonate, and transform.
+        Join Prospecs today for personalized support, innovative solutions, and a community dedicated to your success. Whether you're a seasoned athlete or just starting out, we're here to empower you. Don't wait, join us now!
         </Typography>
-        <Btn className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
-          Reach Us
+        <Btn 
+        onClick={()=>router.push('/apply')}
+        className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
+          Join Us
         </Btn>
     </Container>
 
@@ -201,7 +190,7 @@ PreLoader = ({data,resImages}:any) => {
             </Typography>
          
           <a className='center text-center auto' target='_blank' rel='noreferrer' href={`
-https://www.instagram.com/Prospecslb/`}>
+https://www.instagram.com/prospecsme/`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '
@@ -212,7 +201,7 @@ mb:4,
 alignItems: 'center',
 
 fontWeight:400,fontSize:{xs:'.76em',sm:'.95em'}}}>
-@design__compass
+@prospecsme
 </Typography>
   </a>
         <Box className='flex row wrap' sx={{justifyContent:'space-between'}}>

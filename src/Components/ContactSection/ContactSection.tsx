@@ -174,7 +174,7 @@ sx={{
         justifyContent: 'center',
         flexDirection: 'column'
     }}>
-    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/Prospecslb/`}>
+    {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={`https://www.instagram.com/prospecsme/`}>
 
 
         <Typography

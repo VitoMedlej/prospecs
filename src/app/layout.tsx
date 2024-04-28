@@ -8,10 +8,10 @@ import QuickCart from '@/Components/Shared/QuickCart/QuickCart'
 import ContextWrapper from '@/context/Contexts'
 
 export const metadata = {
-    title: 'Prospecs: Elevating Interior Design in Lebanon',
-    description: `Discover the artistry and innovation of Prospecs, your premier interior design firm in Lebanon. We transform spaces into masterpieces`,
+    title: 'Experience Personalized Athletic Support with Prospecs',
+    description: `Discover personalized coaching, innovative solutions, and a supportive community at Prospecs. Elevate your athletic journey to new heights with us!`,
     icons: {
-        icon: `https://ucarecdn.com/f21fe250-e19c-4fd7-b4e7-bf1b246a3640/favicon.jpeg`
+        icon: `https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg`
     }
 }
 

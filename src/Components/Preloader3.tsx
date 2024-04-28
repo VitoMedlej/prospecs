@@ -74,16 +74,18 @@ const Preloader3 = ({res}:{res:any}) => {
                             
                       
                             <Box sx={{top:0,right:0,width:'100%',zIndex:1123,height:'100%',background:'black'
-                            ,opacity:.57}} className="absolute">
+                            ,opacity:.57}} className="absolute auto">
 
                             </Box>
                             <Box 
                             className='auto center  text-center'
                             sx={{
                                 top:'50%',
-                                px:{xs:4,sm:5,md:6},
+                               
                                 // maxWidth:'750px',
-                                transform:'translateY(-50%)',
+                                width: {xs:'100%',xl:'auto'},
+                                // transform:{xs:'translate(0%,-50%)'},
+                                transform:{xs:'translate(0%,-50%)',xl:'translate(25%,-50%)'},
                                 zIndex:123456,
                                 position:'absolute'}}>
                                 <Typography 
