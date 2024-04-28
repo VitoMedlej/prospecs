@@ -98,14 +98,15 @@ export default function Navbar() {
 <Box
     sx={{
     mx: {
+        xs:'.25em',
         sm: '1em'
     },
-    width:{xs:'90px',sm: '110px'}
+    width:{xs:'100px',sm: '110px'}
 }}>
     <img
         className='img'
-        src={`https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG`}
-        alt="design compas  logo"/>
+        src={`https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG`}
+        alt="prospecs.me  logo"/>
 </Box>
 
 </Link>
@@ -152,9 +153,9 @@ export default function Navbar() {
 
                         <Box sx={{display:{xs:'flex',md:'none'}}}>
                             <Btn 
-                            onClick={()=>router.push('/apply')}
-                            sx={{fontWeight:'600',mr:1}}>
-                                Apply
+                            onClick={()=>router.push('/register')}
+                            sx={{fontWeight:'600',mr:0}}>
+                                register
                             </Btn>
                         </Box>
                       

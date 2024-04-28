@@ -91,7 +91,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
       <ListItem
           sx={{fontWeight:600}}
 
-          onClick={()=>{router.push(`/apply`); toggleDrawer(false)}}
+          onClick={()=>{router.push(`/register`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             

@@ -13,7 +13,7 @@ const Perks = () => {
         id='contactsection'
             className='flexed bg'
             sx={{
-                mt: '0',
+                mt: '2em',
                 flexWrap: 'wrap',
                 // background:'#f0f0f0',
                 py: '1.5em',
@@ -93,36 +93,7 @@ sx={{
 </Box> */}
 
 
-                 <Box
-
-                    sx={{
-                        display: 'flex',
-                        gap: '.5em',
-                        flexDirection: 'row'
-                    }}>
-                    <Box className='flex items-center'>
-                        <BsLinkedin color='#fff' />
-                    </Box>
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            flexDirection: 'column'
-                        }}>
-                        {<a className='white' target={`_blank`} style={{textDecoration:"none"}} rel='noreferrer' href={"https://www.linkedin.com/company/68516974/"}>
-
-
-                            <Typography
-                                sx={{
-                                    fontSize: '1.1em'
-                                }}>LinkedIn</Typography>
-                        </a>
-
-                        }
-                    </Box>
-
-                </Box>
+              
 
 
                 <Box

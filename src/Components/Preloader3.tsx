@@ -115,7 +115,7 @@ const Preloader3 = ({res}:{res:any}) => {
                                 <Box className="flex">
 
                                 <Btn
-                        onClick={() => router.push('/apply')}
+                        onClick={() => router.push('/register')}
                                 
                                 className='bg white  center borderColor' sx={{mx:'auto',mt:3}}>
                                     Register

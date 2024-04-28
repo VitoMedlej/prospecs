@@ -19,7 +19,7 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG' alt="Prospecs Lebanon Logo" />
+            <img className='img ' src='https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG' alt="Prospecs Lebanon Logo" />
             </Link>
           </div>
           <Typography sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
@@ -43,7 +43,7 @@ const Footer = () => (
           <ul className=' ul-white'>
             <li className='link-title'>Site links</li>
             <li><Link  href="/">Home</Link></li>
-            <li><Link href="/apply">apply now</Link></li> 
+            <li><Link href="/register">Register</Link></li> 
             <li><Link href="/about">About Us</Link></li>
             {/* <li><Link href="/contact">Contact Us</Link></li> */}
             {/* <li><Link href="https://www.google.com/maps/place/Design+compass/@33.8884247,35.4809988,17z/data=!3m1!4b1!4m6!3m5!1s0x151f1749ba249eaf:0xc9a67248535dca49!8m2!3d33.8884247!4d35.4809988!16s%2Fg%2F11hxvhzfj_?entry=ttu">Google Maps</Link></li> */}
@@ -51,13 +51,13 @@ const Footer = () => (
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            <li><Link href="mailto:info@Prospecs.com">Info@Prospecs.com</Link></li>
+            <li><Link href="mailto:info@Prospecs.com">Info@Prospecs.me</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
             <li><a href="https://www.instagram.com/prospecsme/" target="_blank" rel="noreferrer" >@prospecsme</a></li>
             <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >+{process.env.NEXT_PUBLIC_WA}</a></li>
-            {/* <li><a href={`http://tiktok.com/@thecraftroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
+            {/* <li><a href={`http://tiktok.com/@thePROroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
         </div>
   

@@ -3,6 +3,209 @@ import React, { useState } from 'react';
 import { TextField, Button, Box, FormControl, InputLabel, MenuItem, Select, Typography } from '@mui/material';
 import Btn from '../Btn/Btn';
 import Dob from '../Dob/Dob';
+const allCountries = [
+  "Saudi Arabia",
+  "United Arab Emirates",
+  "United Kingdom",
+  "Lebanon",
+  "Algeria",
+  "Syria",
+
+  "Afghanistan",
+  "Albania",
+  "Andorra",
+  "Angola",
+  "Antigua and Barbuda",
+  "Argentina",
+  "Armenia",
+  "Australia",
+  "Austria",
+  "Azerbaijan",
+  "Bahamas",
+  "Bahrain",
+  "Bangladesh",
+  "Barbados",
+  "Belarus",
+  "Belgium",
+  "Belize",
+  "Benin",
+  "Bhutan",
+  "Bolivia",
+  "Bosnia and Herzegovina",
+  "Botswana",
+  "Brazil",
+  "Brunei",
+  "Bulgaria",
+  "Burkina Faso",
+  "Burundi",
+  "Cabo Verde",
+  "Cambodia",
+  "Cameroon",
+  "Canada",
+  "Central African Republic",
+  "Chad",
+  "Chile",
+  "China",
+  "Colombia",
+  "Comoros",
+  "Congo",
+  "Costa Rica",
+  "Croatia",
+  "Cuba",
+  "Cyprus",
+  "Czechia",
+  "Democratic Republic of the Congo",
+  "Denmark",
+  "Djibouti",
+  "Dominica",
+  "Dominican Republic",
+  "East Timor",
+  "Ecuador",
+  "Egypt",
+  "El Salvador",
+  "Equatorial Guinea",
+  "Eritrea",
+  "Estonia",
+  "Eswatini",
+  "Ethiopia",
+  "Fiji",
+  "Finland",
+  "France",
+  "Gabon",
+  "Gambia",
+  "Georgia",
+  "Germany",
+  "Ghana",
+  "Greece",
+  "Grenada",
+  "Guatemala",
+  "Guinea",
+  "Guinea-Bissau",
+  "Guyana",
+  "Haiti",
+  "Honduras",
+  "Hungary",
+  "Iceland",
+  "India",
+  "Indonesia",
+  "Iran",
+  "Iraq",
+  "Ireland",
+  "Israel",
+  "Italy",
+  "Ivory Coast",
+  "Jamaica",
+  "Japan",
+  "Jordan",
+  "Kazakhstan",
+  "Kenya",
+  "Kiribati",
+  "Kosovo",
+  "Kuwait",
+  "Kyrgyzstan",
+  "Laos",
+  "Latvia",
+  "Lesotho",
+  "Liberia",
+  "Libya",
+  "Liechtenstein",
+  "Lithuania",
+  "Luxembourg",
+  "Madagascar",
+  "Malawi",
+  "Malaysia",
+  "Maldives",
+  "Mali",
+  "Malta",
+  "Marshall Islands",
+  "Mauritania",
+  "Mauritius",
+  "Mexico",
+  "Micronesia",
+  "Moldova",
+  "Monaco",
+  "Mongolia",
+  "Montenegro",
+  "Morocco",
+  "Mozambique",
+  "Myanmar",
+  "Namibia",
+  "Nauru",
+  "Nepal",
+  "Netherlands",
+  "New Zealand",
+  "Nicaragua",
+  "Niger",
+  "Nigeria",
+  "North Korea",
+  "North Macedonia",
+  "Norway",
+  "Oman",
+  "Pakistan",
+  "Palau",
+  "Palestine",
+  "Panama",
+  "Papua New Guinea",
+  "Paraguay",
+  "Peru",
+  "Philippines",
+  "Poland",
+  "Portugal",
+  "Qatar",
+  "Romania",
+  "Russia",
+  "Rwanda",
+  "Saint Kitts and Nevis",
+  "Saint Lucia",
+  "Saint Vincent and the Grenadines",
+  "Samoa",
+  "San Marino",
+  "Sao Tome and Principe",
+  "Senegal",
+  "Serbia",
+  "Seychelles",
+  "Sierra Leone",
+  "Singapore",
+  "Slovakia",
+  "Slovenia",
+  "Solomon Islands",
+  "Somalia",
+  "South Africa",
+  "South Korea",
+  "South Sudan",
+  "Spain",
+  "Sri Lanka",
+  "Sudan",
+  "Suriname",
+  "Sweden",
+  "Switzerland",
+  "Taiwan",
+  "Tajikistan",
+  "Tanzania",
+  "Thailand",
+  "Togo",
+  "Tonga",
+  "Trinidad and Tobago",
+  "Tunisia",
+  "Turkey",
+  "Turkmenistan",
+  "Tuvalu",
+  "Uganda",
+  "Ukraine",
+  
+  "United States",
+  "Uruguay",
+  "Uzbekistan",
+  "Vanuatu",
+  "Vatican City",
+  "Venezuela",
+  "Vietnam",
+  "Yemen",
+  "Zambia",
+  "Zimbabwe"
+];
+
+
 
 export default function ControlledForm() {
     const [formState, setFormState] = useState({
@@ -25,7 +228,8 @@ export default function ControlledForm() {
         PaymentMethod:'',
         additionalInfo:''
       });
-      console.log('formState: ', formState);
+
+      const [isSending,setSending] = useState(false)
 
 
 
@@ -38,21 +242,66 @@ export default function ControlledForm() {
     });
   };
 
+
+  async function sendEmail(formState: any) {
+    const url = process.env.NEXT_PUBLIC_URL + "/api/send-email";
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formState),
+        });
+
+        if (!response.ok) {
+          setSending(false)
+            throw new Error(`HTTP error! status: ${response.status}`);
+
+        }
+
+        const data = await response.json();
+    setSending(false)
+
+        return data;
+    } catch (error) {
+        console.error('There was an error!', error);
+    setSending(false)
+
+    }
+}
   const handleSubmit = (event: any) => {
     event.preventDefault();
+    setSending(true)
+    
     console.log(formState);
+    sendEmail(formState);
+    setSending(false)
+
   };
+ 
+
+
   const handleSelect = (event: any) => {
     setFormState(prevState => ({
       ...prevState,
       [event.target.name as string]: event.target.value,
     }));
   };
+
+
   return (
-    <form style={{maxWidth:'600px'}} className='auto flex row wrap justify-between space-between' onSubmit={handleSubmit}>
+    <form 
+    
+    
+    style={{maxWidth:'600px'}} className='auto flex row wrap justify-between space-between'
+    
+    onSubmit={handleSubmit}>
       <TextField
+      required
       sx={{width:'49%',my:1}}
-        name="FullName"
+        name="fullName"
         label="Full Name"
         variant='outlined'
         value={formState.fullName}
@@ -74,6 +323,8 @@ export default function ControlledForm() {
 fullWidth>
       <InputLabel id="demo-simple-select-label">Gender</InputLabel>
       <Select
+      required
+
   name="gender"
 
         labelId="demo-simple-select-label"
@@ -92,18 +343,45 @@ fullWidth>
 
 <Dob/>
 
-<TextField
+{/* <TextField
   sx={{width:'99%',my:1}}
   name="country"
   label="Country"
   variant='outlined'
   value={formState.country}
   onChange={handleChange}
-/>
+/> */}
+
+<FormControl
+      sx={{width:'99%',my:1}}
+
+fullWidth>
+      <InputLabel id="demo-simple-Country-label">Country</InputLabel>
+      <Select
+      required
+
+  name="country"
+
+        labelId="demo-simple-Country-label"
+        id="demo-simple-Country"
+        value={formState.country}
+        label="Gender"
+        onChange={handleSelect}
+      >
+        {allCountries.map((option, index) => (
+          <MenuItem key={index} value={option?.toLocaleLowerCase()}>
+            {option}
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
+
 
 <TextField
   sx={{width:'99%',my:1}}
   name="city"
+  required
+
   label="City"
   variant='outlined'
   value={formState.city}
@@ -113,6 +391,8 @@ fullWidth>
 <TextField
   sx={{width:'99%',my:1}}
   name="address"
+  required
+
   label="Address"
   variant='outlined'
   value={formState.address}
@@ -133,6 +413,8 @@ fullWidth>
   sx={{width:'49%',my:1}}
   name="phoneNumber"
   label="Phone Number"
+  required
+
   variant='outlined'
   value={formState.phoneNumber}
   onChange={handleChange}
@@ -207,6 +489,8 @@ fullWidth>
         labelId="demo-simple-skillLevel-label"
         id="demo-simple-skillLevel"
         value={formState.skillLevel}
+      required
+
         label="skillLevel"
         onChange={handleSelect}
       >
@@ -228,7 +512,7 @@ fullWidth>
 /> */}
 
 <FormControl
-      sx={{width:'49%',my:1}}
+      sx={{width:'99%',my:1}}
 
 fullWidth>
       <InputLabel id="demo-simple-jerseySize-label">Jersey Size (if applicable)</InputLabel>
@@ -344,17 +628,23 @@ rows={2}
         Declaration:
 
           <Typography>
-{`I, ${formState.fullName}, hereby confirm that all information provided in this registration form is true and accurate to the best of my knowledge. I understand that participation in the Basketball Training Camp with coach Phil Handy involves physical activity and agree to comply with all rules and regulations set forth by the organizers.
+{`I, hereby confirm that all information provided in this registration form is true and accurate to the best of my knowledge. I understand that participation in the Basketball Training Camp with coach Phil Handy involves physical activity and agree to comply with all rules and regulations set forth by the organizers.
 `}
           </Typography>
         </Box>
 
 
 
-        <Box sx={{width:'100%',flex:1,display:'flex'}}>
-
-      <Btn sx={{mt:4,mx:'auto',width:'200px'}}>Submit</Btn>
+        <Box className='col' sx={{width:'100%',flex:1,display:'flex'}}>
+      <Btn 
+      type='submit'
+      sx={{mt:4,mx:'auto',width:'200px'}}>Submit</Btn>
         </Box>
+        <Typography sx={{pt:1,fontSize:'.67em'}}>
+          {
+           `By clicking ‘Submit’, you confirm that you give us consent to send you emails, and that you comply with our acceptable use policy, which includes maintaining up-to-date mailing lists and ensuring all recipients have opted in to receive emails.`
+          }
+          </Typography>
     </form>
   );
 }

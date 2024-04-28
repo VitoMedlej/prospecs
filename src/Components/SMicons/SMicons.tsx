@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import React from 'react'
 // import {FaInstagram,FaWhatsapp} from 'react-icons/fa';
 // import {BsTiktok} from 'react-icons/bs';
-import {CiFacebook,CiInstagram,CiLinkedin} from 'react-icons/ci'
+import {CiFacebook,CiInstagram} from 'react-icons/ci'
 
 const sm = [
     {
@@ -41,13 +41,7 @@ const SMicons = ({sx,color}:{color?:string,sx?:any}) => {
          </a>
         
             </Box>
-            <Box fontSize='2em' className='cursor pointer' sx={{width:'50px'}}>
-         <a href='https://www.linkedin.com/company/68516974/' style={{color:'#3d8af7',fill:'#3d8af7'}} className='white' target='_blank' rel='noopener' >
-              
-              <CiLinkedin></CiLinkedin>
-         </a>
-            
-            </Box>
+          
             
             
           </Box>

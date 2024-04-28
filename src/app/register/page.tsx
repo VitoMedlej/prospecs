@@ -7,11 +7,11 @@ const page = () => {
   return (
     <Container className='auto center'>
         <Box sx={{pb:8}} className='auto text-center w100 center'>
-            <Box sx={{width:'150px'}} className='auto'>
-                <img src="https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG" alt="" className="img" />
-            </Box>
+            {/* <Box sx={{width:'150px'}} className='auto'>
+                <img src="https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG" alt="" className="img" />
+            </Box> */}
             <Box>
-                <Typography component='h1' sx={{fontSize:'2.5em',fontWeight:800}} >
+                <Typography component='h1' sx={{pt:2,fontSize:'2.5em',fontWeight:800}} >
                     Register Today!
                 </Typography>
                 <Typography  className='auto center text-center' sx={{maxWidth:'700px',fontSize:'.9em'}} component='p'>

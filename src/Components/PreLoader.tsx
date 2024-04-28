@@ -44,9 +44,9 @@ PreLoader = ({data,resImages}:any) => {
       {/* <Perks/> */}
 
     <Container maxWidth='lg'   sx={{mb:{xs:3,sm:6,md:8},mt:{xs:4,sm:6,md:8}}}>
-      <Box sx={{width:'100px',height:'100px'}} className='auto'>
-        <img src="https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG" alt="" className="img" />
-      </Box>
+      {/* <Box sx={{width:'100px',height:'100px'}} className='auto'>
+        <img src="https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG" alt="" className="img" />
+      </Box> */}
       <Typography
       component='h1'
       sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
@@ -56,14 +56,14 @@ PreLoader = ({data,resImages}:any) => {
    {`   Welcome to Prospecs, where we're committed to pushing the boundaries of athletic achievement through innovative Capacity Development Trainings, Data, & Technology.`}
         </Typography>
         <Btn 
-        onClick={()=>router.push('/apply')}
+        onClick={()=>router.push('/register')}
         
         sx={{margin:'1em auto'}}>
-          Apply Now
+          register Now
         </Btn>
     </Container>
 
-    <Container  className='wrap row  center auto flex' 
+    {/* <Container  className='wrap row  center auto flex' 
     sx={{background:'white',alignItems:'left',px:{sm:1},py:{xs:6,sm:12},display:'flex'}}>
         {
       [
@@ -143,7 +143,7 @@ PreLoader = ({data,resImages}:any) => {
     {`    Join Prospecs today for personalized support, innovative solutions, and a community dedicated to your success. Whether you're a seasoned athlete or just starting out, we're here to empower you. Don't wait, join us now!`}
         </Typography>
         <Btn 
-        onClick={()=>router.push('/apply')}
+        onClick={()=>router.push('/register')}
         className='color' sx={{width:'100px',color:'black',mt:2,px:0}}>
           Join Us
         </Btn>
@@ -156,7 +156,7 @@ PreLoader = ({data,resImages}:any) => {
  
 
 
-
+ */}
 
       <Box/>
 

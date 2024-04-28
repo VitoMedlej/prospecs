@@ -78,7 +78,7 @@ fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Reach Us
 </Typography>
 </Link>
-<Link className='black decor-none ' href={`/apply`}>
+<Link className='black decor-none ' href={`/register`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '
@@ -88,7 +88,7 @@ mx:'1em',
 alignItems: 'center',
 
 fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
-apply now
+register now
 </Typography>
 
 </Link>

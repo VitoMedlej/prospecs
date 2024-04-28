@@ -58,9 +58,9 @@ const Index = () => {
           </Typography>
 
           <Btn 
-          onClick={()=>router.push('/apply')}
+          onClick={()=>router.push('/register')}
           sx={{mt:2,borderRadius:'0'}}>
-            Apply Now
+            register Now
           </Btn>
           </Box>
           <Box sx={{height:{xs:'300px',sm:'400px'},mt:.5,borderRadius:'6px', width:{xs:'100%',sm:'40%'}}}>
