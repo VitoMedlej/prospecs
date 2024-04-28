@@ -19,7 +19,7 @@ const Index = () => {
                 </Typography>
                 <Typography sx={{maxWidth:'650px',fontSize:"1em"}}>
 
-                Welcome to our world at Prospecs, where we're dedicated to enhancing athlete engagement and optimizing their experiences through a seamless fusion of cutting-edge Capacity Development Trainings, Data, & Technology.
+                Welcome to our world at Prospecs, where we&apos;re dedicated to enhancing athlete engagement and optimizing their experiences through a seamless fusion of cutting-edge Capacity Development Trainings, Data, & Technology.
                 
                 </Typography>
 
@@ -43,18 +43,18 @@ const Index = () => {
           Revolutionizing the way athletes train
           </Typography>
           <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>
-          At Prospecs, we're not just shaping athletes—we're shaping the future of sports. Join us on this exhilarating journey, where innovation knows no bounds and every achievement is a testament to the limitless possibilities of human potential.
+        {`  At Prospecs, we're not just shaping athletes—we're shaping the future of sports. Join us on this exhilarating journey, where innovation knows no bounds and every achievement is a testament to the limitless possibilities of human potential.`}
 
 
        
           </Typography>
           <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>
-          Our Capacity Development Trainings go beyond the traditional approach, offering dynamic programs crafted to unlock the full potential of athletes. 
-         
+        {`  Our Capacity Development Trainings go beyond the traditional approach, offering dynamic programs crafted to unlock the full potential of athletes. 
+         `}
           </Typography>
           <Typography sx={{color:'#4d555e',fontSize:{xs:'.88em',sm:'1em'},pb:.65,maxWidth:'650px'}}>
-          From personalized coaching to specialized workshops, we provide the support and guidance needed to cultivate skills, confidence, and resilience.
-         
+          {`From personalized coaching to specialized workshops, we provide the support and guidance needed to cultivate skills, confidence, and resilience.
+         `}
           </Typography>
 
           <Btn 

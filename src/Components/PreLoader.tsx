@@ -53,7 +53,7 @@ PreLoader = ({data,resImages}:any) => {
      Prospecs: Revolutionizing Athletic Excellence
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-      Welcome to Prospecs, where we're committed to pushing the boundaries of athletic achievement through innovative Capacity Development Trainings, Data, & Technology.
+   {`   Welcome to Prospecs, where we're committed to pushing the boundaries of athletic achievement through innovative Capacity Development Trainings, Data, & Technology.`}
         </Typography>
         <Btn 
         onClick={()=>router.push('/apply')}
@@ -140,7 +140,7 @@ PreLoader = ({data,resImages}:any) => {
         Join the Prospecs Team Today
         </Typography>
         <Typography sx={{width:'100%',maxWidth:'500px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',mt:2}} className=''>
-        Join Prospecs today for personalized support, innovative solutions, and a community dedicated to your success. Whether you're a seasoned athlete or just starting out, we're here to empower you. Don't wait, join us now!
+    {`    Join Prospecs today for personalized support, innovative solutions, and a community dedicated to your success. Whether you're a seasoned athlete or just starting out, we're here to empower you. Don't wait, join us now!`}
         </Typography>
         <Btn 
         onClick={()=>router.push('/apply')}

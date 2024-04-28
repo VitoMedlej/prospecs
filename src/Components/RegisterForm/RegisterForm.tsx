@@ -169,7 +169,7 @@ fullWidth>
       sx={{width:'49%',my:1}}
 
 fullWidth>
-      <InputLabel id="demo-simple-role-label">Player or Coach"</InputLabel>
+      <InputLabel id="demo-simple-role-label">Player or Coach</InputLabel>
       <Select
 
   name="role"
@@ -344,8 +344,8 @@ rows={2}
         Declaration:
 
           <Typography>
-I, {formState.fullName}, hereby confirm that all information provided in this registration form is true and accurate to the best of my knowledge. I understand that participation in the Basketball Training Camp with coach Phil Handy involves physical activity and agree to comply with all rules and regulations set forth by the organizers.
-
+{`I, ${formState.fullName}, hereby confirm that all information provided in this registration form is true and accurate to the best of my knowledge. I understand that participation in the Basketball Training Camp with coach Phil Handy involves physical activity and agree to comply with all rules and regulations set forth by the organizers.
+`}
           </Typography>
         </Box>
 
