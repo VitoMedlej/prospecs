@@ -8,7 +8,7 @@ const page = () => {
     <Container className='auto center'>
         <Box sx={{pb:8}} className='auto text-center w100 center'>
             <Box sx={{width:'150px'}} className='auto'>
-                <img src="https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg" alt="" className="img" />
+                <img src="https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG" alt="" className="img" />
             </Box>
             <Box>
                 <Typography component='h1' sx={{fontSize:'2.5em',fontWeight:800}} >

@@ -29,6 +29,8 @@ const Preloader3 = ({res}:{res:any}) => {
     }, [])
     
     return (
+        <>
+        
         <Box
             sx={{
             // py: {xs:'.75em',sm:'2em',md:'3em'},
@@ -42,12 +44,13 @@ const Preloader3 = ({res}:{res:any}) => {
             height : {xs:'100%  ',sm:'650px'},
              
             display: {
-                xs: 'flex'
+                xs: 'none',
+                md:'flex'
             },
             // mt:20,
         }}>
             <Swiper
-            
+
                 navigation={false}
                 slidesPerView={1}
                 spaceBetween={0}
@@ -135,8 +138,14 @@ const Preloader3 = ({res}:{res:any}) => {
     }
     
             </Swiper>
-    
         </Box>
+        <Box sx={{
+            
+            display:{xs:'flex',md:'none'},height:'100%'}}>
+            <img src="https://ucarecdn.com/4a7e0e1c-47b7-4196-bfa7-b474365da6c8/WhatsAppImage20240428at125445_21f13c27.jpg" alt="" className="img" />
+        </Box>
+        </>
+
     )
 }
 

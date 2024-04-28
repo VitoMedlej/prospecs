@@ -45,7 +45,7 @@ PreLoader = ({data,resImages}:any) => {
 
     <Container maxWidth='lg'   sx={{mb:{xs:3,sm:6,md:8},mt:{xs:4,sm:6,md:8}}}>
       <Box sx={{width:'100px',height:'100px'}} className='auto'>
-        <img src="https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg" alt="" className="img" />
+        <img src="https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG" alt="" className="img" />
       </Box>
       <Typography
       component='h1'

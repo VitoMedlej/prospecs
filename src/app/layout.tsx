@@ -11,7 +11,7 @@ export const metadata = {
     title: 'Experience Personalized Athletic Support with Prospecs',
     description: `Discover personalized coaching, innovative solutions, and a supportive community at Prospecs. Elevate your athletic journey to new heights with us!`,
     icons: {
-        icon: `https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg`
+        icon: `https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG`
     }
 }
 

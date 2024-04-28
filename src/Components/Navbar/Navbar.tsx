@@ -100,11 +100,11 @@ export default function Navbar() {
     mx: {
         sm: '1em'
     },
-    width:{xs:'80px',sm: '90px'}
+    width:{xs:'90px',sm: '110px'}
 }}>
     <img
         className='img'
-        src={`https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg`}
+        src={`https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG`}
         alt="design compas  logo"/>
 </Box>
 

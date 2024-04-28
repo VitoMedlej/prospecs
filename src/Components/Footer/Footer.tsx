@@ -19,7 +19,7 @@ const Footer = () => (
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/f48b3ea2-14c1-4d42-bccd-4fd7e11ede93/435703294_7322179437817723_6804426274623400866_n.jpg' alt="Prospecs Lebanon Logo" />
+            <img className='img ' src='https://ucarecdn.com/5aa43a6f-929b-4827-982c-b418111f0ce1/logo2.PNG' alt="Prospecs Lebanon Logo" />
             </Link>
           </div>
           <Typography sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
