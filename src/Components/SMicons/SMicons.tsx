@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import React from 'react'
 // import {FaInstagram,FaWhatsapp} from 'react-icons/fa';
 // import {BsTiktok} from 'react-icons/bs';
-import {CiFacebook,CiInstagram} from 'react-icons/ci'
+import {CiInstagram} from 'react-icons/ci'
 
 const sm = [
     {
@@ -28,13 +28,13 @@ const SMicons = ({sx,color}:{color?:string,sx?:any}) => {
     // </Box>
     <Box className='flex white' sx={{fill:'white',mt:1}}>
 
-          <Box className='cursor pointer white'  sx={{width:'50px'}}>
+          {/* <Box className='cursor pointer white'  sx={{width:'50px'}}>
          <a href='https://www.facebook.com/Desigcompass/' style={{color:'#3d8af7',fill:'#3d8af7'}} className='white' target='_blank' rel='noopener' >
             
               <CiFacebook fontSize='2em' fill='white !important' color='white'></CiFacebook>
          </a>
            
-            </Box>
+            </Box> */}
             <Box fontSize='2em' className='cursor pointer' sx={{width:'50px'}}>
          <a href='https://www.instagram.com/prospecsme/' style={{color:'#3d8af7',fill:'#3d8af7'}} className='white' target='_blank' rel='noopener' >
               <CiInstagram></CiInstagram>

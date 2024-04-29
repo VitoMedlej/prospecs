@@ -228,8 +228,8 @@ export default function ControlledForm() {
         PaymentMethod:'',
         additionalInfo:''
       });
-
-      const [isSending,setSending] = useState(false)
+      
+      const [status,setStatus] = useState({isSubmitting: false, isSent:false,failed:false})
 
 
 
@@ -245,6 +245,7 @@ export default function ControlledForm() {
 
   async function sendEmail(formState: any) {
     const url = process.env.NEXT_PUBLIC_URL + "/api/send-email";
+    setStatus({isSubmitting:true,isSent:false,failed:false})
 
     try {
         const response = await fetch(url, {
@@ -256,28 +257,37 @@ export default function ControlledForm() {
         });
 
         if (!response.ok) {
-          setSending(false)
+            setStatus({isSubmitting:false,isSent:false,failed:false})
             throw new Error(`HTTP error! status: ${response.status}`);
-
         }
+        
 
         const data = await response.json();
-    setSending(false)
+        if (data?.success === false) {
+          
+        setStatus({isSubmitting:false,isSent:false,failed:true})
+        return
+      }
+        setStatus({isSubmitting:false,isSent:true,failed:false})
+
 
         return data;
     } catch (error) {
         console.error('There was an error!', error);
-    setSending(false)
+        setStatus({isSubmitting:false,isSent:false,failed:false})
+
 
     }
 }
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    setSending(true)
+    setStatus({isSubmitting:true,isSent:false,failed:false})
+
     
     console.log(formState);
     sendEmail(formState);
-    setSending(false)
+    setStatus({isSubmitting:false,isSent:true,failed:false})
+
 
   };
  
@@ -290,7 +300,13 @@ export default function ControlledForm() {
     }));
   };
 
-
+  if (status?.isSubmitting === false && status?.isSent === true) return (
+    <Box className='center flex text-center'>
+      <Typography component='h2' sx={{fontWeight:600,maxWidth:'700px'}}>
+        Thank you for registering! Expect an email from us soon.
+      </Typography>
+    </Box>
+  )
   return (
     <form 
     
@@ -300,7 +316,7 @@ export default function ControlledForm() {
     onSubmit={handleSubmit}>
       <TextField
       required
-      sx={{width:'49%',my:1}}
+      sx={{width:'99%',my:1}}
         name="fullName"
         label="Full Name"
         variant='outlined'
@@ -616,7 +632,7 @@ multiline
 rows={2}
   sx={{width:'99%',my:1}}
   name="additionalInfo"
-  label="additional Information"
+  label="Additional Information"
   variant='outlined'
   value={formState.additionalInfo}
   onChange={handleChange}
@@ -625,7 +641,6 @@ rows={2}
 
 
         <Box>
-        Declaration:
 
           <Typography>
 {`I, hereby confirm that all information provided in this registration form is true and accurate to the best of my knowledge. I understand that participation in the Basketball Training Camp with coach Phil Handy involves physical activity and agree to comply with all rules and regulations set forth by the organizers.
@@ -637,6 +652,7 @@ rows={2}
 
         <Box className='col' sx={{width:'100%',flex:1,display:'flex'}}>
       <Btn 
+      disabled={status?.isSubmitting}
       type='submit'
       sx={{mt:4,mx:'auto',width:'200px'}}>Submit</Btn>
         </Box>

@@ -50,7 +50,7 @@ fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
 Home
 </Typography>
 </Link>
-<Link className='black decor-none ' href={`/about`}>
+{/* <Link className='black decor-none ' href={`/about`}>
 
 <Typography 
 className=' cursor center flex gap1 black decor-none '
@@ -62,7 +62,7 @@ alignItems: 'center',
 fontWeight:500,fontSize:{xs:'.76em',sm:'.95em'}}}>
 About Us
 </Typography>
-</Link>
+</Link> */}
 <Link 
 onClick={()=>router.push('/#contactsection')}
 className='black decor-none ' href={`/#contactsection`}>

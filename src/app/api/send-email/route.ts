@@ -192,9 +192,12 @@ const transporter = nodemailer.createTransport({
 }
 
 export  async function POST(req: NextRequest, res: NextApiResponse) {
+  try {
+
   // const order = req?.body.get('order')
-  const {formState} = await req.json()
-  
+  const body = await req.json()
+  console.log('body: ', body);
+  const formState : any = null;
   let orderId = nanoid()
         orderId = `${orderId}`.replace(/[^a-zA-Z0-9]/g, '')?.slice(0,6)?.toUpperCase()
   console.log('order: ', formState);
@@ -203,10 +206,11 @@ export  async function POST(req: NextRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     // Process a POST request
     if (!formState || !formState?.fullName) return NextResponse.json({success:false})
+      console.log('formState: ', formState);
        const insertReq = await client.db("PRO").collection("Orders").insertOne({...formState,orderID: `${orderId}`});
        if (insertReq.acknowledged ) {         
         
-         await sendOrderConfirmationEmail(orderId,formState)
+        //  await sendOrderConfirmationEmail(orderId,formState)
 
 
 
@@ -216,6 +220,12 @@ export  async function POST(req: NextRequest, res: NextApiResponse) {
 }
 return NextResponse.json({success:false});
 
+}
+catch(e) {
+  console.log('e: ', e);
+  return NextResponse.json({success:true});
+
+}
 }
 
 

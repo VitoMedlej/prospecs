@@ -67,7 +67,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             
-                  <Typography sx={{fontWeight:600}}>
+                  <Typography className='black' sx={{fontWeight:600}}>
              Home
             </Typography>
             </ListItemButton>
@@ -80,10 +80,18 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
           onClick={()=>{router.push(`/#contactsection`); toggleDrawer(false)}}
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
-            
+              <a
+              
+              
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer"
+              className='decor-none black'
+              target='_blank' >
+
+
                   <Typography sx={{fontWeight:600}}>
              Contact Us
             </Typography>
+              </a>
             </ListItemButton>
   
           <Divider></Divider>
@@ -95,14 +103,15 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
            disablePadding>
               <ListItemButton sx={{py:1.5}} >
             
-                  <Typography sx={{fontWeight:600}}>
+                  <Typography className='black' sx={{fontWeight:600}}>
                   Register now
             </Typography>
             </ListItemButton>
   
           <Divider></Divider>
           </ListItem> 
-          <ListItem
+
+          {/* <ListItem
           sx={{fontWeight:600}}
 
           onClick={()=>{router.push(`/about`); toggleDrawer(false)}}
@@ -115,7 +124,7 @@ export default function TemporaryDrawer({cates}:{cates:string[] | undefined}) {
             </ListItemButton>
   
 
-          </ListItem>
+          </ListItem> */}
 
                   {/* <Accordion sx={{border:'none',boxShadow:'none',}}>
             

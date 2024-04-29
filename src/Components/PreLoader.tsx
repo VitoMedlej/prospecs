@@ -50,10 +50,10 @@ PreLoader = ({data,resImages}:any) => {
       <Typography
       component='h1'
       sx={{fontSize:{xs:'2em',sm:'2.8em'},maxWidth:'800px',fontWeight:900}} className='center text-center auto '>
-     Prospecs: Revolutionizing Athletic Excellence
+     Revolutionizing Athletic Excellence
       </Typography>
       <Typography sx={{width:'100%',maxWidth:'800px',flex:1,fontSize:{xs:'.8em',sm:'.9em'},fontWeight:300,color:'#4d555e',pt:1.5}} className='center text-center auto'>
-   {`   Welcome to Prospecs, where we're committed to pushing the boundaries of athletic achievement through innovative Capacity Development Trainings, Data, & Technology.`}
+   {`   Welcome to Prospecs, where we're committed to pushing the boundaries of athletic achievement through innovative Capacity Development Trainings`}
         </Typography>
         <Btn 
         onClick={()=>router.push('/register')}

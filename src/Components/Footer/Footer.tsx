@@ -25,7 +25,7 @@ const Footer = () => (
           <Typography sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
           At Prospecs, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design. With an unwavering commitment to creativity and quality, we turn your vision into reality.
           </Typography>
-          <SMicons/>
+          {/* <SMicons/> */}
 
           {/* <ul className="site-footer__social-networks">
           <li><a href="https://www.facebook.com/profile.php?id=100063581229923" rel="noreferrer" target='_blank'><i className="icon-facebook"></i></a></li>
@@ -40,23 +40,47 @@ const Footer = () => (
         {/* <div>
         <iframe style={{height:'100%',width:'100%',border:0}} frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=Beirut,+Lebanon&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
         </div> */}
-          <ul className=' ul-white'>
+          {/* <ul className=' ul-white'>
             <li className='link-title'>Site links</li>
             <li><Link  href="/">Home</Link></li>
             <li><Link href="/register">Register</Link></li> 
-            <li><Link href="/about">About Us</Link></li>
+          </ul> */}
+            {/* <li><Link href="/about">About Us</Link></li> */}
             {/* <li><Link href="/contact">Contact Us</Link></li> */}
             {/* <li><Link href="https://www.google.com/maps/place/Design+compass/@33.8884247,35.4809988,17z/data=!3m1!4b1!4m6!3m5!1s0x151f1749ba249eaf:0xc9a67248535dca49!8m2!3d33.8884247!4d35.4809988!16s%2Fg%2F11hxvhzfj_?entry=ttu">Google Maps</Link></li> */}
-          </ul>
      
           <ul  className='ul-white' style={{color:'black'}}>
             <li className='link-title'>Contact</li>
-            <li><Link href="mailto:info@Prospecs.com">Info@Prospecs.me</Link></li>
+            <li ><Link
+            className='flex row gap2'
+            href="mailto:info@Prospecs.com">
+              
+              <Box sx={{opacity:.8, width:'17px',maxWidth:'17px',height:'17px',maxHeight:'17px'}}>
+                <img src="https://cdn-icons-png.flaticon.com/128/646/646094.png" alt="" className="img" />
+              </Box>
+              Info@Prospecs.me</Link></li>
             
             {/* <li><a href="https://www.facebook.com/profile.php?id=100076163602459/" target="_blank" rel="noreferrer" >Facebook</a></li> */}
 
-            <li><a href="https://www.instagram.com/prospecsme/" target="_blank" rel="noreferrer" >@prospecsme</a></li>
-            <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer" target='_blank' >+{process.env.NEXT_PUBLIC_WA}</a></li>
+            <li><a 
+            className='flex row gap2'
+            
+            href="https://www.instagram.com/prospecsme/" target="_blank" rel="noreferrer" >
+              
+            <Box sx={{opacity:.8, width:'17px',maxWidth:'17px',height:'17px',maxHeight:'17px'}}>
+                <img src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt="" className="img" />
+              </Box>
+              @prospecsme</a></li>
+            <li><a href={`https://wa.me/${process.env.NEXT_PUBLIC_WA}`} rel="noreferrer"
+            
+            className='flex row gap2'
+            
+            target='_blank' >
+              
+              <Box sx={{opacity:.8, width:'17px',maxWidth:'17px',height:'17px',maxHeight:'17px'}}>
+                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="" className="img" />
+              </Box>
+              +{process.env.NEXT_PUBLIC_WA}</a></li>
             {/* <li><a href={`http://tiktok.com/@thePROroomlb`} rel="noreferrer" target='_blank' >TikTok</a></li> */}
           </ul>
         </div>

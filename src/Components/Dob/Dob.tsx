@@ -8,8 +8,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 const DateComponent: React.FC = () => {
   const [startDate, setStartDate] = useState(new Date());
   return (
-    <Box sx={{my:1}} className='center  flex col'>
-    <Typography>
+    <Box sx={{mb:1}} className='center  flex col'>
+    <Typography sx={{fontSize:'.7em'}}>
         Date of birth:
     </Typography>
     <DatePicker selected={startDate} onChange={(date: Date) => setStartDate(date)} />
