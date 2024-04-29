@@ -11,15 +11,23 @@ const Footer = () => (
   <footer className="site-footer " style={{color:'black',background:'white'}}>
     <Divider></Divider>
     <div className="container " style={{color:'black',background:'white'}}>
-      <div className="site-footer__top ">
-        <div className="site-footer__description">
+      <Box className="site-footer__top " sx={{
+        width:'100%',
+        margin:{sm:'0 auto'},
+            flexDirection: {xs:'column-reverse',sm:'row-reverse'},
+        maxWidth:'1200px'}}>
+        <Box className="site-footer__description"
+        sx={{
+              justifyContent:{sm:'flex-end'},
+          display: 'flex'}}
+        >
           <div className='logos cursor'>
 
             <Link href="/">
               {/* <a><h1 className="site-logo"><Logo />E-Shop</h1></a> */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675357773/logo_ghli5e.jpg */}
               {/* https://res.cloudinary.com/dwxm8f25f/image/upload/v1675713948/logo_sktnut_1_jwy2hk.png */}
-            <img className='img ' src='https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG' alt="Prospecs Lebanon Logo" />
+            <img className='img contain' src='https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG' alt="Prospecs Lebanon Logo" />
             </Link>
           </div>
           {/* <Typography sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
@@ -34,7 +42,7 @@ const Footer = () => (
           <li><a href={`${process.env.NEXT_PUBLIC_INSTA}`}rel="noreferrer" target='_blank' ><i className="icon-instagram"></i></a></li>
           <li><a href="#"><i className="icon-youtube-play"></i></a></li>
         </ul> */}
-        </div>
+        </Box>
 
         <div className="site-footer__links ">
         {/* <div>
@@ -85,7 +93,7 @@ const Footer = () => (
           </ul>
         </div>
   
-      </div>
+      </Box>
     </div>
 
     <div className="site-footer__bottom " style={{color:'black',borderTop:"1px solid #0000001f"}}>

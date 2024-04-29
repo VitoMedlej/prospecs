@@ -8,10 +8,11 @@ footer .container {
 }
 footer .container .site-footer__top {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 footer .container .site-footer__description {
-  max-width: 400px;
+  max-width: none;
+  width: 100%;
 }
 footer .site-footer__links {
   display: flex;
@@ -119,7 +120,7 @@ button[disabled] {
 @media (min-width: 767px) {
   .site-footer .site-footer__top {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding-bottom: 60px;
   }
 }
@@ -134,7 +135,7 @@ button[disabled] {
 }
 @media (min-width: 767px) {
   .site-footer .site-footer__description {
-    width: 400px;
+    width: 200px;
     margin-bottom: 50px;
   }
 }
