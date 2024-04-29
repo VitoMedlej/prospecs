@@ -300,7 +300,7 @@ export default function ControlledForm() {
     }));
   };
 
-  if (status?.isSubmitting === false && status?.isSent === true) return (
+  if (status?.isSubmitting === false && status?.isSent === true && status?.failed === false) return (
     <Box className='center flex text-center'>
       <Typography component='h2' sx={{fontWeight:600,maxWidth:'700px'}}>
         Thank you for registering! Expect an email from us soon.

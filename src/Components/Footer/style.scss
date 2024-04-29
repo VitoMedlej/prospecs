@@ -197,7 +197,7 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
       color: #000;
       font-weight: 300;
       align-items: center;
-      margin-bottom: 33px;
+      margin-bottom: 15px;
       span {
         font-weight: 400;
         color: var(--color-orange);
@@ -247,7 +247,7 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
           font-weight: 600;
           margin-bottom: 10px;
           @include breakpoint(phone) {
-            margin-bottom: 34px;
+            margin-bottom: 14px;
           }
         }
         a {
