@@ -22,9 +22,9 @@ const Footer = () => (
             <img className='img ' src='https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG' alt="Prospecs Lebanon Logo" />
             </Link>
           </div>
-          <Typography sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
+          {/* <Typography sx={{ fontSize: '.95em',color:"2b2b2b" }}  className='footer-p '>
           At Prospecs, we believe that every space has a story to tell. Our passionate team of designers is dedicated to weaving unique narratives through the art of interior design. With an unwavering commitment to creativity and quality, we turn your vision into reality.
-          </Typography>
+          </Typography> */}
           {/* <SMicons/> */}
 
           {/* <ul className="site-footer__social-networks">
