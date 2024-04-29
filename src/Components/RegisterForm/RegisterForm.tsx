@@ -334,7 +334,7 @@ export default function ControlledForm() {
 /> */}
 
 <FormControl
-      sx={{width:'49%',my:1}}
+      sx={{width:'99%',my:1}}
 
 fullWidth>
       <InputLabel id="demo-simple-select-label">Gender</InputLabel>

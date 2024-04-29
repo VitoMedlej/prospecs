@@ -195,7 +195,8 @@ button[disabled] {
 }
 
 .react-datepicker__input-container input {
-  padding: 1em !important;
+  width: 98%;
+  padding: 1em 0 !important;
 }
 
 .MuiInputBase-input {
