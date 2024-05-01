@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 import { TextField, Button, Box, FormControl, InputLabel, MenuItem, Select, Typography } from '@mui/material';
 import Btn from '../Btn/Btn';
 import Dob from '../Dob/Dob';
+import dayjs, { Dayjs } from 'dayjs';
+
+
+
 const allCountries = [
   "Saudi Arabia",
   "United Arab Emirates",
@@ -208,10 +212,12 @@ const allCountries = [
 
 
 export default function ControlledForm() {
+  const [startDate, setStartDate] = React.useState<any>(null);
+
     const [formState, setFormState] = useState({
         fullName: '',
-        dob: '', // Date of Birth
-        gender: 'male', // Gender
+        dob: `${startDate}`, // Date of Birth
+        gender: '', // Gender
         country: '', // Country
         city: '', // City
         address: '', // Address
@@ -226,6 +232,7 @@ export default function ControlledForm() {
         specialRequests: '', // Special Requests or Accommodations Needed
         referralSource: '', // How did you hear about the camp?
         PaymentMethod:'',
+
         additionalInfo:''
       });
       
@@ -244,6 +251,7 @@ export default function ControlledForm() {
 
 
   async function sendEmail(formState: any) {
+    setFormState({...formState, dob: `${startDate}` })
     const url = process.env.NEXT_PUBLIC_URL + "/api/send-email";
     setStatus({isSubmitting:true,isSent:false,failed:false})
 
@@ -357,7 +365,7 @@ fullWidth>
       </Select>
     </FormControl>
 
-<Dob/>
+<Dob startDate={startDate ? startDate : null} setStartDate={setStartDate}/>
 
 {/* <TextField
   sx={{width:'99%',my:1}}

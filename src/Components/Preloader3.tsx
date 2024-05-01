@@ -6,8 +6,8 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useRouter } from 'next/navigation';
-import { Autoplay } from 'swiper';
-import Btn from './Btn/Btn';
+// import { Autoplay } from 'swiper';
+// import Btn from './Btn/Btn';
 
 
 
@@ -31,7 +31,7 @@ const Preloader3 = ({res}:{res:any}) => {
     return (
         <>
         
-        <Box
+        {/* <Box
             sx={{
             // py: {xs:'.75em',sm:'2em',md:'3em'},
             // width: {xs:'98%',md:'74%',lg:'80%'},
@@ -138,11 +138,17 @@ const Preloader3 = ({res}:{res:any}) => {
     }
     
             </Swiper>
-        </Box>
+        </Box> */}
         <Box sx={{
             
             display:{xs:'flex',md:'none'},height:'100%'}}>
             <img src="https://ucarecdn.com/4a7e0e1c-47b7-4196-bfa7-b474365da6c8/WhatsAppImage20240428at125445_21f13c27.jpg" alt="" className="img" />
+        </Box>
+
+        <Box sx={{
+            
+            display:{xs:'none',md:'flex'},height:'100%'}}>
+            <img src="https://ucarecdn.com/3bdd3e73-bdcf-4f38-8aa4-3621913a9e67/landing.png" alt="" className="img" />
         </Box>
         </>
 
