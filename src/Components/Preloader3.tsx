@@ -148,7 +148,7 @@ const Preloader3 = ({res}:{res:any}) => {
         <Box sx={{
             
             display:{xs:'none',md:'flex'},height:'100%'}}>
-            <img src="https://ucarecdn.com/3bdd3e73-bdcf-4f38-8aa4-3621913a9e67/landing.png" alt="" className="img" />
+            <img src="https://ucarecdn.com/ca77c2ca-9d0f-4fcc-b2e2-6955a844e9ca/169.jpg" alt="" className="img" />
         </Box>
         </>
 

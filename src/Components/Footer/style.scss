@@ -21,7 +21,7 @@ footer {
       ul {
           list-style-type: none;
           margin: 0;
-          // padding: 0;
+          padding: 0;
           width: 22%;
           min-width: 170px;
           li {
@@ -98,7 +98,8 @@ button[disabled]{
       
       ul {
           min-width: 200px;
-          padding: 0.35em 0 ;
+          padding:  0 ;
+          // padding: 0.35em 0 ;
           width: 100% !important;
          
       }

@@ -57,7 +57,7 @@ const Footer = () => (
             {/* <li><Link href="/contact">Contact Us</Link></li> */}
             {/* <li><Link href="https://www.google.com/maps/place/Design+compass/@33.8884247,35.4809988,17z/data=!3m1!4b1!4m6!3m5!1s0x151f1749ba249eaf:0xc9a67248535dca49!8m2!3d33.8884247!4d35.4809988!16s%2Fg%2F11hxvhzfj_?entry=ttu">Google Maps</Link></li> */}
      
-          <ul  className='ul-white' style={{color:'black'}}>
+          <ul  className='ul-white' style={{padding:'0 !Important',color:'black'}}>
             <li className='link-title'>Contact</li>
             <li ><Link
             className='flex row gap2'
