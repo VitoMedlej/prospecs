@@ -171,6 +171,18 @@ button[disabled]{
     
     }
 }
+.field {
+    gap:.5em;
+    display: flex;
+    margin-bottom: .25em;
+    flex-direction: row;
+}
+.container {
+    .field-value
+    {
+        font-weight:600 !important
+    }
+}
 
 .MuiInputBase-input {
     font-family: "Inter", sans-serif !important;

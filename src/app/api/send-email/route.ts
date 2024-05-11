@@ -197,9 +197,9 @@ export  async function POST(req: NextRequest, res: NextApiResponse) {
   // const order = req?.body.get('order')
   const body = await req.json()
   console.log('body: ', body);
-  const formState : any = null;
-  let orderId = nanoid()
-        orderId = `${orderId}`.replace(/[^a-zA-Z0-9]/g, '')?.slice(0,6)?.toUpperCase()
+  const formState : any = body;
+  let applicationId = nanoid()
+  applicationId = `${applicationId}`.replace(/[^a-zA-Z0-9]/g, '')?.slice(0,6)?.toUpperCase()
   console.log('order: ', formState);
 
 
@@ -207,13 +207,10 @@ export  async function POST(req: NextRequest, res: NextApiResponse) {
     // Process a POST request
     if (!formState || !formState?.fullName) return NextResponse.json({success:false})
       console.log('formState: ', formState);
-       const insertReq = await client.db("PRO").collection("Orders").insertOne({...formState,orderID: `${orderId}`});
+       const insertReq = await client.db("PRO").collection("Orders").insertOne({...formState,applicationId: `${applicationId}`});
        if (insertReq.acknowledged ) {         
         
         //  await sendOrderConfirmationEmail(orderId,formState)
-
-
-
 
          return NextResponse.json({success:true});
         }

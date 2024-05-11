@@ -9,14 +9,14 @@ try {
 
     const ProductsCollection = await client
         .db("PRO")
-        .collection("Products");
+        .collection("Orders");
     let featuredProducts : any = [];
     let products : any = []
 
     const featuredProductsQuery = await ProductsCollection
         // .find({isFeatured: true})
         .find({})
-        .limit(35)
+        .limit(500)
     // const ProductsQuery = await ProductsCollection
     //     // .find({isFeatured: false})
     //     .find({})
