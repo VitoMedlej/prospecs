@@ -232,7 +232,6 @@ export default function ControlledForm() {
         specialRequests: '', // Special Requests or Accommodations Needed
         referralSource: '', // How did you hear about the camp?
         PaymentMethod:'',
-
         additionalInfo:''
       });
       
