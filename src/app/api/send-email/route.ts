@@ -142,6 +142,7 @@ export  async function POST(req: NextRequest, res: NextApiResponse) {
     
     // let result : any= 'true';
     const result =  await sendOrderConfirmationEmail(message);
+    console.log('result: ', result);
     // console.log('result: ', result);
 
     if (insertReq?.acknowledged && result == true) {         

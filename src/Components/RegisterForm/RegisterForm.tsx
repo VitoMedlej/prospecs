@@ -263,6 +263,7 @@ export default function ControlledForm() {
             body: JSON.stringify(formState),
         });
 
+        console.log('response: ', response);
         if (!response.ok) {
             setStatus({isSubmitting:false,isSent:false,failed:false})
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -270,6 +271,7 @@ export default function ControlledForm() {
         
 
         const data = await response.json();
+        console.log('data: ', data);
         if (data?.success === false) {
           
         setStatus({isSubmitting:false,isSent:false,failed:true})
