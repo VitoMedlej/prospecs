@@ -53,7 +53,7 @@ async function sendOrderConfirmationEmail(formState: any): Promise<boolean> {
   <body>
   <div class="container">
   <div class='cont'>
-  <img class='imgg' src='https://ucarecdn.com/09c3a7b0-509a-485d-a988-7a8bae7dd575/logobia.jpg' />
+  <img class='imgg' src='https://ucarecdn.com/93b9b344-419c-40ac-8b82-75a277432702/logo3.PNG' />
   </div>
           <h2>You received a new message through the website from ${applicant?.fullName}</h2>
           <div style={{ fontFamily: 'Arial, sans-serif', lineHeight: '1.6', color: '#333' }}>
