@@ -216,7 +216,7 @@ export default function ControlledForm() {
 
     const [formState, setFormState] = useState({
         fullName: '',
-        dob: `${startDate}`, // Date of Birth
+        dob: `${startDate?.$d}`, // Date of Birth
         gender: '', // Gender
         country: '', // Country
         city: '', // City
@@ -249,8 +249,12 @@ export default function ControlledForm() {
   };
 
 
+  console.log('formState: ', {...formState, dob: `${startDate?.$d}` });
+  console.log('startDate: ', startDate?.$d);
   async function sendEmail(formState: any) {
-    setFormState({...formState, dob: `${startDate}` })
+    setFormState({...formState, dob: `${startDate?.$d}` })
+
+
     const url = process.env.NEXT_PUBLIC_URL + "/api/send-email";
     setStatus({isSubmitting:true,isSent:false,failed:false})
 
