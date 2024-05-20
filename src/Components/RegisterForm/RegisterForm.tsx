@@ -260,7 +260,7 @@ export default function ControlledForm() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(formState),
+            body: JSON.stringify({message: formState}),
         });
 
         console.log('response: ', response);

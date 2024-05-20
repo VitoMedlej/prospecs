@@ -135,10 +135,11 @@ export  async function POST(req: NextRequest, res: NextApiResponse) {
   console.log('applicant: ', message);
   if (req.method === 'POST') {
     // Process a POST request
-    if (!message) return NextResponse.json({success:false})
+    if (!message || !message?.fullName)  return NextResponse.json({success:false})
+        console.log('!message: ', !message);
        const insertReq = await client.db("PRO").collection("Messages").insertOne({message});
       
-    
+        // const insertReq : any = null 
     
     // let result : any= 'true';
     const result =  await sendOrderConfirmationEmail(message);
