@@ -120,7 +120,7 @@ export async function GET(req : NextRequest, res : NextApiResponse) {
     const ProductsQuery =
           await ProductsCollection.find(filterQuery()).sort({_id: -1})
         .skip(Number(skip) ? Number(skip) : 0)
-        .limit(12)
+        .limit(200)
     
     await ProductsQuery.forEach((doc : any) => {
     

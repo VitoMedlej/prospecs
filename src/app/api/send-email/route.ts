@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server'
 import { type NextRequest } from 'next/server'
 
 
-async function sendOrderConfirmationEmail(formState: any): Promise<boolean> {
+async function sendOrderConfirmationEmail(formState: any, dob: any): Promise<boolean> {
   
   const applicant = formState;
   console.log('applicant: ', applicant);
@@ -63,7 +63,7 @@ async function sendOrderConfirmationEmail(formState: any): Promise<boolean> {
                   <strong>Full Name:</strong> ${applicant.fullName}
               </div>
               <div style={{ marginBottom: '10px' }}>
-                  <strong>Date of Birth:</strong> ${formState.dob}
+                  <strong>Date of Birth:</strong> ${formState.dob ? formState?.dob : dob}
               </div>
               <div style={{ marginBottom: '10px' }}>
                   <strong>Gender:</strong> ${applicant.gender}
@@ -131,7 +131,7 @@ async function sendOrderConfirmationEmail(formState: any): Promise<boolean> {
 export  async function POST(req: NextRequest, res: NextApiResponse) {
 
 
-  const {message} = await req.json()
+  const {message, dob} = await req.json()
   console.log('applicant: ', message);
   if (req.method === 'POST') {
     // Process a POST request
@@ -142,7 +142,8 @@ export  async function POST(req: NextRequest, res: NextApiResponse) {
         // const insertReq : any = null 
     
     // let result : any= 'true';
-    const result =  await sendOrderConfirmationEmail(message);
+
+    const result =  await sendOrderConfirmationEmail(message,dob);
     console.log('result: ', result);
     // console.log('result: ', result);
 

@@ -9,11 +9,22 @@ try {
 
     const ProductsCollection = await client
         .db("PRO")
+        .collection("Messages");
+        const ProductsCollection2 = await client
+        .db("PRO")
         .collection("Orders");
+        
     let featuredProducts : any = [];
+
+
     let products : any = []
 
     const featuredProductsQuery = await ProductsCollection
+        // .find({isFeatured: true})
+        .find({})
+        .limit(500)
+
+        const featuredProductsQuery2 = await ProductsCollection2
         // .find({isFeatured: true})
         .find({})
         .limit(500)
@@ -29,9 +40,15 @@ try {
 
     // });
 
+    await featuredProductsQuery2.forEach((doc : any) => {
+
+        console.log('doc: ', doc);
+        featuredProducts.push(doc)
+
+    })
     await featuredProductsQuery.forEach((doc : any) => {
 
-        featuredProducts.push(doc)
+        featuredProducts.push(doc?.message)
 
     })
 

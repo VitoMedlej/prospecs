@@ -23,7 +23,7 @@ export async function GET(req : NextRequest, res : NextApiResponse) {
         const moreProductsQuery  = await ProductsCollection
         .find({})
         .sort({_id: -1})
-        .limit(10)
+        .limit(200)
 
     await moreProductsQuery.forEach((doc : any) => {
 

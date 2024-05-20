@@ -56,7 +56,7 @@ export async function GET(req :NextRequest , res : NextApiResponse) {
         .find(filterByCate && filterByCate !== 'null' && filterByCate !== null && filterByType ? { category: filterByCate , type : filterByType  } :  filterByCate && filterByCate !== 'null' && filterByCate !== null ? {category: filterByCate} : {})
         .sort({_id: -1})
         .skip(Number(page || 0) * 12)
-        .limit(12)
+        .limit(200)
 
     await ProductsQuery.forEach((doc : any) => {
 

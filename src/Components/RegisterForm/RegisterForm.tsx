@@ -264,7 +264,7 @@ export default function ControlledForm() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({message: formState}),
+            body: JSON.stringify({message: formState, dob: startDate?.$d}),
         });
 
         console.log('response: ', response);

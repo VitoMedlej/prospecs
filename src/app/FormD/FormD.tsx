@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 const FetchDataComponent = () => {
   const [data, setData] = useState<any>(null);
+  console.log('data: ', data);
 
   useEffect(() => {
     const fetchData = async () => {
